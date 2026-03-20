@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Progress — Alfonse Otieno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Alfonse Otieno</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="articles.html">Articles</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="progress.html">Progress</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+  <div class="page-header">
+    <h1>Progress</h1>
+    <p>Honest, real metrics. No inflation. Just what has actually happened so far.</p>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number" data-target="3" id="stat-books">0</div>
+      <div class="stat-label">Books Read</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" data-target="3" id="stat-langs">0</div>
+      <div class="stat-label">Languages Learned</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" data-target="8" id="stat-articles">0</div>
+      <div class="stat-label">Articles Written</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" data-target="3" id="stat-projects">0</div>
+      <div class="stat-label">Projects Built</div>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <h2 class="section-title" style="margin-bottom:0.5rem;">Timeline</h2>
+  <div class="divider"></div>
+  <div class="timeline" style="margin-bottom:5rem;">
+
+    <div class="timeline-item">
+      <div class="timeline-date">November 2025</div>
+      <div class="timeline-event">Created 1-Year Master Plan</div>
+      <div class="timeline-desc">Defined a structured roadmap for learning, building, and publishing over the next 12 months.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">December 2024</div>
+      <div class="timeline-event">Finished KCSE</div>
+      <div class="timeline-desc">Completed secondary school education.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">January 2025</div>
+      <div class="timeline-event">Started Sales Role</div>
+      <div class="timeline-desc">Took on a sales position to develop communication and resilience. Left after evaluating alignment with long-term goals.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">January 2025</div>
+      <div class="timeline-event">Started Reading: The Brain That Changes Itself</div>
+      <div class="timeline-desc">First book of the self-directed learning phase — introduced neuroplasticity and the idea that the brain is not fixed.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">February 2025</div>
+      <div class="timeline-event">Finished: Atomic Habits</div>
+      <div class="timeline-desc">Read and applied core concepts on identity-based habit building.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">March 2025</div>
+      <div class="timeline-event">Read: Deep Work</div>
+      <div class="timeline-desc">Implemented deep work sessions into daily schedule to improve coding and writing focus.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">January 2026</div>
+      <div class="timeline-event">Learned HTML — Built First Projects</div>
+      <div class="timeline-desc">Started coding seriously. Built initial web projects using HTML, then expanded into CSS and JavaScript.</div>
+    </div>
+
+  </div>
+
+  <!-- BOOKS -->
+  <h2 class="section-title" style="margin-bottom:0.5rem;">Books Read</h2>
+  <div class="divider"></div>
+  <div class="books-grid">
+
+    <div class="book-card">
+      <div class="book-cover-placeholder">📖</div>
+      <div class="book-completed">Completed: January 2025</div>
+      <h3 class="book-title">The Brain That Changes Itself</h3>
+      <p class="book-desc">Norman Doidge explores the science of neuroplasticity — how the brain can rewire itself through experience and deliberate practice.</p>
+      <ul class="book-takeaways">
+        <li>The brain is not fixed — it reshapes itself based on what you repeatedly do.</li>
+        <li>Deliberate, focused practice drives structural change in the brain.</li>
+        <li>Habits carved through repetition become increasingly automatic over time.</li>
+      </ul>
+      <div class="book-applied"><strong>What I applied:</strong> Used this to commit to daily coding sessions, treating skill-building as a physical process of brain change, not just willpower.</div>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-placeholder">⚛️</div>
+      <div class="book-completed">Completed: February 2025</div>
+      <h3 class="book-title">Atomic Habits</h3>
+      <p class="book-desc">James Clear's framework for building systems of small habits that compound into significant long-term results.</p>
+      <ul class="book-takeaways">
+        <li>Identity-driven habits outlast outcome-driven ones — become the person, not just the goal.</li>
+        <li>Make habits obvious, attractive, easy, and satisfying to reinforce them.</li>
+        <li>1% improvements are invisible daily but transformative over a year.</li>
+      </ul>
+      <div class="book-applied"><strong>What I applied:</strong> Rebuilt daily routines around identity — "I am a developer" rather than "I want to learn to code."</div>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-placeholder">🎯</div>
+      <div class="book-completed">Completed: March 2025</div>
+      <h3 class="book-title">Deep Work</h3>
+      <p class="book-desc">Cal Newport makes the case for distraction-free, concentrated work as the defining skill of the knowledge economy.</p>
+      <ul class="book-takeaways">
+        <li>Depth of focus, not quantity of hours, produces the most valuable work.</li>
+        <li>Shallow work expands to fill time if you don't protect your schedule deliberately.</li>
+        <li>Embrace boredom — the ability to focus is trained, not innate.</li>
+      </ul>
+      <div class="book-applied"><strong>What I applied:</strong> Blocked 2–3 hour deep work sessions for coding and writing, removed phone during those windows.</div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Alfonse Otieno. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>
