@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alfonse Otieno — Developer & Self-Directed Learner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Alfonse Otieno</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="articles.html">Articles</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="progress.html">Progress</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-eyebrow">Developer · Writer · Builder</span>
+        <h1 class="hero-headline">I build and document systems for growth in code, writing, and discipline.</h1>
+        <p class="hero-subtext">Developer in progress. I create projects and share what I learn along the way.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary">Contact Me</a>
+          <a href="projects.html" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="alfonse.png" alt="Alfonse Otieno" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECT -->
+<section class="section" style="background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <p class="featured-label">Featured Project</p>
+    <div class="featured-project-card">
+      <div>
+        <div class="project-label">Live Project</div>
+        <h3>Ongata Rongai Boxing Club</h3>
+        <p>A professional website for a local boxing club in Ongata Rongai — built to establish their online presence, showcase training programs, and attract new members.</p>
+      </div>
+      <div class="fp-actions">
+        <a href="https://orbc.co.ke" target="_blank" rel="noopener" class="btn btn-primary">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST ARTICLE -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Latest Article</h2>
+    <div class="divider"></div>
+    <div class="article-preview-card">
+      <div class="article-meta">
+        <span class="tag">Personal Growth</span>
+        <span>8 min read</span>
+        <span>March 2025</span>
+      </div>
+      <h3>Life Is Not Fair — And That Is Okay</h3>
+      <p>Life distributes advantages unevenly. Some are born into royalty, others into poverty. The real question is not whether life is fair, but what we do with the hand we're dealt.</p>
+      <a href="articles.html" class="btn btn-primary btn-sm">Read Article</a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <h2 class="section-title">Explore More</h2>
+    <div class="divider"></div>
+    <div class="explore-grid">
+      <div class="explore-card">
+        <div class="icon">⚙️</div>
+        <h3>Projects</h3>
+        <p>Explore my projects — websites and tools I've built while learning to code.</p>
+        <a href="projects.html" class="btn btn-secondary">View More Projects</a>
+      </div>
+      <div class="explore-card">
+        <div class="icon">✍️</div>
+        <h3>Articles</h3>
+        <p>Read more of my writing on growth, discipline, coding, and systems thinking.</p>
+        <a href="articles.html" class="btn btn-secondary">Read More Articles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSTACK CTA -->
+<section class="substack-section">
+  <div class="substack-inner">
+    <h2>I write regularly about growth, coding, and discipline.</h2>
+    <p>Lessons from books, projects, and deliberate self-experimentation — published on Substack.</p>
+    <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on Substack</a>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section final-cta">
+  <div class="container">
+    <h2>Interested in working together or connecting?</h2>
+    <p>I'm open to collaboration, projects, and conversations aligned with growth and building.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Me</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Alfonse Otieno. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
