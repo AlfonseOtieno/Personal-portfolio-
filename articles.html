@@ -45,10 +45,12 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<div class="container">
+<!-- SINGLE ARTICLE VIEW — sits at top, hidden by default -->
+<div id="article-single" class="hidden"></div>
 
-  <!-- ARTICLE LIST VIEW -->
-  <div id="article-list">
+<!-- ARTICLE LIST VIEW -->
+<div id="article-list">
+  <div class="container">
     <div class="page-header">
       <h1>Articles</h1>
       <p>Thoughts on growth, discipline, coding, and building systems that work.</p>
@@ -56,13 +58,19 @@
     <div class="articles-grid" id="articles-grid">
       <!-- Rendered by articles.js -->
     </div>
-  </div>
 
-  <!-- SINGLE ARTICLE VIEW -->
-  <div id="article-single" class="hidden">
-    <!-- Rendered by articles.js when an article is opened -->
+    <!-- BOTTOM CTA — shown after all articles -->
+    <div class="articles-subscribe-cta">
+      <div class="articles-subscribe-inner">
+        <span class="articles-subscribe-label">✍️ New articles every week</span>
+        <h2>I write twice a week documenting my journey</h2>
+        <p>Discipline experiments, lessons from books, coding progress, and honest reflections from a 19-year-old building himself from the ground up. Every article is free.</p>
+        <a href="https://alfonseotieno.substack.com/subscribe" target="_blank" rel="noopener" class="btn btn-primary">
+          Subscribe to My Substack
+        </a>
+      </div>
+    </div>
   </div>
-
 </div>
 
 <footer>

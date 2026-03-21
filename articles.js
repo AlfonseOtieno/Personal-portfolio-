@@ -245,7 +245,13 @@ function topicTag(topic) {
   return `<span class="tag" style="background:${s.bg};color:${s.color};border:1px solid ${s.border};">${topic}</span>`;
 }
 
-/* ── RENDER ARTICLE LIST ─────────────────────────────────────── */
+/* ── SCROLL TO TOP (accounts for fixed nav) ──────────────────── */
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
+
+/* ── RENDER ARTICLE LIST (articles.html) ─────────────────────── */
 function renderList() {
   const grid = document.getElementById('articles-grid');
   if (!grid) return;
@@ -277,31 +283,32 @@ function openArticle(index) {
   const singleView = document.getElementById('article-single');
 
   singleView.innerHTML = `
-    <button class="article-back" id="back-btn">← Back to Articles</button>
-    <div class="article-full">
-      <div class="article-meta">
-        ${topicTag(a.topic)}
-        <span>${a.readTime}</span>
-        <span>${a.date}</span>
-      </div>
-      <h1>${a.title}</h1>
-      <div class="article-full-body">${a.body}</div>
-
-      <div class="article-cta">
-        <div class="article-cta-icon">✍️</div>
-        <h3>Enjoyed this article?</h3>
-        <p>I publish new essays every week on growth, discipline, coding, and systems thinking. Every article is free. Subscribe so you never miss one.</p>
-        <a href="${a.substackUrl}" target="_blank" rel="noopener" class="btn btn-primary">
-          Subscribe on Substack — It's Free
-        </a>
-        <p class="cta-sub">Join readers getting honest, unfiltered writing about building yourself from the ground up.</p>
+    <div class="container">
+      <button class="article-back" id="back-btn">← Back to Articles</button>
+      <div class="article-full">
+        <div class="article-meta">
+          ${topicTag(a.topic)}
+          <span>${a.readTime}</span>
+          <span>${a.date}</span>
+        </div>
+        <h1>${a.title}</h1>
+        <div class="article-full-body">${a.body}</div>
+        <div class="article-cta">
+          <div class="article-cta-icon">✍️</div>
+          <h3>Enjoyed this article?</h3>
+          <p>I publish new essays every week on growth, discipline, coding, and systems thinking. Every article is free. Subscribe so you never miss one.</p>
+          <a href="https://alfonseotieno.substack.com/subscribe" target="_blank" rel="noopener" class="btn btn-primary">
+            Subscribe on Substack — It's Free
+          </a>
+          <p class="cta-sub">Join readers getting honest, unfiltered writing about building yourself from the ground up.</p>
+        </div>
       </div>
     </div>
   `;
 
   listView.classList.add('hidden');
   singleView.classList.remove('hidden');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollToTop();
 
   document.getElementById('back-btn').addEventListener('click', closeArticle);
 }
@@ -310,8 +317,36 @@ function openArticle(index) {
 function closeArticle() {
   document.getElementById('article-list').classList.remove('hidden');
   document.getElementById('article-single').classList.add('hidden');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollToTop();
+}
+
+/* ── AUTO-RENDER LATEST ARTICLE ON HOME PAGE (index.html) ───────
+   Add <div id="latest-article-slot"></div> anywhere in index.html
+   and this function will fill it automatically from ARTICLES[0].
+   When you add a new article to the top of the ARTICLES array,
+   the home page updates with zero other changes needed.
+─────────────────────────────────────────────────────────────────*/
+function renderLatestArticle() {
+  const slot = document.getElementById('latest-article-slot');
+  if (!slot) return;
+
+  const a = ARTICLES[0]; // always the newest — keep ARTICLES sorted latest first
+  slot.innerHTML = `
+    <div class="article-preview-card">
+      <div class="article-meta">
+        ${topicTag(a.topic)}
+        <span>${a.readTime}</span>
+        <span>${a.date}</span>
+      </div>
+      <h3>${a.title}</h3>
+      <p>${a.excerpt}</p>
+      <a href="articles.html" class="btn btn-primary btn-sm">Read Article</a>
+    </div>
+  `;
 }
 
 /* ── INIT ────────────────────────────────────────────────────── */
-document.addEventListener('DOMContentLoaded', renderList);
+document.addEventListener('DOMContentLoaded', function () {
+  renderList();          // articles.html — renders the full grid
+  renderLatestArticle(); // index.html    — renders the latest article preview
+});
