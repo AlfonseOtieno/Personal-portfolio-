@@ -50,6 +50,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ── FEATURED PROJECT — CASE STUDY TOGGLE ────────────────────
+  const fpToggle = document.querySelector('.fp-toggle-btn');
+  const fpCaseStudy = document.querySelector('.fp-case-study');
+  if (fpToggle && fpCaseStudy) {
+    fpToggle.addEventListener('click', function () {
+      const isOpen = fpToggle.getAttribute('aria-expanded') === 'true';
+      if (isOpen) {
+        fpCaseStudy.hidden = true;
+        fpToggle.setAttribute('aria-expanded', 'false');
+        fpToggle.innerHTML = 'Read Case Study <span class="fp-arrow">↓</span>';
+      } else {
+        fpCaseStudy.hidden = false;
+        fpToggle.setAttribute('aria-expanded', 'true');
+        fpToggle.innerHTML = 'Close Case Study <span class="fp-arrow">↓</span>';
+      }
+    });
+  }
+
   // ── ACTIVE NAV LINK ──────────────────────────────────────────
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(function (a) {
