@@ -3,16 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Articles by Alfonse Otieno on growth, discipline, coding, and building systems that work.">
 <title>Articles — Alfonse Otieno</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>
-  .article-single { display: none; }
-  .article-single.active { display: block; }
-  .article-list-view.hidden { display: none; }
-</style>
 </head>
 <body>
 
@@ -51,141 +47,23 @@
 
 <div class="container">
 
-  <!-- PAGE HEADER -->
-  <div class="page-header">
-    <h1>Articles</h1>
-    <p>Thoughts on growth, discipline, coding, and building systems that work.</p>
-  </div>
-
-  <!-- ── ARTICLE LIST ── -->
-  <div class="article-list-view" id="article-list">
-    <div class="articles-grid">
-
-      <div class="article-card" data-slug="fairness" style="cursor:pointer;">
-        <div class="article-meta">
-          <span class="tag">Personal Growth</span>
-          <span>8 min read</span>
-          <span>Mar 2025</span>
-        </div>
-        <h3>Life Is Not Fair — And That Is Okay</h3>
-        <p>Life distributes advantages unevenly. Some are born into royalty, others into poverty. The real question is not whether life is fair, but what we do with the hand we're dealt.</p>
-        <span class="read-more">Read Article →</span>
-      </div>
-
-      <div class="article-card" data-slug="habits" style="cursor:pointer;">
-        <div class="article-meta">
-          <span class="tag">Skill Development</span>
-          <span>5 min read</span>
-          <span>Feb 2025</span>
-        </div>
-        <h3>Identity-Driven Habits vs Outcome-Driven Habits</h3>
-        <p>Why do we set New Year's resolutions but fail to uphold them? The answer lies in understanding the difference between identity-driven and outcome-driven habits.</p>
-        <span class="read-more">Read Article →</span>
-      </div>
-
-      <div class="article-card" data-slug="ai" style="cursor:pointer;">
-        <div class="article-meta">
-          <span class="tag">Technology</span>
-          <span>6 min read</span>
-          <span>Jan 2025</span>
-        </div>
-        <h3>The Impact of Artificial Intelligence</h3>
-        <p>AI is reshaping how we work, learn, and think. Understanding its impact is crucial for anyone building a future in tech.</p>
-        <span class="read-more">Read Article →</span>
-      </div>
-
+  <!-- ARTICLE LIST VIEW -->
+  <div id="article-list">
+    <div class="page-header">
+      <h1>Articles</h1>
+      <p>Thoughts on growth, discipline, coding, and building systems that work.</p>
     </div>
-  </div><!-- /article-list -->
-
-  <!-- ── ARTICLE: FAIRNESS ── -->
-  <div class="article-single" id="article-fairness">
-    <span class="article-back" onclick="closeArticle()">← Back to Articles</span>
-    <div class="article-full">
-      <div class="article-meta">
-        <span class="tag">Personal Growth</span>
-        <span>8 min read</span>
-        <span>March 2025</span>
-      </div>
-      <h1>Life Is Not Fair — And That Is Okay</h1>
-      <div class="article-full-body">
-        <p>Life distributes advantages unevenly. Some are born into royalty, others into poverty. Some inherit health, others inherit illness. Some are raised in environments that cultivate discipline, others are raised in chaos. The starting lines are never equal.</p>
-        <p>And yet, the conversation about fairness often stops at the problem. We acknowledge the imbalance, feel its weight, and then — consciously or not — use it as an explanation for where we are. That's where the danger lies.</p>
-        <h2>The Cost of Expecting Fairness</h2>
-        <p>When you expect life to be fair, you set yourself up for a specific kind of suffering. Every setback feels like an injustice. Every advantage someone else has becomes a reason your progress is slower. The framework of fairness turns the world into a court where you are perpetually the wronged party.</p>
-        <p>This doesn't mean injustice doesn't exist. It does. But anchoring your identity to what you didn't receive — rather than what you choose to do — is a slow form of paralysis.</p>
-        <h2>What You Can Control</h2>
-        <p>The stoics understood this well. The dichotomy of control — separating what is within your power from what is not — is not a resignation. It is a focusing mechanism. You stop spending energy on what you cannot change and redirect it toward what you can.</p>
-        <p>Your inputs. Your consistency. Your decisions under pressure. Your willingness to build when building is difficult.</p>
-        <h2>The Real Question</h2>
-        <p>The question is never whether your circumstances are fair. The question is what you build from those circumstances. History is full of people who built remarkable things from unfavorable conditions — not because the odds flipped, but because they worked as if the odds were irrelevant.</p>
-        <p>Accepting that life is not fair is not pessimism. It is clarity. And from clarity, you can move.</p>
-      </div>
-      <div class="article-cta">
-        <p>If you enjoyed this article and want more like this, I write regularly on Substack.</p>
-        <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Read more on Substack</a>
-      </div>
+    <div class="articles-grid" id="articles-grid">
+      <!-- Rendered by articles.js -->
     </div>
   </div>
 
-  <!-- ── ARTICLE: HABITS ── -->
-  <div class="article-single" id="article-habits">
-    <span class="article-back" onclick="closeArticle()">← Back to Articles</span>
-    <div class="article-full">
-      <div class="article-meta">
-        <span class="tag">Skill Development</span>
-        <span>5 min read</span>
-        <span>February 2025</span>
-      </div>
-      <h1>Identity-Driven Habits vs Outcome-Driven Habits</h1>
-      <div class="article-full-body">
-        <p>Why do we set New Year's resolutions but fail to uphold them? The answer lies in understanding the difference between identity-driven and outcome-driven habits — and why the former almost always wins.</p>
-        <h2>Outcome-Driven Habits</h2>
-        <p>Most people build habits around outcomes. "I want to lose 10kg." "I want to read 24 books." "I want to earn more money." The goal is the destination. The habit is just a vehicle.</p>
-        <p>The problem: when you miss a day, the system collapses. Because the goal was never tied to who you are — it was tied to what you wanted to have. One skip, and the motivation evaporates.</p>
-        <h2>Identity-Driven Habits</h2>
-        <p>Identity-driven habits start with a different question: not "what do I want?" but "who am I becoming?" When you define yourself as a reader, missing a day feels like a violation of your identity — not just a missed target. The habit becomes self-reinforcing.</p>
-        <p>James Clear framed it well in Atomic Habits: every action is a vote for the kind of person you want to become. The goal is not to run a marathon — it is to become a runner. The marathon follows.</p>
-        <h2>How to Apply This</h2>
-        <p>Start by asking: what is the identity behind the habit I want to build? Replace "I want to code every day" with "I am a developer. Developers code." Small reframe. Significant difference in follow-through.</p>
-        <p>The habits that stick are the ones that feel like expressions of who you are — not obligations imposed by who you want to become.</p>
-      </div>
-      <div class="article-cta">
-        <p>If you enjoyed this article and want more like this, I write regularly on Substack.</p>
-        <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Read more on Substack</a>
-      </div>
-    </div>
+  <!-- SINGLE ARTICLE VIEW -->
+  <div id="article-single" class="hidden">
+    <!-- Rendered by articles.js when an article is opened -->
   </div>
 
-  <!-- ── ARTICLE: AI ── -->
-  <div class="article-single" id="article-ai">
-    <span class="article-back" onclick="closeArticle()">← Back to Articles</span>
-    <div class="article-full">
-      <div class="article-meta">
-        <span class="tag">Technology</span>
-        <span>6 min read</span>
-        <span>January 2025</span>
-      </div>
-      <h1>The Impact of Artificial Intelligence</h1>
-      <div class="article-full-body">
-        <p>AI is no longer a concept from science fiction. It is a tool reshaping how we work, learn, communicate, and think. For anyone building a future in tech, understanding its trajectory is not optional — it is foundational.</p>
-        <h2>Automation and the Labor Market</h2>
-        <p>The most visible effect of AI is on repetitive, pattern-based work. Administrative tasks, data entry, customer service scripts — these are being automated at scale. The jobs that remain will require what machines struggle to replicate: creativity, judgment, and contextual reasoning.</p>
-        <p>This creates pressure on anyone who isn't actively building higher-order skills. But it also creates opportunity — tools that once required entire teams can now be operated by individuals who know how to use them well.</p>
-        <h2>AI as a Learning Tool</h2>
-        <p>One of the most underrated shifts is how AI changes learning. A student who learns how to use AI effectively — to break down concepts, generate examples, and identify gaps — has access to a form of personalized tutoring that was previously available only to the privileged few.</p>
-        <p>The question is not whether to use these tools. It is whether to use them passively (letting AI think for you) or actively (using AI to accelerate your own thinking).</p>
-        <h2>Where This Leaves You</h2>
-        <p>AI is not a threat if you are building. The people most at risk are those waiting for the world to stay the same. The people positioned well are those who treat AI as a lever — something that amplifies what they are already building, thinking, and creating.</p>
-        <p>Build. Document. Adapt. That's the only coherent response to a rapidly changing landscape.</p>
-      </div>
-      <div class="article-cta">
-        <p>If you enjoyed this article and want more like this, I write regularly on Substack.</p>
-        <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Read more on Substack</a>
-      </div>
-    </div>
-  </div>
-
-</div><!-- /container -->
+</div>
 
 <footer>
   <div class="container">
