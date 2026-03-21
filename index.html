@@ -173,20 +173,15 @@
   </div>
 </section>
 
-<!-- LATEST ARTICLE -->
+<!-- LATEST ARTICLE — auto-populated from articles.js ARTICLES[0] -->
 <section class="section">
   <div class="container">
     <h2 class="section-title">Latest Article</h2>
     <div class="divider"></div>
-    <div class="article-preview-card">
-      <div class="article-meta">
-        <span class="tag">Personal Growth</span>
-        <span>8 min read</span>
-        <span>March 2025</span>
-      </div>
-      <h3>Life Is Not Fair — And That Is Okay</h3>
-      <p>Life distributes advantages unevenly. Some are born into royalty, others into poverty. The real question is not whether life is fair, but what we do with the hand we're dealt.</p>
-      <a href="articles.html" class="btn btn-primary btn-sm">Read Article</a>
+    <div id="latest-article-slot">
+      <!-- Automatically filled by articles.js — no manual updates needed.
+           To update: add your new article to the TOP of the ARTICLES array
+           in articles.js. This section updates itself. -->
     </div>
   </div>
 </section>
@@ -238,5 +233,5 @@
 </footer>
 
 <script src="main.js"></script>
-</body>
+<script src="articles.js"></script>
 </html>
