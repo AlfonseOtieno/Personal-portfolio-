@@ -116,59 +116,14 @@
   </div>
 </section>
 
-<!-- FEATURED PROJECT -->
+<!-- FEATURED PROJECT — auto-populated from projects.js PROJECTS[0] -->
 <section class="section" style="background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
   <div class="container">
     <p class="featured-label">Featured Project</p>
-    <div class="featured-project-card fp-expandable">
-
-      <!-- Top: image + info side by side -->
-      <div class="fp-top">
-        <div class="fp-preview">
-          <!-- Replace orbc-preview.png with your actual screenshot -->
-          <img src="orbc-preview.png" alt="Ongata Rongai Boxing Club website preview" class="fp-img" onerror="this.parentElement.classList.add('fp-img-missing')">
-          <div class="fp-img-placeholder">📸 Replace with orbc-preview.png</div>
-        </div>
-        <div class="fp-info">
-          <div class="project-label">Live Project</div>
-          <h3>Ongata Rongai Boxing Club</h3>
-          <p>A professional website for a local boxing club in Ongata Rongai — built to establish their online presence, showcase training programs, and attract new members.</p>
-
-          <!-- Stack tags -->
-          <div class="fp-stack">
-            <span class="stack-tag">WordPress</span>
-            <span class="stack-tag">Elementor</span>
-            <span class="stack-tag">CSS</span>
-            <span class="stack-tag">cPanel Hosting</span>
-          </div>
-
-          <div class="fp-actions-row">
-            <button class="btn btn-secondary btn-sm fp-toggle-btn" aria-expanded="false">
-              Read Case Study <span class="fp-arrow">↓</span>
-            </button>
-            <a href="https://orbc.co.ke" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Site →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Expandable case study -->
-      <div class="fp-case-study" hidden>
-        <div class="fp-case-body">
-          <div class="fp-case-block">
-            <h4>🥊 The Problem</h4>
-            <p>Ongata Rongai Boxing Club had no online presence. Potential members couldn't find them, coaches had no way to share schedules, and the club had no platform to communicate their story or training programs to the public.</p>
-          </div>
-          <div class="fp-case-block">
-            <h4>⚙️ How We Fixed It</h4>
-            <p>We built a clean, professional WordPress website with dedicated pages for training programs, coaching staff, and membership sign-up. The site was optimised for mobile and local search so people in Ongata Rongai could find the club on Google.</p>
-          </div>
-          <div class="fp-case-block">
-            <h4>🚧 Challenges</h4>
-            <p>The club had very limited digital assets — no photos, no written content, and no brand guidelines. We had to build everything from scratch, including writing the copy, sourcing images, and defining a visual identity that matched the energy of the sport.</p>
-          </div>
-        </div>
-      </div>
-
+    <div id="featured-project-slot">
+      <!-- Automatically filled by projects.js — no manual updates needed.
+           To change the featured project: move it to the TOP of the PROJECTS
+           array in projects.js. This section updates itself. -->
     </div>
   </div>
 </section>
@@ -234,4 +189,5 @@
 
 <script src="main.js"></script>
 <script src="articles.js"></script>
+<script src="projects.js"></script>
 </html>

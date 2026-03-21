@@ -1,0 +1,215 @@
+/* ============================================================
+   ALFONSE OTIENO — PORTFOLIO
+   projects.js — All project data + rendering logic
+
+   HOW TO ADD A NEW PROJECT:
+   1. Add a new object to the TOP of the PROJECTS array below
+   2. Give it a unique slug, fill in all fields
+   3. The projects page and home page featured project update automatically
+   ============================================================ */
+
+const PROJECTS = [
+  {
+    slug: 'orbc',
+    title: 'Ongata Rongai Boxing Club',
+    status: 'Live',
+    image: 'orbc-preview.png',        // drop your screenshot here — 1200×750px recommended
+    stack: ['WordPress', 'Elementor', 'CSS', 'cPanel Hosting'],
+    summary: 'A professional website for a local boxing club in Ongata Rongai — built to establish their online presence, showcase training programs, and attract new members.',
+    liveUrl: 'https://orbc.co.ke/',
+    githubUrl: '',                     // leave empty string if no GitHub repo
+    caseStudy: {
+      problem: 'Ongata Rongai Boxing Club had zero online presence. Potential members could not find them on Google, coaches had no way to share training schedules publicly, and the club had no platform to tell their story or communicate what they offered. New members were being lost simply because the club was invisible online.',
+      solution: 'We built a clean, professional WordPress website with dedicated pages for training programs, coaching staff, pricing, and membership sign-up. The site was optimised for mobile and set up for local SEO so that people searching for boxing in Ongata Rongai could find the club directly on Google.',
+      challenges: 'The club had virtually no digital assets — no professional photos, no written content, and no defined brand. Everything had to be built from scratch: we wrote all the copy, sourced images, and created a visual identity that matched the energy and discipline of the sport.',
+      learned: 'Client work is as much about communication as it is about code. Most of the project time was spent understanding what the client actually needed — not just what they asked for — and translating that into a site that works for their specific audience.'
+    }
+  },
+  {
+    slug: 'portfolio',
+    title: 'Personal Portfolio Website',
+    status: 'Live',
+    image: 'portfolio-preview.png',   // drop your screenshot here — 1200×750px recommended
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    summary: 'A self-built portfolio documenting my journey as a developer and self-directed learner — built with pure HTML, CSS, and JavaScript. No frameworks, no libraries.',
+    liveUrl: 'https://alfonseotieno.github.io/',
+    githubUrl: 'https://github.com/alfonseotieno/alfonseotieno.github.io',
+    caseStudy: {
+      problem: 'As someone actively building skills in coding and writing, I had no central place to show my work, share my thinking, or give potential clients a reason to trust me. My projects and articles existed in isolation with nothing connecting them.',
+      solution: 'Built a complete portfolio from scratch using only HTML, CSS, and JavaScript — no frameworks. The site includes a home page, articles system with full article content, a progress tracker, project case studies, quotes, and a contact form. Everything is hand-coded and fully responsive.',
+      challenges: 'Starting with limited JavaScript knowledge and building a multi-page site with dynamic features — like the articles system that renders full content from a data file — pushed me far beyond what I had learned formally. A lot of it was trial, error, and reading documentation.',
+      learned: 'Building something real accelerates learning faster than any tutorial. Every problem I hit on this project forced me to understand the underlying concept — not just copy a solution. The site itself is proof of the skill it took to build it.'
+    }
+  }
+];
+
+/* ── STACK TAG HTML ──────────────────────────────────────────── */
+function stackTags(stack) {
+  return stack.map(t => `<span class="stack-tag">${t}</span>`).join('');
+}
+
+/* ── RENDER PROJECTS GRID (projects.html) ────────────────────── */
+function renderProjects() {
+  const grid = document.getElementById('projects-grid');
+  if (!grid) return;
+
+  grid.innerHTML = PROJECTS.map((p, i) => `
+    <div class="project-card" id="project-card-${i}">
+
+      <!-- Preview image -->
+      <div class="project-thumb-img">
+        <img
+          src="${p.image}"
+          alt="${p.title} preview"
+          class="project-preview-img"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        >
+        <div class="project-preview-placeholder">
+          📸 Add <code>${p.image}</code> to your project folder
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="project-stack">${stackTags(p.stack)}</div>
+        <div class="project-status-row">
+          <span class="project-status-badge">${p.status}</span>
+        </div>
+        <h3>${p.title}</h3>
+        <p>${p.summary}</p>
+
+        <!-- Actions -->
+        <div class="project-actions">
+          ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Website →</a>` : ''}
+          ${p.githubUrl ? `<a href="${p.githubUrl}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub</a>` : ''}
+          <button class="btn btn-secondary btn-sm project-cs-toggle" data-index="${i}" aria-expanded="false">
+            Case Study <span class="cs-arrow">↓</span>
+          </button>
+        </div>
+
+        <!-- Case study panel -->
+        <div class="project-case-study" id="cs-${i}" hidden>
+          <div class="cs-block">
+            <h4>🎯 The Problem</h4>
+            <p>${p.caseStudy.problem}</p>
+          </div>
+          <div class="cs-block">
+            <h4>⚙️ The Solution</h4>
+            <p>${p.caseStudy.solution}</p>
+          </div>
+          <div class="cs-block">
+            <h4>🚧 Challenges</h4>
+            <p>${p.caseStudy.challenges}</p>
+          </div>
+          <div class="cs-block">
+            <h4>💡 What I Learned</h4>
+            <p>${p.caseStudy.learned}</p>
+          </div>
+          ${p.liveUrl ? `
+          <div class="cs-cta">
+            <a href="${p.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit the Live Site →</a>
+          </div>` : ''}
+        </div>
+
+      </div>
+    </div>
+  `).join('');
+
+  // Case study toggles
+  grid.querySelectorAll('.project-cs-toggle').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const i      = this.dataset.index;
+      const panel  = document.getElementById(`cs-${i}`);
+      const isOpen = this.getAttribute('aria-expanded') === 'true';
+      const arrow  = this.querySelector('.cs-arrow');
+
+      if (isOpen) {
+        panel.hidden = true;
+        this.setAttribute('aria-expanded', 'false');
+        this.innerHTML = `Case Study <span class="cs-arrow">↓</span>`;
+      } else {
+        panel.hidden = false;
+        this.setAttribute('aria-expanded', 'true');
+        this.innerHTML = `Close Case Study <span class="cs-arrow" style="transform:rotate(180deg);display:inline-block;">↓</span>`;
+      }
+    });
+  });
+}
+
+/* ── AUTO-RENDER FEATURED PROJECT ON HOME PAGE (index.html) ─────
+   Add <div id="featured-project-slot"></div> in index.html.
+   Always shows PROJECTS[0] — the first item in the array.
+   To update the home page: add new project to TOP of PROJECTS array.
+─────────────────────────────────────────────────────────────────*/
+function renderFeaturedProject() {
+  const slot = document.getElementById('featured-project-slot');
+  if (!slot) return;
+
+  const p = PROJECTS[0];
+  slot.innerHTML = `
+    <div class="featured-project-card fp-expandable">
+      <div class="fp-top">
+        <div class="fp-preview">
+          <img
+            src="${p.image}"
+            alt="${p.title} preview"
+            class="fp-img"
+            onerror="this.parentElement.classList.add('fp-img-missing')"
+          >
+          <div class="fp-img-placeholder">📸 Add ${p.image} to your folder</div>
+        </div>
+        <div class="fp-info">
+          <div class="project-label">${p.status} Project</div>
+          <h3>${p.title}</h3>
+          <p>${p.summary}</p>
+          <div class="fp-stack">${stackTags(p.stack)}</div>
+          <div class="fp-actions-row">
+            <button class="btn btn-secondary btn-sm fp-toggle-btn" aria-expanded="false">
+              Read Case Study <span class="fp-arrow">↓</span>
+            </button>
+            ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Site →</a>` : ''}
+          </div>
+        </div>
+      </div>
+      <div class="fp-case-study" hidden>
+        <div class="fp-case-body">
+          <div class="fp-case-block">
+            <h4>🎯 The Problem</h4>
+            <p>${p.caseStudy.problem}</p>
+          </div>
+          <div class="fp-case-block">
+            <h4>⚙️ The Solution</h4>
+            <p>${p.caseStudy.solution}</p>
+          </div>
+          <div class="fp-case-block">
+            <h4>🚧 Challenges</h4>
+            <p>${p.caseStudy.challenges}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Case study toggle for home page
+  const toggleBtn = slot.querySelector('.fp-toggle-btn');
+  const casePanel = slot.querySelector('.fp-case-study');
+  if (toggleBtn && casePanel) {
+    toggleBtn.addEventListener('click', function () {
+      const isOpen = this.getAttribute('aria-expanded') === 'true';
+      if (isOpen) {
+        casePanel.hidden = true;
+        this.setAttribute('aria-expanded', 'false');
+        this.innerHTML = 'Read Case Study <span class="fp-arrow">↓</span>';
+      } else {
+        casePanel.hidden = false;
+        this.setAttribute('aria-expanded', 'true');
+        this.innerHTML = 'Close Case Study <span class="fp-arrow" style="transform:rotate(180deg);display:inline-block;">↓</span>';
+      }
+    });
+  }
+}
+
+/* ── INIT ────────────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function () {
+  renderProjects();       // projects.html
+  renderFeaturedProject(); // index.html
+});
