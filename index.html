@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfonse Otieno — Developer & Builder</title>
+  <meta name="description" content="Portfolio of Alfonse Otieno — a web developer building real-world projects." />
+  <link rel="icon" type="image/png" href="https://alfonseotieno.github.io/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0B0F19;
+      --accent: #DC2626;
+      --accent-glow: rgba(220,38,38,0.3);
+      --muted: #64748B;
+      --border: #1F2937;
+    }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      overflow: hidden;
+    }
+
+    /* ── RED TOP BAR sweeps in ── */
+    .top-bar {
+      position: fixed; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--accent); z-index: 10;
+      transform-origin: left;
+      animation: topbar 0.9s cubic-bezier(0.16,1,0.3,1) 0.1s both;
+    }
+    @keyframes topbar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    /* ── CENTRE STAGE ── */
+    .stage {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 2rem;
+      animation: fadeOut 0.5s ease 2.4s both;
+    }
+
+    /* ── EYEBROW ── */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.6s ease 0.3s both;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: ''; display: block;
+      width: 24px; height: 1px;
+      background: var(--accent); opacity: 0.7;
+    }
+
+    /* ── HEADLINE ── */
+    .headline {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 7vw, 4.5rem);
+      line-height: 1.1; color: #F1F5F9;
+      margin-bottom: 1.25rem; max-width: 700px;
+      opacity: 0; animation: fadeUp 0.7s ease 0.55s both;
+    }
+    .headline em { font-style: italic; color: var(--accent); }
+
+    /* ── SUBLINE ── */
+    .subline {
+      font-size: clamp(0.9rem, 2vw, 1.05rem);
+      color: var(--muted); max-width: 400px; line-height: 1.75;
+      opacity: 0; animation: fadeUp 0.7s ease 0.8s both;
+    }
+
+    /* ── PROGRESS BAR (loading feel) ── */
+    .loader-wrap {
+      position: fixed; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.65rem;
+      opacity: 0; animation: fadeUp 0.6s ease 1.1s both;
+    }
+    .loader-track {
+      width: 120px; height: 2px;
+      background: var(--border); border-radius: 2px; overflow: hidden;
+    }
+    .loader-fill {
+      height: 100%; background: var(--accent); border-radius: 2px;
+      animation: load 1.6s cubic-bezier(0.4, 0, 0.2, 1) 1.1s both;
+    }
+    @keyframes load { from { width: 0%; } to { width: 100%; } }
+    .loader-label {
+      font-size: 0.65rem; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── SHARED ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to   { opacity: 0; pointer-events: none; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 480px) {
+      .headline { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+      .eyebrow::before, .eyebrow::after { width: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"></div>
+
+  <main class="stage">
+    <span class="eyebrow">Alfonse Otieno</span>
+    <h1 class="headline">
+      Building things that<br />
+      <em>work, matter,</em> and last.
+    </h1>
+    <p class="subline">
+      Developer · Writer · Self-directed learner
+    </p>
+  </main>
+
+  <div class="loader-wrap">
+    <div class="loader-track">
+      <div class="loader-fill"></div>
+    </div>
+    <span class="loader-label">Loading portfolio…</span>
+  </div>
+
+  <script>
+    // Redirect after splash — 2.9s gives animations time to complete
+    setTimeout(function () {
+      window.location.replace("html/index.html");
+    }, 2900);
+  </script>
+
+</body>
+</html>
