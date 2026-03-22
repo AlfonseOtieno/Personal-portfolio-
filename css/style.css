@@ -580,6 +580,82 @@ footer p { font-size: 0.88rem; color: var(--text-secondary); }
   font-size: 3rem;
   border-bottom: 1px solid var(--border);
 }
+
+/* ── PROJECT PREVIEW IMAGES — auto-fit any screenshot size ── *
+ * How it works: the wrapper enforces a fixed 16:9 ratio and   *
+ * clips overflow. The <img> fills that box with object-fit.   *
+ * You never need to resize a screenshot — just drop it in.    *
+ * ─────────────────────────────────────────────────────────── */
+.project-thumb-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.35s ease;
+}
+.project-card:hover .project-preview-img {
+  transform: scale(1.03);
+}
+.project-preview-placeholder {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ── FEATURED PROJECT IMAGE (home page) ─────────────────── */
+.fp-preview {
+  width: 340px;
+  min-width: 220px;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+.fp-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.35s ease;
+}
+.fp-preview:hover .fp-img {
+  transform: scale(1.03);
+}
+.fp-img-placeholder {
+  display: none;
+}
+.fp-img-missing .fp-img { display: none; }
+.fp-img-missing .fp-img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 1rem;
+  text-align: center;
+}
 .project-body { padding: 1.75rem; }
 .project-stack { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .stack-tag {
@@ -727,30 +803,237 @@ footer p { font-size: 0.88rem; color: var(--text-secondary); }
   font-weight: 500;
 }
 
-/* ── RESPONSIVE ───────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE — Three breakpoints
+   ▸ Tablet  : max-width 900px  (iPad landscape and below)
+   ▸ Mobile  : max-width 768px  (phones + small tablets)
+   ▸ Small   : max-width 480px  (compact phones)
+══════════════════════════════════════════════════════════════ */
+
+/* ── TABLET (≤ 900px) ─────────────────────────────────────── */
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+
+  /* Layout */
+  .section { padding: 3.5rem 0; }
+  .page-header { padding: 3.5rem 0 2rem; margin-bottom: 2.5rem; }
+
+  /* Hero */
+  .hero { padding: 3rem 0; min-height: auto; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+  }
   .hero-image-wrap { order: -1; justify-content: center; }
+  .hero-image-wrap::before { inset: -8px; }
+  .hero-image-wrap img { width: 240px; height: 240px; }
+  .hero-subtext { margin: 0 auto 2rem; max-width: 480px; }
   .hero-buttons { justify-content: center; }
-  .hero-subtext { margin: 0 auto 2rem; }
-  .stats-grid { grid-template-columns: 1fr 1fr; }
-  .books-grid { grid-template-columns: 1fr 1fr; }
+  .hero-eyebrow { margin-bottom: 1rem; }
+
+  /* Featured project — stack image above info */
+  .featured-project-card {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+  .fp-preview {
+    width: 100%;
+    min-width: unset;
+  }
+  .fp-info { width: 100%; }
+  .featured-project-card p { max-width: 100%; }
+
+  /* Grids → single column */
   .projects-grid { grid-template-columns: 1fr; }
-  .quotes-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .explore-grid { grid-template-columns: 1fr; }
-  .featured-project-card { flex-direction: column; }
+  .quotes-grid   { grid-template-columns: 1fr; }
+  .explore-grid  { grid-template-columns: 1fr; }
+
+  /* Stats → 2 columns */
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Books → 2 columns */
+  .books-grid { grid-template-columns: 1fr 1fr; }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-img {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .about-content { text-align: left; }
   .values-list { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+  /* Timeline */
+  .timeline { padding-left: 1.5rem; }
+
+  /* Substack / CTA */
+  .substack-inner { padding: 3rem 1.5rem; }
 }
+
+/* ── MOBILE (≤ 768px) ─────────────────────────────────────── */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
-  .hero-image-wrap img { width: 220px; height: 220px; }
-  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Nav — hide links, show hamburger */
+  .nav-links  { display: none; }
+  .hamburger  { display: flex; }
+
+  /* Hero */
+  .hero { padding: 2.5rem 0; }
+  .hero-image-wrap img { width: 200px; height: 200px; }
+  .hero-headline { font-size: clamp(1.75rem, 6vw, 2.4rem); }
+
+  /* Sections */
+  .section { padding: 3rem 0; }
+  .page-header { padding: 3rem 0 1.75rem; margin-bottom: 2rem; }
+  .page-header h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+
+  /* Featured project card */
+  .featured-project-card { padding: 1.25rem; }
+  .fp-preview { width: 100%; }
+  .fp-actions-row { flex-wrap: wrap; gap: 0.6rem; }
+
+  /* Project cards */
+  .project-body { padding: 1.25rem; }
+  .project-actions { flex-wrap: wrap; gap: 0.6rem; }
+
+  /* Stats → still 2 cols on mobile */
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat-number { font-size: 2.4rem; }
+
+  /* Books → single column */
   .books-grid { grid-template-columns: 1fr; }
+
+  /* Quotes */
+  .quotes-grid { grid-template-columns: 1fr; }
+
+  /* About */
+  .about-img { width: 160px; }
+  .values-list { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-form-wrap { padding: 1.5rem; }
+
+  /* Article full */
+  .article-full { padding: 2rem 0; }
+  .article-cta { padding: 1.5rem; }
+
+  /* Explore grid */
+  .explore-grid { grid-template-columns: 1fr; }
+  .explore-card { padding: 1.5rem; }
+
+  /* Substack */
+  .substack-inner { padding: 2.5rem 1rem; }
+  .substack-inner h2 { font-size: 1.5rem; }
+
+  /* Final CTA */
+  .final-cta h2 { font-size: 1.5rem; }
+
+  /* Footer */
+  footer { margin-top: 3rem; padding: 1.75rem 0; }
+
+  /* GitHub CTA */
+  .github-cta { padding: 1.75rem; }
 }
+
+/* ── SMALL PHONES (≤ 480px) ───────────────────────────────── */
 @media (max-width: 480px) {
-  .container { padding: 0 1.25rem; }
-  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Container breathing room */
+  .container { padding: 0 1rem; }
+
+  /* Nav */
+  .nav-inner { padding: 0 1rem; }
+  .nav-logo { font-size: 1rem; }
+  .mobile-menu { padding: 1rem 1rem 1.5rem; }
+
+  /* Hero */
+  .hero { padding: 2rem 0; }
+  .hero-image-wrap img { width: 160px; height: 160px; }
+  .hero-headline { font-size: clamp(1.5rem, 7vw, 2rem); }
+  .hero-subtext { font-size: 0.97rem; }
+  .hero-buttons { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .hero-buttons .btn { width: 100%; text-align: center; }
+
+  /* Sections */
+  .section { padding: 2.5rem 0; }
+  .section-title { font-size: 1.5rem; }
+  .page-header { padding: 2rem 0 1.5rem; margin-bottom: 1.75rem; }
+
+  /* Stats → stack to single column on smallest phones */
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .stat-card { padding: 1.25rem; }
+  .stat-number { font-size: 2rem; }
+  .stat-label { font-size: 0.82rem; }
+
+  /* Featured project */
+  .featured-project-card { padding: 1rem; border-radius: 10px; }
+  .featured-project-card h3 { font-size: 1.25rem; }
+  .fp-actions-row { flex-direction: column; gap: 0.5rem; }
+  .fp-actions-row .btn { width: 100%; text-align: center; }
+
+  /* Project cards */
+  .project-body { padding: 1rem; }
+  .project-body h3 { font-size: 1.1rem; }
+  .project-actions { flex-direction: column; gap: 0.5rem; }
+  .project-actions .btn { width: 100%; text-align: center; }
+
+  /* Article cards */
+  .article-card { padding: 1.25rem; }
+  .article-card h3 { font-size: 1.15rem; }
+  .article-preview-card { padding: 1.25rem 1.5rem; }
+
+  /* Quotes */
+  .quote-card { padding: 1.25rem; }
+  .quote-text { font-size: 1rem; }
+
+  /* About */
+  .about-img { width: 130px; }
+  .about-content h1 { font-size: 1.75rem; }
+
+  /* Contact */
+  .contact-form-wrap { padding: 1.25rem; }
+  .contact-info h2 { font-size: 1.6rem; }
+  .contact-icons { gap: 0.75rem; }
+
+  /* Timeline */
+  .timeline { padding-left: 1.25rem; }
+  .timeline-item { padding-left: 1rem; margin-bottom: 2rem; }
+
+  /* Books */
+  .book-card { padding: 1.25rem; }
+
+  /* Buttons */
+  .btn { font-size: 0.9rem; padding: 0.6rem 1.25rem; }
+  .btn-sm { font-size: 0.82rem; padding: 0.45rem 0.9rem; }
+
+  /* Substack */
+  .substack-inner { padding: 2rem 0.75rem; }
+  .substack-inner h2 { font-size: 1.3rem; }
+
+  /* Footer */
+  footer { margin-top: 2.5rem; }
+
+  /* Explore */
+  .explore-card { padding: 1.25rem; }
+
+  /* GitHub CTA */
+  .github-cta { padding: 1.25rem; }
+  .github-cta h3 { font-size: 1.2rem; }
+
+  /* Progress gallery items */
+  .gallery-item video,
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
 }
