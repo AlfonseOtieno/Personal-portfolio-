@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Projects by Alfonse Otieno — real work, real links, honest tech stack and case studies.">
-<title>Projects — Alfonse Otieno</title>
+<meta name="description" content="Articles by Alfonse Otieno on growth, discipline, coding, and building systems that work.">
+<title>Articles — Alfonse Otieno</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -45,22 +45,32 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<div class="container">
-  <div class="page-header">
-    <h1>Projects</h1>
-    <p>Real work, real links, honest tech stack — and the story behind each build.</p>
+<!-- SINGLE ARTICLE VIEW — sits at top, hidden by default -->
+<div id="article-single" class="hidden"></div>
+
+<!-- ARTICLE LIST VIEW -->
+<div id="article-list">
+  <div class="container">
+    <div class="page-header">
+      <h1>Articles</h1>
+      <p>Thoughts on growth, discipline, coding, and building systems that work.</p>
+    </div>
+    <div class="articles-grid" id="articles-grid">
+      <!-- Rendered by articles.js -->
+    </div>
+
+    <!-- BOTTOM CTA — shown after all articles -->
+    <div class="articles-subscribe-cta">
+      <div class="articles-subscribe-inner">
+        <span class="articles-subscribe-label">✍️ New articles every week</span>
+        <h2>I write twice a week documenting my journey</h2>
+        <p>Discipline experiments, lessons from books, coding progress, and honest reflections from a 19-year-old building himself from the ground up. Every article is free.</p>
+        <a href="https://alfonseotieno.substack.com/subscribe" target="_blank" rel="noopener" class="btn btn-primary">
+          Subscribe to My Substack
+        </a>
+      </div>
+    </div>
   </div>
-
-  <!-- Projects rendered by projects.js — to add a project, edit PROJECTS array in projects.js -->
-  <div class="projects-grid" id="projects-grid"></div>
-
-  <!-- GitHub CTA -->
-  <div class="github-cta">
-    <h3>See the Code on GitHub</h3>
-    <p>All my open source work, repositories, and experiments are on GitHub.</p>
-    <a href="https://github.com/alfonseotieno" target="_blank" rel="noopener" class="btn btn-secondary">View GitHub Profile</a>
-  </div>
-
 </div>
 
 <footer>
@@ -69,7 +79,7 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
-<script src="projects.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/articles.js"></script>
 </body>
 </html>
