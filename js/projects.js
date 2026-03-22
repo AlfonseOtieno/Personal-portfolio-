@@ -59,7 +59,7 @@ function renderProjects() {
       <!-- Preview image -->
       <div class="project-thumb-img">
         <img
-          src="${p.image}"
+          src="../assets/portfolio/${p.image}"
           alt="${p.title} preview"
           class="project-preview-img"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
@@ -150,7 +150,7 @@ function renderFeaturedProject() {
       <div class="fp-top">
         <div class="fp-preview">
           <img
-            src="${p.image}"
+            src="../assets/portfolio/${p.image}"
             alt="${p.title} preview"
             class="fp-img"
             onerror="this.parentElement.classList.add('fp-img-missing')"
