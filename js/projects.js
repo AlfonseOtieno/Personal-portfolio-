@@ -10,6 +10,23 @@
 
 const PROJECTS = [
   {
+  slug: 'codereview-ai',
+  title: 'CodeReview AI',
+  status: 'Live',
+  image: 'codereview-preview.png', // add screenshot later
+  stack: ['HTML', 'CSS', 'JavaScript', 'Vercel Serverless', 'Anthropic API'],
+  summary: 'An AI-powered code review tool that analyzes HTML, CSS, and JavaScript and returns structured feedback with scores, issues, and fixes in seconds.',
+  liveUrl: 'https://codereview-ai-ten.vercel.app/',
+  githubUrl: 'https://github.com/YOUR-USERNAME/codereview-ai',
+  caseStudy: {
+    problem: 'Beginner developers often don’t know what’s wrong with their code or how to improve it. Feedback is slow, inconsistent, or unavailable unless they ask someone more experienced.',
+    solution: 'Built a web app that lets users paste code and receive instant AI-powered reviews. The system uses a structured prompt and returns JSON with a score, categorized issues, and exact code fixes. A serverless function protects the API key and handles requests securely.',
+    challenges: 'Handling inconsistent AI responses was a major challenge. The model sometimes returned invalid JSON, so I had to implement cleaning and validation logic. I also had to design prompts carefully to enforce strict output structure.',
+    learned: 'This project taught me how to integrate external APIs, handle unreliable outputs, and design systems that enforce structure. It also deepened my understanding of backend logic using serverless functions, not just frontend development.'
+  }
+  
+},
+  {
     slug: 'orbc',
     title: 'Ongata Rongai Boxing Club',
     status: 'Live',
