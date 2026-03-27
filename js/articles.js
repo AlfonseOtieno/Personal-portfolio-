@@ -398,7 +398,7 @@ function openArticle(index) {
           <div class="article-cta-icon">✍️</div>
           <h3>Enjoyed this article?</h3>
           <p>I publish new essays every week on growth, discipline, coding, and systems thinking. Every article is free. Subscribe so you never miss one.</p>
-          <a href="https://alfonseotieno.substack.com/subscribe" target="_blank" rel="noopener" class="btn btn-primary">
+          <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">
             Subscribe on Substack — It's Free
           </a>
           <p class="cta-sub">Join readers getting honest, unfiltered writing about building yourself from the ground up.</p>
