@@ -17,7 +17,7 @@ const PROJECTS = [
   stack: ['HTML', 'CSS', 'JavaScript', 'Vercel Serverless', 'Anthropic API'],
   summary: 'An AI-powered code review tool that analyzes HTML, CSS, and JavaScript and returns structured feedback with scores, issues, and fixes in seconds.',
   liveUrl: 'https://codereview-ai-ten.vercel.app/',
-  githubUrl: 'https://github.com/YOUR-USERNAME/codereview-ai',
+  githubUrl: 'https://github.com/AlfonseOtieno/codereview-ai',
   caseStudy: {
     problem: 'Beginner developers often don’t know what’s wrong with their code or how to improve it. Feedback is slow, inconsistent, or unavailable unless they ask someone more experienced.',
     solution: 'Built a web app that lets users paste code and receive instant AI-powered reviews. The system uses a structured prompt and returns JSON with a score, categorized issues, and exact code fixes. A serverless function protects the API key and handles requests securely.',
@@ -27,22 +27,6 @@ const PROJECTS = [
   
 },
   {
-    slug: 'orbc',
-    title: 'Ongata Rongai Boxing Club',
-    status: 'Live',
-    image: 'orbc-preview.png',        // drop your screenshot here — 1200×750px recommended
-    stack: ['WordPress', 'Elementor', 'CSS', 'cPanel Hosting'],
-    summary: 'A professional website for a local boxing club in Ongata Rongai — built to establish their online presence, showcase training programs, and attract new members.',
-    liveUrl: 'https://orbc.co.ke/',
-    githubUrl: '',                     // leave empty string if no GitHub repo
-    caseStudy: {
-      problem: 'Ongata Rongai Boxing Club had zero online presence. Potential members could not find them on Google, coaches had no way to share training schedules publicly, and the club had no platform to tell their story or communicate what they offered. New members were being lost simply because the club was invisible online.',
-      solution: 'We built a clean, professional WordPress website with dedicated pages for training programs, coaching staff, pricing, and membership sign-up. The site was optimised for mobile and set up for local SEO so that people searching for boxing in Ongata Rongai could find the club directly on Google.',
-      challenges: 'The club had virtually no digital assets — no professional photos, no written content, and no defined brand. Everything had to be built from scratch: we wrote all the copy, sourced images, and created a visual identity that matched the energy and discipline of the sport.',
-      learned: 'Client work is as much about communication as it is about code. Most of the project time was spent understanding what the client actually needed — not just what they asked for — and translating that into a site that works for their specific audience.'
-    }
-  },
-  {
     slug: 'portfolio',
     title: 'Personal Portfolio Website',
     status: 'Live',
@@ -50,7 +34,7 @@ const PROJECTS = [
     stack: ['HTML', 'CSS', 'JavaScript'],
     summary: 'A self-built portfolio documenting my journey as a developer and self-directed learner — built with pure HTML, CSS, and JavaScript. No frameworks, no libraries.',
     liveUrl: 'https://alfonseotieno.github.io/',
-    githubUrl: 'https://github.com/alfonseotieno/alfonseotieno.github.io',
+    githubUrl: 'https://github.com/AlfonseOtieno/Personal-portfolio-',
     caseStudy: {
       problem: 'As someone actively building skills in coding and writing, I had no central place to show my work, share my thinking, or give potential clients a reason to trust me. My projects and articles existed in isolation with nothing connecting them.',
       solution: 'Built a complete portfolio from scratch using only HTML, CSS, and JavaScript — no frameworks. The site includes a home page, articles system with full article content, a progress tracker, project case studies, quotes, and a contact form. Everything is hand-coded and fully responsive.',
