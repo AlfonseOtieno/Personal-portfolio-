@@ -5,6 +5,112 @@
 
 const ARTICLES = [
   {
+  slug: 'masculinity-boy-to-man',
+  title: 'Masculinity- how does a boy become a man.',
+  topic: 'Personal Growth',
+  date: 'Mar 28, 2026',
+  readTime: '10 min read',
+  substackUrl: '#',
+  excerpt: 'Masculinity is not something you download from the internet. It is shaped by environment, experience, and the path you choose to follow.',
+  body: `
+  <p>Masculinity- how does a boy become a man.</p>
+
+  <p>As young boys, we looked up to our fathers.A boy who idolises his father sees him aassone sort of superhero - a figure of authority. He doesn’t necessarily know what he does or why he leaves home. He can’t fully describe it. He just sees him, and admires him. And you just know that one day you want to be like him.</p>
+
+  <p>Then we get to adolescence.</p>
+
+  <p>We start picking behaviours outside our household. A character that you look up to and are impressed with, you decide to adopt and practise it. You continue to adopt characters from then onward and form a self-image.</p>
+
+  <p>And this results in who you become.</p>
+
+  <p>The home you grow up in, your community, your role models, and your beliefs shape you into the man you become. And in turn, it becomes what you view as masculinity.</p>
+
+  <p>Definition of masculinity</p>
+
+  <p>Masculinity is defined as the social construct and set of behaviours and traits associated with boys and men, often characterised by strength, assertiveness, and leadership.</p>
+
+  <p>To put it simply, masculinity is simply acting like a man.</p>
+
+  <p>It comes naturally.</p>
+
+  <p>And this leads me to my main question:</p>
+
+  <p>Why are boys and men searching for masculinity tips online?</p>
+
+  <p>Growing up, we had guidance and a sense of community. Once we got older, we got access to phones, entered social media, and became connected to the whole world. We were exposed to different characters, different beliefs, and different ideas of masculinity.</p>
+
+  <p>You have people like Andrew Tate who teach traditional masculinity and how to become an “alpha male.”</p>
+
+  <p>You have Chris Williamson who leans more towards a reflective, empathetic form of masculinity.</p>
+
+  <p>You have others who show masculinity through discipline and routines.</p>
+
+  <p>These are just a few examples.</p>
+
+  <p>Now here is the ironic part.</p>
+
+  <p>With all these reference points and models of masculinity—especially digital masculinity—most men feel lost.</p>
+
+  <p>According to research, about 15% of men and boys report not having close friends. Men are now 4 times more likely to suffer from isolation and even suicide, yeli 10% likely to seek care.</p>
+
+  <p>One of the major reasons for this problem is the global interconnectedness brought by social media.</p>
+
+  <p>Initially, young men would look up to and compare themselves with their fathers, uncles, neighbours, and others in their immediate environment.</p>
+
+  <p>Right now, we open social media and see men with six-pack abs, boys who became millionaires at 16, confident men who have no problem approaching women—all examples of the “alpha male.”</p>
+
+  <p>And you feel like you have no excuse to be fat, shy, poor, or living with your parents at the age of twenty.</p>
+
+  <p>In your twenties, you already feel like you’ve failed in life.</p>
+
+  <p>And you keep telling yourself:</p>
+
+  <p>“I’m not good enough.”</p>
+
+  <p>Everything in your daily life confirms this—when you look in the mirror, your social life, your finances, your entire situation.</p>
+
+  <p>And this pushes you to search for masculinity tips online.</p>
+
+  <p>Of course, some fall into depression and start looking at how less significant their lives are.</p>
+
+  <p>Others find their own solutions to this.</p>
+
+  <p>As human beings, we all have different coping mechanisms for different situations. Now, as men or boys who want to turn into men, and we have already seen how other men are prospering, how other men have six-packs, and beautiful partners and milions. It begins to make you question your masculinity or your level of competence . And this may sometimes lead us to become depressed because this is an attack on our self-worth.</p>
+
+  <p>There’s a group which falls into depression and chooses to spend the rest of their days, or the period of time in their 20s, looking at how less significant they are compared to other people. But there’s another group who agree to accept reality. They accept that you cannot be as rich as Elon Musk. They accept the fact that Lamine Yamal started playing professionally at the age of 16, but that doesn’t mean that if they are in their teens or 20s, they have failed in life.</p>
+
+  <p>So this crisis is brought by social media and interconnectedness. And it is very convenient that social media and technology have also offered a solution to this problem. One of the ways to cope with this situation is becoming competent in your own way. And these are people who simulate competence, and there are others who decide to work in the real world.</p>
+
+  <p>Right now, we are in an environment where we have very many ways to escape reality. Just because you couldn’t make it in the real world, we have technology which allows you to be very prosperous in another world, in the gaming world. And that is why men who are meant to conquer and provide and who are meant to dominate, we are getting lost in video games. Because these offer us an easier path to conquer something, to dominate something.</p>
+
+  <p>And I cannot lie, I myself have fallen victim to this, because there was a period where I used to play mobile football games, and you always collect money and buy expensive players. And there’s a point where I had gotten one million coins. That day, my mother found me bragging that I have one million in my account, and she was very excited. She thought it was actual money. And then I told her, no, it is just one million in my game account, and now I can buy Cristiano Ronaldo. And that, for me, was a big achievement. But the disappointment on her face showed me that this is not an achievement in the real world.</p>
+
+  <p>Right now, it is easier to level up your username than your surname. And I think that is a trap, because we are meant to achieve, but if you have somewhere where achieving is very easy, then it loses the drive to achieve in real life. That is why we go for validation on social media, where it is easy. That is why even people right now have AI girlfriends, because approaching a real girl is not easy; you are not guaranteed success. It is very uncomfortable.</p>
+
+  <p>So, for me, I think one of the ways a boy becomes a man is by first accepting himself as he is in his current situation and striving to improve, not artificially, but he has to embrace discomfort and just strive in the real world.</p>
+
+  <p>And there's this other group of men who accept that they are not alphas, but they decide to just improve in their own ways. Right now, I’m writing this article at the age of 19 because, at some point in time, I looked at myself and my life and saw that there are a lot of things that I can improve in myself, in my environment, and in my life.</p>
+
+  <p>Firstly, I started by creating a radical system where I would overhaul my entire reality very dramatically. And for those who are into self-development or who are going to look for it on social media, I saw this video saying, “go and improve in the shadows and come back stronger.” And I started learning things. I started working out. I even started training boxing because there was a level which I was in, and there was a level which I used to see in other people, and I wanted to be like them. And that is what still drives me.</p>
+
+  <p>But the more I continued to improve, I started to compare myself with other people and their progress, and I won’t lie, it used to hurt me when I would go on TikTok and see people saying they are 16 years old and they are millionaires. It made me question a lot of things. And I, for one, have gone online and searched for masculinity tips, but also, while doing research and seeing these behavioural people advising, I started to realize that masculinity depends on what it means to you.</p>
+
+  <p>If your view of masculinity is becoming stoic, then that is masculinity for you, and no one will blame you for that.</p>
+
+  <p>So the first thing that I did, and it really liberated me, is I accepted the fact that I am training boxing because, at the moment, I am not confident in violent confrontation. I am working out because currently I am weak, and I want to become stronger.</p>
+
+  <p>So right now, my development is not about escaping from who I am or trying to become a better version of myself. Right now, my development is about accepting the way I am and moving together with my weaknesses and improving, because I know that everyone can change and everything can be improved.</p>
+
+  <p>As I conclude, I would just want to say that masculinity is not something that you learn from the internet. It’s something that comes from the environment. We see our fathers, and we learn how to be responsible men and how to be tough men. And our mothers teach us respect and how to treat other people well. And those like me who do martial arts, we see from our coaches that you’re supposed to be a good man, but there are some times you need to fight for what you believe in.</p>
+
+  <p>Your understanding of masculinity is shaped by what is around you. Masculinity is not a universal template. It’s not something that you copy from someone else, because what it means to one person differs from what it means to another.</p>
+
+  <p>Your masculinity depends on your environment and the kind of man you decide to become. Your environment can show you what to follow. It can also show you what you want to avoid. Both are useful.</p>
+
+  <p>The responsibility is on you to observe, decide, and commit to a path.</p>
+  `
+},
+  {
   slug: 'ai-code-reviewer-thinking',
   title: 'I Built an AI Code Reviewer — Not to Replace Thinking, But to Force It',
   topic: 'Technology',
