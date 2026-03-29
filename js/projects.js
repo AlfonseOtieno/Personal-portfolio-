@@ -10,6 +10,27 @@
 
 const PROJECTS = [
   {
+  slug: 'neuroplex',
+  title: 'NeuroPlex',
+  status: 'Live',
+  image: 'neuroplex-preview.png', 
+  stack: ['HTML', 'CSS', 'JavaScript'],
+  summary: 'A cognitive training platform designed to improve focus, working memory, and learning speed using structured neuroplasticity exercises.',
+
+  liveUrl: 'https://alfonseotieno.github.io/NeuroPlex/',
+  githubUrl: 'https://github.com/AlfonseOtieno/NeuroPlex',
+
+  caseStudy: {
+    problem: 'Most people underestimate their brain’s ability to improve. Cognitive training is either too theoretical or reduced to simple games that don’t translate into real-world performance. There is no structured system that focuses on actual neuroplastic change rather than entertainment.',
+
+    solution: 'Built NeuroPlex — a structured cognitive training system based on neuroplasticity principles. The platform uses 13 carefully selected exercises targeting working memory, focus, and processing speed. Instead of over-optimizing for interactivity, the system prioritizes real cognitive adaptation, including offline exercises (pen and paper) to prevent users from simply getting better at the interface rather than improving actual mental performance.',
+
+    challenges: 'Balancing interactivity with real-world effectiveness was the main challenge. Many brain-training platforms rely heavily on gamification, which can lead to users optimizing for the game instead of actual cognitive improvement. I had to intentionally limit interactivity in some areas and design exercises that transfer beyond the screen. Structuring difficulty progression and incorporating feedback without overcomplicating the system was also a key challenge.',
+
+    learned: 'This project taught me how to design systems around principles rather than trends. I learned that effective cognitive training requires focus, feedback, and the right level of difficulty — not just engagement. It also strengthened my ability to translate abstract concepts like neuroplasticity into practical, usable tools.'
+  }
+},
+  {
   slug: 'codereview-ai',
   title: 'CodeReview AI',
   status: 'Live',
