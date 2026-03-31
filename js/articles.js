@@ -5,6 +5,258 @@
 
 const ARTICLES = [
   {
+  slug: 'neuroplasticity-training-system',
+  title: 'Designing a Neuroplasticity Training System: From Theory to Implementation',
+  topic: 'Technology',
+  date: 'Mar 31, 2026',
+  readTime: '12 min read',
+  substackUrl: '#',
+  excerpt: 'After testing neuroplasticity through deliberate practice, I realised something: improvement is real — but the systems for training it are broken. So I built my own.',
+  body: `
+  <h2>Designing a Neuroplasticity Training System: From Theory to Implementation</h2>
+
+  <p>After reading The Brain That Changes Itself, I came to a powerful realisation:</p>
+
+  <p>Our brains are not fixed and we can improve our cognitive abilities through deliberate practice.</p>
+
+  <p>I decided to test this theory directly.</p>
+
+  <p>I incoperated deliberate neuroplasticity exercises into my daily routine: mental arithmetic, chess and using my non-dominant hand.</p>
+
+  <p>After just three months of doing these exercises, I observed improvements:</p>
+
+  <p>I was faster in mental calculations,</p>
+  <p>My ELO in chess was increasing,</p>
+  <p>I cound write comfortably with my left hand(although still not as good as my right hand)</p>
+
+  <p>This proved to me that we can improve cognitive functions through deliberate practice.</p>
+
+  <p>I decided to improve other functions as well and this is where i saw the problem.</p>
+
+  <h2>The Problem</h2>
+
+  <p>While the concept of neuroplasticity is well established, there is no clear, structured system for training.</p>
+
+  <p>Most exercises are online are more like games and more optimised for interaction than real for real improvements.</p>
+
+  <p>I wanted a way to train deliberately , not randomly.</p>
+
+  <p>A system where each exercise is mapped with a specific function, you know what they improve in real life and they are optimised for maximum benefit and improvements on the users side.</p>
+
+  <p>After searching for existing platforms and finding no solution that met this need, I decided to build my own.</p>
+
+  <h2>Where existing solutions fail</h2>
+
+  <p>After experimenting with several neuroplasticity platforms and cognitive training games, I began to notice a problem in what they are optimised for.</p>
+
+  <p>From a neuroplasticity perspective, effective cognitive change requires three core conditions:</p>
+
+  <p>focused attention</p>
+  <p>controlled duration (not too short to be ineffective, not too long to cause fatigue)</p>
+  <p>clear feedback on performance</p>
+
+  <p>Without these, training just becomes entertainment.</p>
+
+  <p>Most existing platforms fail to meet these conditions in meaningful ways.</p>
+
+  <h3>1. They are optimised for engagement rather than neuroplastic change</h3>
+
+  <p>Many platforms are designed around progression loops — levels, streaks, scores, and difficulty scaling. While this improves engagement, it often shifts the focus away from deliberate cognitive training.</p>
+
+  <p>This leads to users becoming better at the game itself, but not experiencing improvements in real-world tasks.</p>
+
+  <p>Some exercises require interaction-heavy interfaces (constant clicking, tapping, or progression prompts), which disrupt sustained focus. However, true neuroplastic training often requires uninterrupted attention and internal feedback rather than constant external stimulation.</p>
+
+  <h3>2. The feedback systems are often misaligned with real world cognition</h3>
+
+  <p>While some tasks provide immediate in-app feedback, they rarely connect performance to real-life cognitive functions.</p>
+
+  <p>This creates a gap between:</p>
+
+  <p>“I improved my score”</p>
+
+  <p>versus</p>
+
+  <p>“I improved my ability to think, recall, or process information in real situations”</p>
+
+  <p>Without this bridge, improvement remains isolated within the platform and does not reliably translate to everyday activities.</p>
+
+  <h3>3. Cognitive improvements are not described clearly</h3>
+
+  <p>Most platforms label training in terms such as:</p>
+
+  <p>working memory</p>
+  <p>spatial reasoning</p>
+  <p>processing speed</p>
+
+  <p>While accurate, these terms are not clear for most users.</p>
+
+  <p>For someone without a neuroscience background, it is often unclear how these translate into lived experience.</p>
+
+  <p>For example:</p>
+
+  <p>“working memory” is more meaningfully understood as holding thoughts and information in mind , just like doing calculations in your head.</p>
+
+  <p>“processing speed” can be understood as formulating responses faster in conversations so that you dont feel like you are "loading" before every respone.</p>
+
+  <p>Without this, users may not fully understand what they are improving or why it matters.</p>
+
+  <p>These limitations led me to build my own system — one designed not for engagement, but for deliberate neuroplastic change, grounded in focused practice, meaningful feedback, and real-world cognitive translation.</p>
+
+  <h2>The Build</h2>
+
+  <p>I built the system using HTML, CSS, and JavaScript, intentionally keeping the stack minimal to prioritize performance, clarity, and accessibility over complexity.</p>
+
+  <p>My goal was not to create another cognitive “game,” but a structured environment optimized for neuroplastic change through deliberate practice.</p>
+
+  <h3>1. Exercise design and selection</h3>
+
+  <p>I curated and implemented 13 core cognitive exercises, each targeting a specific function.</p>
+
+  <p>These exercises were not treated as a game, but as a training platforms.</p>
+
+  <h3>2. Progressive difficulty system</h3>
+
+  <p>Every exercise is structured across three levels:</p>
+
+  <p>Beginner</p>
+  <p>Intermediate</p>
+  <p>Advanced</p>
+
+  <p>However, difficulty is not static.</p>
+
+  <p>Each task adapts dynamically based on user performance.</p>
+
+  <p>This design is based on the idea that neuroplastic change occurs in the “Goldilocks zone” — a level of difficulty that is neither too easy that it becomes boring nor too hard that it becomes frustrating, but just slightly above current ability.</p>
+
+  <p>As performance improves:</p>
+
+  <p>the system gradually increases difficulty to maintain challenge</p>
+
+  <p>If performance drops:</p>
+
+  <p>the system reduces difficulty to prevent frustration.</p>
+
+  <p>This ensures the user is consistently operating at the edge of their capability, where learning is most effective.</p>
+
+  <h3>3. Feedback and real-world transfer</h3>
+
+  <p>A key design decision was ensuring that feedback is not purely in-game.</p>
+
+  <p>Instead of optimizing for scores or engagement loops, each exercise defines cognitive function improved and some examples of what they improve in the real world</p>
+
+  <p>This allows users to interpret progress beyond the interface — for example, improved recall in conversation or better sustained attention while working.</p>
+
+  <h3>4. Design philosophy: effectiveness over engagement optimization</h3>
+
+  <p>I deliberately avoided common engagement-driven mechanics such as:</p>
+
+  <p>excessive animations</p>
+  <p>reward loops</p>
+  <p>unnecessary interaction prompts</p>
+
+  <p>The goal was to reduce cognitive noise and allow full focus on the exercise itself.</p>
+
+  <p>The interface is intentionally minimal, ensuring that attention is directed toward performance, not navigation or distractions.</p>
+
+  <h3>5. Final intent</h3>
+
+  <p>While the system resembles a cognitive training game, it is designed as a structured neuroplasticity training environment, grounded in the idea that adaptation happens at the boundary between challenge and ability.</p>
+
+  <p>The objective was not to increase engagement metrics, but to create measurable, transferable improvements in real-world cognitive function.</p>
+
+  <h2>Trade-offs in the system</h2>
+
+  <p>One of the key challenges in designing this system was the limitation of translating certain neuroplasticity exercises into a fully digital, trackable environment.</p>
+
+  <p>Some exercises are mostly physical or the feedback is internally experienced, meaning they cannot be accurately measured through traditional software interactions.</p>
+
+  <p>This created an important design trade-off: accuracy of measurement vs. fidelity of real-world training.</p>
+
+  <h3>1. Physical exercises with no direct digital feedback</h3>
+
+  <p>Certain exercises must be performed in the real world without meaningful digital tracking.</p>
+
+  <p>In these cases, the goal was not to simulate feedback , but to ensure clarity of execution.</p>
+
+  <p>Instead of forcing a tracking system, I focused on designing precise, structured instructions that clearly define:</p>
+
+  <p>what the user should do</p>
+  <p>how the exercise should be performed</p>
+  <p>what cues or outcomes they should observe</p>
+
+  <p>In tese exercises feedback comes from users observation and self awareness.</p>
+
+  <h3>2. Partially observable cognitive exercises</h3>
+
+  <p>For exercises such as focus training, stroop test, or reading speed exercise, direct tracking is either unreliable or impractical without additional hardware (e.g., webcam).</p>
+
+  <p>Attempting to simulate precision in these cases would introduce false accuracy and shift the system toward engagement optimization rather than meaningful training.</p>
+
+  <h3>3. Self-reported feedback as a design choice</h3>
+
+  <p>To address this limitation, I introduced a simple post-exercise reflection step:</p>
+
+  <p>“How was the difficulty of this exercise?”</p>
+
+  <p>This allows users to self-assess whether the task was too easy, appropriately challenging, or too difficult.</p>
+
+  <p>While subjective, this feedback mechanism aligns with the principle that neuroplastic adaptation is strongly influenced by perceived effort and challenge.</p>
+
+  <h3>4. Design constraint: avoiding forced gamification</h3>
+
+  <p>A key decision throughout this process was avoiding unnecessary gamification of any activity.</p>
+
+  <p>Over-engineering feedback systems would risk shifting the product toward engagement optimization, artificial scoring systems and distraction from the core task.</p>
+
+  <p>Instead, I prioritized deliberate practice with minimal interference, even if it meant accepting partial observability in certain exercises.</p>
+
+  <h3>Final trade-off</h3>
+
+  <p>The system accepts a fundamental constraint:</p>
+
+  <p>Not all cognitive training can be perfectly measured.</p>
+
+  <p>In exchange for reduced tracking precision, the system preserves:</p>
+
+  <p>real-world applicability</p>
+  <p>cognitive authenticity</p>
+  <p>focus-driven execution without distraction</p>
+
+  <p>This trade-off was intentional, not a limitation of design.</p>
+
+  <h2>Closing Reflection</h2>
+
+  <p>After building this system, the focus shifted from theory to personal application.</p>
+
+  <p>This project is not only a product I created — it is something I actively use.</p>
+
+  <p>The underlying belief is simple: any cognitive function can be improved through deliberate, structured practice over time.</p>
+
+  <p>The goal of the system is not to make users “better at a game,” but to improve specific cognitive functions that translate into real-world performance.</p>
+
+  <p>Improvements in areas such as working memory, attention control, and processing speed do not remain abstract — they manifest in practical situations like learning, problem-solving, mathematics, and everyday decision-making.</p>
+
+  <p>This is the core value of the system: transferable cognitive improvement through consistent practice.</p>
+
+  <p>However, no system produces change instantly.</p>
+
+  <p>Meaningful neuroplastic adaptation requires consistent repetition.</p>
+
+  <p>Just be patient and you will see changes.</p>
+
+  <p>The system is intentionally designed to be lightweight in time commitment. Around 20 minutes per session on a single exercise is sufficient to enter the optimal learning range — the “Goldilocks zone” where challenge and ability are balanced.</p>
+
+  <p>Within that window, the system adapts to performance and maintains an appropriate level of difficulty.</p>
+
+  <p>The exercises, their targeted cognitive functions, and their real-world applications are clearly defined within the platform so that users understand not only what they are doing, but why it matters.</p>
+
+  <p>This project is an ongoing experiment in deliberate cognitive improvement.</p>
+
+  <p>The rest is consistency.</p>
+  `
+},
+  {
   slug: 'masculinity-boy-to-man',
   title: 'Masculinity- how does a boy become a man.',
   topic: 'Personal Growth',
