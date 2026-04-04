@@ -5,6 +5,239 @@
 
 const ARTICLES = [
   {
+  slug: 'patience-best-strategy',
+  title: 'Sometimes Patience is the Best Strategy',
+  topic: 'Discipline',
+  date: 'Apr 04, 2026',
+  readTime: '12 min read',
+  substackUrl: '#',
+  excerpt: 'When nothing seems to help, I go and look at a stonecutter hammering away at his rock perhaps a hundred times without as much as a crack showing in it. Yet at the hundred and first blow it will split in two, and I know it was not that blow that did it, but all that had gone before." - Jacob Riis',
+  body: `
+  <p>"When nothing seems to help, I go and look at a stonecutter hammering away at his rock perhaps a hundred times without as much as a crack showing in it. Yet at the hundred and first blow it will split in two, and I know it was not that blow that did it, but all that had gone before." - Jacob Riis</p>
+
+  <p>I’m writing this article two days after attending a boxing tournament where most members of our gym participated. I started training in January, and this is now three months into my training.</p>
+
+  <p>Five weeks after starting, I asked my coach when I would get the chance to compete. He told me that if I trained well enough, I could participate in a tournament happening at the end of March. But then, one month before the tournament, he told me I was not yet ready.</p>
+
+  <p>I challenged him. I told him I still had one month to train.</p>
+
+  <p>So for the entire month of March, I pushed myself. I woke up early, did my morning runs, shadow boxed, trained hard, and gave everything I had in sparring.</p>
+
+  <p>But after one month of intense training, I still wasn’t chosen to compete. He told me again that I was not yet ready.</p>
+
+  <p>Coming back from the tournament is when I realized something: I had wasted a whole month.</p>
+
+  <p>Not because I didn’t compete—but because I didn’t learn anything that month.</p>
+
+  <p>I didn’t improve anything. I was just punching harder in sparring, throwing more punches, trying to land more combinations. And every time someone landed a clean punch on me, my response was the same—try harder. More punches, more aggression.</p>
+
+  <p>And all that did was get me hit more.</p>
+
+  <p>When I started boxing I used to treat every training session like a study session. I would focus on one thing to improve per week—footwork, head movement, speed—and actually improve. But this past month, I wasn’t learning. I was trying to prove something.</p>
+
+  <p>I was trying to prove that I was capable of fighting.</p>
+
+  <p>And in doing that, I stopped getting improving.</p>
+
+  <p>That’s when I realized something.</p>
+
+  <p>Maybe I wasn’t doing anything wrong.</p>
+
+  <p>Maybe there was nothing to fix.</p>
+
+  <p>Maybe the best thing I could have done was simply allow myself more time.</p>
+
+  <h2>Patience as the best optimization</h2>
+  <p>We are told that we should work harder. We all know that we should be disciplined. We all know that we should be consistent. And we all know that we should work out to improve our bodies or keep them healthy.</p>
+
+  <p>But I’ve realized that it’s not just a matter of discipline.</p>
+
+  <p>You can feel the motivation to start, build the discipline to continue, and still reach a point where you’re putting in the work but not seeing progress.</p>
+
+  <p>I’ve been thinking about this through my boxing experience, and I think I’ve come to my own conclusion.</p>
+
+  <p>I am an optimizer. I like to experiment, look for feedback, and improve. I’m always looking for areas where I can do better. I do this in coding, reading, and even in my projects and systems.</p>
+
+  <p>I’ve always believed that you can achieve more by doing less—by doing the right things.</p>
+
+  <p>But what happens when you’re doing nothing wrong?</p>
+
+  <p>Sometimes you have the right form, the right schedule, and you’re consistent.</p>
+
+  <p>So how do you optimize a system that is already running well and has no errors?</p>
+
+  <p>For me, the optimization I added to that system was patience.</p>
+
+  <p>I realized that there are things you can optimize to make results come faster, and there are activities where you simply have to pay the time tax and wait.</p>
+
+  <p>You can’t bake a cake in two minutes by turning up the oven. You’ll burn the outside and leave the inside raw.</p>
+
+  <p>That was my realization.</p>
+
+  <p>In boxing, you cannot become a master in one month just by optimizing.</p>
+
+  <p>This is also true for my writing. It’s been two months since I started writing articles, and I’m comfortable with the fact that you cannot become a great writer in that time.</p>
+
+  <p>The same applies to my workouts.</p>
+
+  <p>There were days when, after training, I would spend ten minutes in front of the mirror looking for any sign of muscle growth.</p>
+
+  <p>And only recently did I start seeing my muscles become more defined.</p>
+
+  <p>Truthfully, that was one of the happiest moments in my fitness journey—because I finally saw progress.</p>
+
+  <p>I’ve now accepted that in some activities, you can find ways to optimize.</p>
+
+  <p>But in others, the best optimization you can make is patience—doing the work consistently and allowing results to come with time.</p>
+
+  <h2>The powoer of compounding effort<h2>
+  <p>We all have expectations and aspirations, and sometimes you may work very hard to achieve your goals, but you don’t see your effort produce the expected results.</p>
+
+  <p>This is sometimes called the valley of disappointment. It is the stage between your starting point and your breakthrough, where no effort seems to be bearing results.</p>
+
+  <p>And the reason is not always a lack of discipline or commitment. Sometimes it doesn’t even require optimization or improvement, and it doesn’t mean that you’re failing.</p>
+
+  <p>It simply requires you to stay consistent and continue what you’re doing—and eventually, you will reach your breakthrough.</p>
+
+  <p>I think this valley of disappointment is the toughest stage for anyone pursuing growth, because it is an invisible phase. You are not seeing any progress, and you don’t know if it’s working.</p>
+
+  <p>I like using the analogy of melting ice from negative ten degrees.</p>
+
+  <p>When you increase the temperature from negative ten to negative five, there is still no visible change. From negative five to negative three to negative one, still no change.But when it moves from zero to one, that’s when you start to see visible change.</p>
+
+  <p>And just like that, it doesn’t mean that the earlier increases—from negative ten to negative two—were not producing results. It was all accumulated effort.</p>
+
+  <p>So passing through the valley of disappointment means persevering—continuing to move forward and waiting to see the light at the end of the tunnel, even when you can’t yet see the slightest hint of it, and just letting your efforts compund.</p>
+
+  <h2>Finishing is a superpower</h2>
+  <p>Nowadays, we expect quick feedback, and most people are selling the end product. No one tells you about the invisible phase between the starting point and success.</p>
+
+  <p>So when we reach that stage—where you’re not seeing anything and you’re not sure whether you’re succeeding or failing—we usually interpret it as failure and start looking for a better option.</p>
+
+  <p>Right now, we are in an environment where people are selling superhuman abilities or promising to make you better than everyone else. You see videos saying: do these five exercises to get superhuman reflexes, do this to read anyone in seconds.</p>
+
+  <p>But I think in today’s environment, in our society and even in the coming generation, the greatest superpower a person can have is the ability to finish what you started.</p>
+
+  <p>Most of us don’t fail because we didn’t work hard or didn’t focus. Most of us fail because we didn’t pursue what we started long enough to succeed.</p>
+
+  <p>You can see this everywhere—people learning new languages, starting new sports. Even I accept that we want to see success early, we want feedback.</p>
+
+  <p>But being able to persist—doing something consistently while others keep switching—I think that is one of the most valuable advantages in today’s environment.</p>
+
+  <p>We are told to pivot fast. But pivoting often just takes you back to the start of a new valley of disappointment.</p>
+
+  <p>When you pivot, you reset the compounding clock to zero. All the progress you had made—you leave it behind and start again.</p>
+
+  <p>If you do this repeatedly, you end up with many half-built bridges.</p>
+
+  <p>If you want to cross from one side of a river to the other, the person who commits to building one bridge will eventually reach the other side. But if you keep switching, you end up with five half-built bridges—and you’re still standing on the same side of the water.</p>
+
+  <p>Still, I know it’s easier said than done.</p>
+
+  <p>Some activities are easier to be patient with than others. Things like boxing or working out have clear, biological feedback—you know they will eventually yield results.</p>
+
+  <p>But starting a business, learning a new language, or taking a course—there is no guaranteed outcome.</p>
+
+  <p>So I won’t just say “be patient” blindly.</p>
+
+  <p>Because sometimes, you do need to pivot.</p>
+
+  <h2>Deterministic systems</h2>
+  <p>Deterministic systems are systems where outcomes are proven—by biology, science, or simply the rules of life.</p>
+
+  <p>You know that if you work out, you will eventually build muscle. Just like if you step off a ledge, gravity will act on you.</p>
+
+  <p>So in activities like working out or boxing, I know that they are certain to produce results.</p>
+
+  <p>In these kinds of activities, I see myself as a stonecutter, hammering at the rock. Each strike is contributing to the moment it finally breaks.</p>
+
+  <p>In deterministic systems, every effort moves you closer to the endpoint, and you are certain that the outcome will come because it is proven.</p>
+
+  <p>So in these systems, you cannot justify quitting after one month just because you didn’t see progress.</p>
+
+  <p>Pivoting cannot be considered a smart decision when you quit something like working out after one month simply because you didn’t see results.</p>
+
+  <h2>Probabilistic systems</h2>
+  <p>A probabilistic system is one where the outcome is not guaranteed. Things like starting a business, building a startup, writing, or even freelancing—success is not certain.</p>
+
+  <p>In these systems, there are many factors beyond consistency and time. Things like luck, the market, what people value, and what they are interested in.</p>
+
+  <p>So sometimes, in business—or in something like freelancing—you may need to pivot. Maybe you’re in the wrong niche, or you’re using the wrong tool.</p>
+
+  <p>Sometimes, you also need to optimize.</p>
+
+  <p>Because you may think you are a stonecutter hammering at a rock, but in reality, you might be trying to break a diamond with a wooden mallet.</p>
+
+  <p>So yes, patience is key.</p>
+
+  <p>But after hitting a hundred or even two hundred times, you may need to step back and look for microfractures.</p>
+
+  <p>And if you don’t see any signs of the stone breaking, maybe it’s time to find a better tool—or a different stone.</p>
+
+  <h2>When to stay vs When to pivot</h2>
+  <p>I cannot give you a clear framework for when to stay or when to pivot, because I believe it all depends on your judgment.</p>
+
+  <p>Some people will thrive in the same area you decide to leave, and maybe you will thrive elsewhere.</p>
+
+  <p>So I won’t just tell you to be patient and wait for improvement. Sometimes you may not be in the right niche, and you need to find what works for you. Other times, you may not be doing everything right, and there are areas you need to optimize.</p>
+
+  <p>But one thing that can help you decide whether to stay consistent or shift—because there’s no point holding on to a sinking ship—is understanding sunk cost vs opportunity cost.</p>
+
+  <p>Ask yourself: if I were to start this activity today, knowing everything I know now, would I still choose it? Or would I choose something else?</p>
+
+  <p>Ask yourself: do I see progress? Do I see even a 1% improvement, or am I just stagnating?</p>
+
+  <p>And then consider the opportunity cost—what am I missing out on by continuing to pursue this one thing?</p>
+
+  <p>Because I can’t just say “be patient” blindly.</p>
+
+  <p>For example, I started doing sales in December, right after finishing high school. But after just one month, I quit.</p>
+
+  <p>One reason was that I was struggling to make a sale. But I also knew that others around me were making sales, so it was likely just a matter of time and patience.</p>
+
+  <p>Still, I considered the opportunity cost.</p>
+
+  <p>I realized that if I quit sales, I would have more time to focus on learning coding and training in boxing.</p>
+
+  <p>So I made the decision not to be patient in that area. I chose to leave and pursue something else.</p>
+
+  <p>Ultimately, it comes down to your judgment.</p>
+
+  <p>You know what you want to achieve. You know your endpoint.</p>
+
+  <p>No one can give you a perfect framework for these decisions, because the path is yours.</p>
+
+  <h2>Why patience is still the best option</h2>
+  <p>Still, I will conclude by saying this:</p>
+
+  <p>patience, consistency, and finishing what you started.</p>
+
+  <p>I think that is the one thing that gives you a competitive edge—not some superpower or superhuman ability.</p>
+
+  <p>Just stick to the thing you started and believe that you will eventually see light at the end of the tunnel.</p>
+
+  <p>This doesn’t mean you will see it immediately. The tunnel itself is part of the process.</p>
+
+  <p>And once you accept that this phase—where nothing seems to be happening—is part of the process, you begin to understand that time is required.</p>
+
+  <p>Even though there are situations where you need to pivot, the cost of starting over is often higher than the cost of pushing through.</p>
+
+  <p>Because when you push through, you compound your efforts. When you start over, you reset that compounding.</p>
+
+  <p>I believe that a person who commits to something consistently—even for just two years—will achieve more than someone who keeps searching for better options in that same period.</p>
+
+  <p>So patience is the best strategy.</p>
+
+  <p>Even though sometimes you may need to pivot, take your time and choose what is worth pursuing to you—what you are willing to endure, what you are willing to struggle for, even when progress is not visible.</p>
+
+  <p>Because in the end, it comes down to what matters to you.</p>
+
+  <p>And once you choose it, pursue it to the end.</p>
+  `
+}
+,
+  
+  {
   slug: 'neuroplasticity-training-system',
   title: 'Designing a Neuroplasticity Training System: From Theory to Implementation',
   topic: 'Technology',
