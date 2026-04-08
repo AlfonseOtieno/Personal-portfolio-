@@ -10,6 +10,28 @@
 
 const PROJECTS = [
   {
+  slug: 'inkdraft',
+  title: 'InkDraft',
+  status: 'Live',
+  image: 'inkdraft-preview.png', 
+  stack: ['HTML', 'CSS', 'JavaScript', 'OCR', 'AI Integration'],
+
+  summary: 'A writer-first platform that converts handwritten drafts into digital text while preserving the original voice, giving users full control over AI-assisted editing.',
+
+  liveUrl: 'https://inkdraft-a-writers-best-friend-abcbtej1y.vercel.app/',
+  githubUrl: 'https://github.com/AlfonseOtieno/Inkdraft--A-writers-best-friend',
+
+  caseStudy: {
+    problem: 'Writers who prefer pen and paper face friction when converting their work into digital format. Existing tools either act as simple scanners with no intelligence or AI systems that heavily rewrite text, often distorting the writer’s original voice and intent.',
+
+    solution: 'Built InkDraft — a system that allows users to scan or upload handwritten content, extract the text, and interact with it without losing authorship. The platform separates original writing from AI-generated versions, allowing users to compare, edit, and selectively adopt changes. Instead of replacing the writer, the AI acts as a controlled assistant that operates within user-defined prompts.',
+
+    challenges: 'The main challenge was balancing AI assistance with author control. Most AI systems are designed to optimize output, not preserve input. Designing a workflow where the original text remains untouched while still allowing meaningful AI interaction required careful separation of states and user actions. Handling OCR accuracy while maintaining readable output was also a key technical challenge.',
+
+    learned: 'This project reinforced the importance of building tools around user intent rather than automation for its own sake. I learned that preserving originality can be more valuable than generating new content. It also deepened my understanding of integrating OCR with AI workflows and designing interfaces that give users control instead of taking it away.'
+  }
+},
+  {
   slug: 'neuroplex',
   title: 'NeuroPlex',
   status: 'Live',
