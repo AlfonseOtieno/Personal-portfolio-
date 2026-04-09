@@ -947,8 +947,8 @@ function scrollToTop() {
 function renderList() {
   const grid = document.getElementById('articles-grid');
   if (!grid) return;
-  grid.innerHTML = ARTICLES.map((a, i) => `
-    <article class="article-card" data-index="${i}" role="button" tabindex="0" aria-label="Read: ${a.title}">
+  grid.innerHTML = ARTICLES.map((a) => `
+    <article class="article-card" data-slug="${a.slug}" role="button" tabindex="0" aria-label="Read: ${a.title}">
       <div class="article-meta">
         ${topicTag(a.topic)}
         <span>${a.readTime}</span>
@@ -961,18 +961,65 @@ function renderList() {
   `).join('');
 
   grid.querySelectorAll('.article-card').forEach(card => {
-    card.addEventListener('click', () => openArticle(+card.dataset.index));
+    card.addEventListener('click', () => navigateTo(card.dataset.slug));
     card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') openArticle(+card.dataset.index);
+      if (e.key === 'Enter' || e.key === ' ') navigateTo(card.dataset.slug);
     });
   });
 }
 
-/* ── OPEN SINGLE ARTICLE ─────────────────────────────────────── */
-function openArticle(index) {
-  const a = ARTICLES[index];
-  const listView   = document.getElementById('article-list');
+/* ── HASH-BASED ROUTING ──────────────────────────────────────── */
+
+// Navigate to an article — updates the URL hash (e.g. articles.html#patience-best-strategy).
+// The URL is now shareable and bookmarkable. Browser back button works automatically.
+function navigateTo(slug) {
+  history.pushState({ slug }, '', `#${slug}`);
+  renderFromHash();
+}
+
+// Go back to the list — clears the hash and shows the article grid.
+function navigateBack() {
+  history.pushState(null, '', location.pathname);
+  renderFromHash();
+}
+
+// Single source of truth: reads the URL hash and decides what to render.
+function renderFromHash() {
+  const slug      = location.hash.slice(1); // strip the leading #
+  const listView  = document.getElementById('article-list');
   const singleView = document.getElementById('article-single');
+
+  if (!listView || !singleView) return; // not on articles.html
+
+  if (slug) {
+    const a = ARTICLES.find(art => art.slug === slug);
+    if (!a) {
+      // Unknown slug — fall back to the list
+      history.replaceState(null, '', location.pathname);
+      listView.classList.remove('hidden');
+      singleView.classList.add('hidden');
+      return;
+    }
+    renderSingleArticle(a, singleView, listView);
+  } else {
+    // No hash — show the article grid
+    document.title = 'Articles — Alfonse Otieno';
+    listView.classList.remove('hidden');
+    singleView.classList.add('hidden');
+    scrollToTop();
+  }
+}
+
+/* ── RENDER SINGLE ARTICLE ───────────────────────────────────── */
+function renderSingleArticle(a, singleView, listView) {
+  document.title = `${a.title} — Alfonse Otieno`;
+
+  // Show "Read on Substack" only when a real URL is provided (not '#')
+  const substackBtn = (a.substackUrl && a.substackUrl !== '#')
+    ? `<a href="${a.substackUrl}" target="_blank" rel="noopener" class="btn btn-substack">
+         Read on Substack ↗
+       </a>`
+    : '';
 
   singleView.innerHTML = `
     <div class="container">
@@ -988,10 +1035,13 @@ function openArticle(index) {
         <div class="article-cta">
           <div class="article-cta-icon">✍️</div>
           <h3>Enjoyed this article?</h3>
-          <p>I publish new essays every week on growth, discipline, coding, and systems thinking. Every article is free. Subscribe so you never miss one.</p>
-          <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">
-            Subscribe on Substack — It's Free
-          </a>
+          <p>I publish new essays every week on growth, discipline, coding, and systems thinking. Every article is free.</p>
+          <div class="article-cta-actions">
+            <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">
+              Subscribe — It's Free
+            </a>
+            ${substackBtn}
+          </div>
           <p class="cta-sub">Join readers getting honest, unfiltered writing about building yourself from the ground up.</p>
         </div>
       </div>
@@ -1002,27 +1052,22 @@ function openArticle(index) {
   singleView.classList.remove('hidden');
   scrollToTop();
 
-  document.getElementById('back-btn').addEventListener('click', closeArticle);
+  document.getElementById('back-btn').addEventListener('click', navigateBack);
 }
 
-/* ── CLOSE / BACK ────────────────────────────────────────────── */
-function closeArticle() {
-  document.getElementById('article-list').classList.remove('hidden');
-  document.getElementById('article-single').classList.add('hidden');
-  scrollToTop();
-}
+// Handle browser back / forward buttons — hash changes without a page reload
+window.addEventListener('popstate', renderFromHash);
 
 /* ── AUTO-RENDER LATEST ARTICLE ON HOME PAGE (index.html) ───────
-   Add <div id="latest-article-slot"></div> anywhere in index.html
-   and this function will fill it automatically from ARTICLES[0].
-   When you add a new article to the top of the ARTICLES array,
-   the home page updates with zero other changes needed.
+   Add <div id="latest-article-slot"></div> in index.html and this
+   fills it from ARTICLES[0]. Add a new article at the top of the
+   ARTICLES array and the home page updates automatically.
 ─────────────────────────────────────────────────────────────────*/
 function renderLatestArticle() {
   const slot = document.getElementById('latest-article-slot');
   if (!slot) return;
 
-  const a = ARTICLES[0]; // always the newest — keep ARTICLES sorted latest first
+  const a = ARTICLES[0]; // always the newest — keep ARTICLES sorted latest-first
   slot.innerHTML = `
     <div class="article-preview-card">
       <div class="article-meta">
@@ -1032,7 +1077,7 @@ function renderLatestArticle() {
       </div>
       <h3>${a.title}</h3>
       <p>${a.excerpt}</p>
-      <a href="articles.html" class="btn btn-primary btn-sm">Read Article</a>
+      <a href="html/articles.html#${a.slug}" class="btn btn-primary btn-sm">Read Article</a>
     </div>
   `;
 }
@@ -1040,5 +1085,6 @@ function renderLatestArticle() {
 /* ── INIT ────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
   renderList();          // articles.html — renders the full grid
+  renderFromHash();      // articles.html — opens article directly if URL has a hash
   renderLatestArticle(); // index.html    — renders the latest article preview
 });
