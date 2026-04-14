@@ -5,6 +5,58 @@
 
 const ARTICLES = [
   {
+  slug: 'building-inkdraft',
+  title: 'Building Inkdraft: An AI Writing Tool That Respects the Writer',
+  topic: 'Technology',
+  date: 'Apr 14, 2026',
+  readTime: '6 min read',
+  substackUrl: 'https://open.substack.com/pub/codeandsystems/p/building-inkdraft-an-ai-writing-tool',
+  excerpt: 'One of the most frustrating trends in AI-assisted writing is that AI always seems to replace your voice rather than improve it. So I built something different.',
+  body: `
+    <p>One of the most frustrating trends in AI-assisted writing is that AI always seems to replace your voice rather than improve it. AI tools can generate entire articles in seconds, but they lack one thing: the human touch. They lack the biases, opinions, and conviction — the very things that make writing human.</p>
+
+    <p>So I built Inkdraft — a writing assistant designed around a simple principle: the writer's voice remains sacred.</p>
+
+    <p>This article breaks down the technical architecture, design decisions, and trade-offs behind building the project.</p>
+
+    <h2>The Problem</h2>
+    <p>I like writing on pen and paper before scanning and publishing my articles. After writing, I like to feed my articles to ChatGPT to correct grammatical errors and remove repetitions, but this approach had one main challenge: improving clarity without losing the writer's voice.</p>
+
+    <p>I decided to test different writing platforms to find a solution. Some platforms focus heavily on AI generation, while others focus on editing but lack intelligent assistance. I wanted to build something that combines OCR (handwriting to text), AI-assisted refinement, and full control for the writer.</p>
+
+    <h2>System Overview</h2>
+    <p>The architecture is intentionally simple. On the frontend: HTML, CSS, and JavaScript with no frameworks, a single-page interface, and PWA support. On the backend: serverless functions on Vercel with two endpoints — <code>/api/ocr</code> and <code>/api/generate</code>. The AI layer runs on Google Gemini API.</p>
+
+    <h2>Key Design Philosophy</h2>
+    <p>The author has full control over the writing process. Instead of letting AI rewrite everything, I constrained it with strict system prompts: it must preserve the original meaning, must not introduce new ideas, and must highlight uncertainty instead of guessing.</p>
+
+    <h2>OCR Pipeline</h2>
+    <p>The OCR system is the core feature. In the first step, the handwritten image is sent to the AI model, which is instructed to extract text faithfully, mark unclear words using a different colour, and underline wrongly spelled words. In the second step, if the writer commands the AI to generate without entering a prompt, it only checks for grammatical errors — improving grammar, preserving tone, and avoiding style rewrites. This is what prevents the common issue where AI tools over-edit content.</p>
+
+    <h2>API Design</h2>
+    <p>The <code>/api/ocr</code> endpoint handles image input, text extraction, and grammar refinement — keeping transcription and improvement as separate concerns. The <code>/api/generate</code> endpoint handles AI-assisted suggestions and controlled transformations, with hard constraints: no full rewrites, no hallucinated content, and the original structure must be maintained.</p>
+
+    <h2>Why Serverless?</h2>
+    <p>I chose Vercel serverless functions because they require zero infrastructure setup and are ideal for early deployment. The trade-off is that rate limiting is harder to implement, but this is an MVP and will be improved for scale over time.</p>
+
+    <h2>PWA Implementation</h2>
+    <p>Everything lives in a single <code>index.html</code> — intentional for speed and minimalism, keeping the writer focused on what matters. The app is installable as a Progressive Web App, giving partial offline access and an app-like experience.</p>
+
+    <h2>Challenges</h2>
+    <p>The first challenge was AI reliability. Models tend to hallucinate and over-correct text. I solved this through strict prompt engineering and multi-step processing. The second was OCR accuracy — handwriting is inconsistent, so instead of forcing the model to commit to a guess, unclear text is displayed in a different colour so the writer can correct it. The third was token limits: the Gemini API has usage constraints that are sustainable as an MVP but will eventually require usage limits on the app side.</p>
+
+    <h2>What Makes Inkdraft Different</h2>
+    <p>Unlike typical AI writing tools, Inkdraft does not try to write for you. It preserves your voice and exposes uncertainty instead of hiding it. The goal is to get the most benefit out of AI-assisted writing while still maintaining the human aspects of the craft.</p>
+
+    <h2>Conclusion</h2>
+    <p>Inkdraft is not just a writing tool — it's an experiment in human-AI collaboration. Instead of replacing creativity, it aims to protect and enhance it.</p>
+
+    <p>The biggest lesson from building it: <em>"The real challenge isn't building AI features — it's controlling them."</em></p>
+
+    <p>Most developers focus on what AI can do. The real leverage comes from deciding what AI should not be allowed to do.</p>
+  `
+},
+  {
     slug: 'you-dont-have-to-suffer-to-grow',
     title: "You Don't Have to Suffer to Grow",
     topic: 'Personal Growth',
