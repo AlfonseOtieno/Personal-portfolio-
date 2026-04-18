@@ -10,6 +10,29 @@
 
 const PROJECTS = [
   {
+  slug: 'athena',
+  title: 'Athena',
+  status: 'Live',
+  image: 'athena-preview.png', // add screenshot
+
+  stack: ['HTML', 'CSS', 'JavaScript', 'AI Integration'],
+
+  summary: 'A learning system built on active recall — transforming notes, code, and language study into interactive testing environments that prioritize memory, application, and feedback over passive consumption.',
+
+  liveUrl: 'https://athena-flame-five.vercel.app',
+  githubUrl: 'https://github.com/AlfonseOtieno/Athena',
+
+  caseStudy: {
+    problem: 'Most learning tools are built around passive consumption — reading, watching, and highlighting — which creates the illusion of understanding without actual retention. Learners struggle to recall and apply knowledge because they are not tested under real conditions.',
+
+    solution: 'Built Athena — a system centered on active recall and iteration. The platform includes three modes: Knowledge Mode (generate questions from notes or PDFs), Code Mode (learn by building inside a live code environment), and Language Mode (test and reinforce understanding through structured prompts). Instead of re-exposing users to information, Athena forces retrieval, correction, and application.',
+
+    challenges: 'Designing a system that enforces active recall without overwhelming the user was a key challenge. Balancing simplicity with depth across three different learning modes required clear structure and separation of concerns. Integrating AI in a way that generates useful, testable outputs — not just explanations — also required careful prompt design.',
+
+    learned: 'This project deepened my understanding of how people actually learn — not through exposure, but through retrieval and feedback. I learned how to design systems that force engagement rather than encourage passivity, and how to use AI as a tool for generating challenges instead of answers.'
+  }
+},
+  {
   slug: 'inkdraft',
   title: 'InkDraft',
   status: 'Live',
