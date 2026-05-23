@@ -13,6 +13,33 @@
 
 var ARTICLES = [
   {
+    slug: 'atomic-habbits-are-automatic-habbits',
+    title: 'Atomic habbits are automatic habbits',
+    topic: 'Books',
+    date: 'Mar 21, 2026',
+    readTime: '4 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/atomic-habbits-are-automatic-habbits',
+    publication: 'deliberately-becoming',
+    excerpt: 'I created a one-year master plan while in high school which was aimed at self-improvement, building skills, and most importantly, building discipline.',
+    body: `
+      <h2>Why I started reading Atomic Habits</h2>
+      <p>I created a one-year master plan while in high school which was aimed at self-improvement, building skills, and most importantly, building discipline. The plan comprised a number of activities I did daily, and I created a daily system. My aim is that by the end of the year, these activities turn into habits and become more automatic with time. I started reading the book Atomic Habits to turn my daily activities into automatic habits.</p>
+      <img src="../assets/articles/atomic-habits.webp" alt="Atomic Habits by James Clear" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <p>I can confidently say that reading the book provided the answers I was looking for and a lot of other meaningful information. The book covers a lot of concepts and ideas. I have already written two articles based on concepts from Atomic Habits. One is about outcome-driven habits vs. identity-driven habits; the other one is how I applied the "paper clip strategy" in sales to turn rejection into progress and improve my overall sales performance. I won't discuss every concept in detail; I will only discuss the concepts that stood out most to me, that caused a shift in my mentality, and how I am applying them.</p>
+      <h2>Key Insight That Changed My Perspective</h2>
+      <p>The book has a lot of interesting arguments and mental models that I can't explain in detail in one article. I already talked about the idea of identity-driven habits in a previous article. I will just try to summarize my interpretation in one sentence:</p>
+      <p>True transformation comes from systems, not goals—specifically by leveraging the compound interest of 1% daily improvements and consequently developing the identity of the person you wish to become.</p>
+      <p>We all have goals (both winners and losers). The difference is that winners set systems that position them to be more likely to win. Not flashy systems, nor intense, but repetitive systems which allow them to continually improve.</p>
+      <h2>How I'm Applying the Knowledge</h2>
+      <p>Firstly, I realized that real change is identity change. I started by reducing the intensity of my activities and focusing more on just showing up—even in the smallest ways—and allowing the habit to develop. I now have a daily system which revolves around repetitive actions, from reading to writing to exercises and boxing.</p>
+      <p>I have come to terms with the fact that on some days I may do all these activities perfectly, and on some days I may feel less motivated to act. The days where I'm least motivated are the most important. I don't force perfection and instead do the least version of the habit—even if it is only for two minutes. As long as I don't miss the habit, I make it a personal commitment not to miss twice in a row. As James Clear says, "Missing once is a mistake; missing twice is the start of a new habit."</p>
+      <h2>Takeaways</h2>
+      <p>Starting and building new habits doesn't require intensity at first. Just start small, get your reps in, and continue forming the identity. A habit must first be established before it is optimized. Working out, running, or reading a book for five minutes isn't flashy, but it is the bridge to you being able to consistently do the habit for an hour without burning out.</p>
+      <h2>Conclusion</h2>
+      <p>For anyone trying to build new habits or strengthen existing ones: you already have a goal. Now set systems that will drive you towards your goal. Don't chase big results. Chase small, consistent actions, and the results will follow naturally.</p>
+    `
+  },
+  {
     slug: 'life-is-not-fair-and-that-is-okay',
     title: 'Life Is Not Fair — And That Is Okay',
     topic: 'Philosophy',
