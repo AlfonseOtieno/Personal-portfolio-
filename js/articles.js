@@ -13,6 +13,54 @@
 
 var ARTICLES = [
   {
+    slug: 'you-dont-have-to-suffer-to-grow',
+    title: 'You Don\'t Have to Suffer to Grow',
+    topic: 'Personal Growth',
+    date: 'Apr 11, 2026',
+    readTime: '5 min read',
+    substackUrl: 'https://deliberatelybecoming.substack.com/p/you-dont-have-to-suffer-to-grow',
+    publication: 'deliberately-becoming',
+    excerpt: 'Does the process of self-development have to be a constant journey of discomfort and unhappiness, or can it actually be a happy one?',
+    body: `
+      <p>Does the process of self-development have to be a constant journey of discomfort and unhappiness, or can it actually be a happy one?</p>
+      <p>Recently, I watched a Huberman Lab podcast in which he was interviewing David Goggins.</p>
+      <p>It was a very interesting conversation since we got a chance to dive deep into the mentality behind David Goggins. I, for one, have always admired his transformation and, at the beginning of this year, would watch his videos in search of motivation. But in this particular podcast, he talks about the actual life of David Goggins, not just what we see in the highlight reel.</p>
+      <h2>The "No Carrot" Philosophy</h2>
+      <p>David Goggins talked about a lot of things that resonated with me (considering I'm also on a journey of self-development) but one. Most of the time, as he was talking about doing the hard things and accepting criticism, I would say to myself, "He's describing exactly how I feel."</p>
+      <p>But one idea struck me most.</p>
+      <p>He talks about how the normal person would view his activities as suffering (which I relate to) and how he doesn't have a reward to get things done—how his days are "all stick and no carrot."</p>
+      <p>This is where I saw a contradiction. Although some of the things I do may seem to others like suffering, I have found a way to be happy and extract meaning from what I do.</p>
+      <p>I know that David Goggins is very successful using his current method. My aim is not to contradict it. Mine is to show you that the process of self-development doesn't have to be constant suffering. It can also be a happy one.</p>
+      <p>I have found a way to turn the hardship of doing the hard things into a framework to extract happiness—a process I call The Ideal Life Philosophy.</p>
+      <h2>The Ideal Life Philosophy</h2>
+      <p>This is the framework I use. Although adopting it doesn't mean that it will keep you smiling every moment of the day, it will help you to not view self-development as suffering.</p>
+      <p>It is a simple thought process and requires you to only ask yourself three questions:</p>
+      <p>What would my ideal life currently look like?</p>
+      <p>What would my ideal life in the next 10 years look like?</p>
+      <p>How can I turn my current life into my ideal life?</p>
+      <h2>1. What would my ideal life currently look like?</h2>
+      <p>This first question requires you to let your imagination run wild.</p>
+      <p>Visualize yourself in an environment where you have no limitations, be it social, physical, or financial.</p>
+      <p>What would need to happen for you to consider it a perfect life? What items would you own, how would your body look, and what would your day look like?</p>
+      <p>I can't actually remember my specific answer when I did this two months ago (you too won't remember it after answering the third question and practicing it for a while). The point isn't to remember the answer. But I know it looked something like being muscular, wearing designer clothes, attending a lot of parties, and traveling the world. Living like royalty.</p>
+      <p>During this process, you realize that you are not royalty today; you probably won't magically become royalty tomorrow. You accept that you cannot realistically live the ideal life you have in your mind for today.</p>
+      <p>And that is the point: realizing that there is a better version of your life you could be living, but you can't live it NOW due to your current limitations.</p>
+      <h2>2. What would my ideal life in the next 10 years look like?</h2>
+      <p>This question also requires a wild imagination. Picture the limitless version of yourself in the next ten years. It will not look the same as your current limitless version, since you will be older and have different aspirations.</p>
+      <p>For me, my version would be a 29-year-old businessman. Having a big tech company. Working a few hours a day but spending more time with my wife and children. I would still train boxing but not competing professionally—maybe as a hobby or as a coach. I don't think I will be going to parties or wearing designer clothes much.</p>
+      <p>This is less painful than the first question since you are looking at a distant future which is not guaranteed, and which you feel you can control to some degree.</p>
+      <h2>3. How can I turn my current life into my ideal life?</h2>
+      <p>This question requires you to come back into reality and accept your current life with all its limitations. Accept that you cannot live your version of an ideal life now, but you can live your ideal life in the next ten years. You need to work backward from your ideal life in ten years to come to your current life.</p>
+      <p>Now ask yourself: how should my current life look so that I can be able to live my ideal life in the next ten years?</p>
+      <p>Define clearly the activities and the routine you should have. That becomes your ideal life.</p>
+      <p>For me, it involves learning programming languages and building tools, boxing training, reading books, and learning about entrepreneurship. I mapped this into a one-year master plan and narrowed it down to a daily system. And this allows me to live my ideal life now because I know I'm building towards something.</p>
+      <p>It has basically allowed me to become limitless within my current limitations.</p>
+      <h2>Happiness and Meaning</h2>
+      <p>This framework doesn't mean that I'm usually smiling during morning runs, writing code, or getting hit during sparring. But I no longer view these as suffering or a burden I have to carry. I see them as actions aligned with a particular goal. This also requires frequent reviews to ensure your actions are still aligned with your goals. Once you do this, it also helps you not get disappointed when you don't see results early on.</p>
+      <p>For me, looking at myself in the mirror every evening knowing that I did everything in the best possible way—it's priceless.</p>
+    `
+  },
+  {
     slug: 'building-my-first-ai-agent-a-habit-tracking-system',
     title: 'Building My First AI Agent: A Habit Tracking System',
     topic: 'Building',
