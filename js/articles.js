@@ -13,6 +13,36 @@
 
 var ARTICLES = [
   {
+    slug: 'boxing-so-far',
+    title: 'Boxing So Far',
+    topic: 'Boxing',
+    date: 'Feb 28, 2026',
+    readTime: '5 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/boxing-so-far',
+    publication: 'deliberately-becoming',
+    excerpt: 'I started boxing in January this year. Not exactly as part of a New Year\'s resolution, since I had wanted to start as early as November. January just happened to be more favorable.',
+    body: `
+      <h2>Starting the Journey</h2>
+      <p>I started boxing in January this year. Not exactly as part of a New Year's resolution, since I had wanted to start as early as November. January just happened to be more favorable. I had just quit my sales job to focus on building my virtual assistant skills and start freelancing. With only four hours of study per day planned, I had more time to dedicate to boxing.</p>
+      <p>Starting boxing was a huge achievement. Even though I had written it in my one-year master plan, doing a combat sport felt like a far-fetched dream. Something for a select group of people which I didn't think I belonged to. I began by asking AI if I could train online through YouTube. It said it was possible, so in December, I subscribed to boxing channels and downloaded videos. I trained in the house for one week then quit once it felt boring and I felt no progress, there was also no feedback. After quitting sales, I had savings set aside specifically for boxing. I researched gyms, visited them, consulted around, and finally found the most affordable one for me. After paying the membership fee—the only cost required—I could hardly believe I was finally starting. My first session was on January 3rd.</p>
+      <h2>The Brutal Beginning</h2>
+      <p>The first few weeks were brutal. On my first day, while others sparred, I was sent to a corner to practice my form. I felt embarrassingly insignificant compared to the other fighters. Having no prior experience in any martial art, I had to start from square zero, with poor form and a shattered ego.</p>
+      <p>It wasn't that the others were too good— of course they had trained for a long time—it was just that my form was so bad that even being average seemed impossible. I felt like quitting, but I reminded myself that no one starts perfect, and even skilled boxers had once been in my position. So, I continued.</p>
+      <h2>Breakthrough on the Bag</h2>
+      <p>After three weeks, the coach promoted me to practice on the bag, just hitting it. That felt like a breakthrough. Practicing form and hitting the bag are completely different sensations. When hitting the bag, you feel confidence. You feel the impact of your punches. That's also when ego starts to develop, because the bag doesn't hit back. The more you hit it, the more capable you feel. I began to feel confident, even ready for confrontation, thinking I was a good fighter.</p>
+      <h2>The Reality of Sparring</h2>
+      <img src="../assets/articles/boxing-so-far.webp" alt="Boxing sparring session" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <p>Then came my first sparring session, and my ego was shattered again. Hitting the bag doesn't punish mistakes. Sparring does. Every slip is met with a counterpunch. I was dominated. I took a lot of punches, landed very few and the rounds just felt like survival. Thats when I realized just how far I had to go.</p>
+      <p>After that session, I returned to the bag to correct my form. One week later, I told the coach I was ready to spar again. Eventually, he randomly selected me to spar. I still got hit a lot, got corrected by my sparring partners, I still wasn't perfect. I continued sparring weekly, knowing that I was going to get hit each session. Sometimes, the hits were intense enough that I considered skipping training, especially since I used to move back too much or even close my eyes during combinations. Once again I felt like quitting. But I kept going.</p>
+      <h2>How I win sparring sessions nowadays</h2>
+      <p>Nowadays, I still spar and still get hit, although not as much as before. I don't win sparring by dominating my opponent, but I win in a different way. I decided that each session would focus on improving one specific thing. My sparring partners are experienced boxers who have competed for years, so the goal is not to prove myself but to learn.</p>
+      <p>I started with keeping my eyes open during punches. The day I managed that, I "won" the session. Next, I focused on movement—slipping to the side instead of stepping back. When I managed that, I won again. Every session now leaves me with either a small victory or feedback to improve.</p>
+      <p>I'm grateful for the opportunity to fight boxers who are better than me and improve one thing every day.</p>
+      <h2>Boxing So Far</h2>
+      <p>That's boxing so far. It's been a journey of brutal beginnings, small breakthroughs, shattered ego, and gradual victories. Each session teaches me something new, and every day, I feel a little closer to the fighter I want to become.</p>
+    `
+  },
+  {
     slug: 'what-i-learned-from-the-brain-that-changes-itself',
     title: 'What I Learned from The Brain That Changes Itself by Norman Doidge',
     topic: 'Books',
