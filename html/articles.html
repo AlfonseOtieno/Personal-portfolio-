@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Articles by Alfonse Otieno on growth, discipline, coding, and building systems that work.">
-<title>Articles — Alfonse Otieno</title>
+<meta name="description" content="Articles by Alfonse Otieno — published on Substack, mirrored here. Discipline, building, book reflections, and honest documentation.">
+<title>Articles &mdash; Alfonse Otieno</title>
+<link rel="icon" type="image/png" href="https://alfonseotieno.github.io/favicon.png">
+<meta name="theme-color" content="#F73859">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -18,64 +21,88 @@
     <a class="nav-logo" href="index.html">Alfonse Otieno</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="articles.html">Articles</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="quotes.html">Quotes</a></li>
       <li><a href="progress.html">Progress</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="articles.html">Articles</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div style="display:flex;align-items:center;gap:0.75rem;">
-      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-        <span id="theme-icon">🌙</span>
-      </button>
-      <button class="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
-  <a href="articles.html">Articles</a>
+  <a href="about.html">About</a>
   <a href="quotes.html">Quotes</a>
   <a href="progress.html">Progress</a>
   <a href="projects.html">Projects</a>
-  <a href="about.html">About</a>
+  <a href="articles.html">Articles</a>
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- SINGLE ARTICLE VIEW — sits at top, hidden by default -->
-<div id="article-single" class="hidden"></div>
-
-<!-- ARTICLE LIST VIEW -->
-<div id="article-list">
+<!-- ARTICLES LIST VIEW -->
+<div id="articles-list-view">
   <div class="container">
     <div class="page-header">
       <h1>Articles</h1>
-      <p>Thoughts on growth, discipline, coding, and building systems that work.</p>
-    </div>
-    <div class="articles-grid" id="articles-grid">
-      <!-- Rendered by articles.js -->
+      <p>Every article published first on Substack, then mirrored here. A permanent record of how I was thinking at every stage.</p>
     </div>
 
-    <!-- BOTTOM CTA — shown after all articles -->
-    <div class="articles-subscribe-cta">
-      <div class="articles-subscribe-inner">
-        <span class="articles-subscribe-label">✍️ New articles every week</span>
-        <h2>I write twice a week documenting my journey</h2>
-        <p>Discipline experiments, lessons from books, coding progress, and honest reflections from a 19-year-old building himself from the ground up. Every article is free.</p>
-        <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-primary">
-          Subscribe to My Substack
-        </a>
+    <!-- Publication filter -->
+    <div class="pub-filter-section">
+      <p class="pub-filter-title">Filter by Publication</p>
+      <div class="pub-filter-buttons">
+        <button class="pub-filter-btn active" data-pub="all">All Articles</button>
+        <button class="pub-filter-btn" data-pub="deliberately-becoming">Deliberately Becoming</button>
+        <button class="pub-filter-btn" data-pub="code-system">Code &amp; System</button>
+      </div>
+      <div class="pub-descriptions">
+        <div class="pub-desc-item">
+          <h4>Deliberately Becoming</h4>
+          <p>Discipline, systems, the search for meaning, and lessons from books. Philosophy that actually changes how you act.</p>
+        </div>
+        <div class="pub-desc-item">
+          <h4>Code &amp; System</h4>
+          <p>What I build, how I build it, and what breaks along the way. Technical writing for people who want to understand the process.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Articles grid — filled by articles.js -->
+    <div class="articles-grid" id="articles-grid"></div>
+
+    <!-- Bottom CTA -->
+    <div class="articles-cta">
+      <div class="articles-cta-text">
+        <h3>I write on Substack.</h3>
+        <p>Two publications &mdash; personal growth and technical building. Every article is free, always.</p>
+      </div>
+      <div class="articles-cta-actions">
+        <a href="https://deliberatelybecoming.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Subscribe</a>
       </div>
     </div>
   </div>
 </div>
 
+<!-- SINGLE ARTICLE VIEW — shown when an article is opened -->
+<div id="articles-single-view" class="hidden"></div>
+
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <p>© 2026 Alfonse Otieno. All rights reserved.</p>
+    <div class="footer-inner">
+      <span class="footer-name">Alfonse Otieno</span>
+      <span class="footer-since">Portfolio started 2026 &mdash; A lifetime project</span>
+      <div class="footer-ctas">
+        <a href="articles.html" class="btn btn-secondary btn-sm">Read Articles</a>
+        <a href="projects.html" class="btn btn-secondary btn-sm">View Projects</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Me</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Alfonse Otieno. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 

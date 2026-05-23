@@ -3,10 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>About — Alfonse Otieno</title>
+<meta name="description" content="About Alfonse Otieno — the full story. Who he is, where he started, and what he is building toward.">
+<title>About &mdash; Alfonse Otieno</title>
+<link rel="icon" type="image/png" href="https://alfonseotieno.github.io/favicon.png">
+<meta name="theme-color" content="#F73859">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -17,73 +21,208 @@
     <a class="nav-logo" href="index.html">Alfonse Otieno</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="articles.html">Articles</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="quotes.html">Quotes</a></li>
       <li><a href="progress.html">Progress</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="articles.html">Articles</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div style="display:flex;align-items:center;gap:0.75rem;">
-      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-        <span id="theme-icon">🌙</span>
-      </button>
-      <button class="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
-  <a href="articles.html">Articles</a>
+  <a href="about.html">About</a>
   <a href="quotes.html">Quotes</a>
   <a href="progress.html">Progress</a>
   <a href="projects.html">Projects</a>
-  <a href="about.html">About</a>
+  <a href="articles.html">Articles</a>
   <a href="contact.html">Contact</a>
 </div>
 
+<!-- ABOUT HERO -->
 <div class="container">
-  <div class="section">
-    <div class="about-grid">
-
-      <div class="about-img-wrap">
-        <img src="../assets/alfonse.png" alt="Alfonse Otieno" class="about-img" />
-      </div>
-
-      <div class="about-content">
-        <h1>Alfonse Otieno</h1>
-        <p class="about-tagline">Developer in progress. Self-directed learner. Builder.</p>
-        <p>I am a 19-year-old based in Kenya, building a future in tech through consistent, deliberate learning. I document my journey publicly — the projects, the books, the lessons, and the progress.</p>
-        <p>This website is my personal archive. It reflects my commitment to honesty, consistency, and long-term self-mastery over short-term performance. I don't publish to appear impressive — I publish to stay accountable.</p>
-        <p>My current focus is frontend development — learning HTML, CSS, and JavaScript — while building projects that solve real problems. Alongside code, I write about growth, discipline, and systems thinking.</p>
-
-        <div class="about-values">
-          <h3>What I'm working on</h3>
-          <ul class="values-list">
-            <li>Learning JavaScript deeply</li>
-            <li>Building real projects</li>
-            <li>Writing consistently</li>
-            <li>Reading and applying books</li>
-            <li>Developing discipline systems</li>
-            <li>Documenting the journey</li>
-          </ul>
-        </div>
-
-        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
-          <a href="contact.html" class="btn btn-primary">Contact Me</a>
-          <a href="https://alfonseotieno.substack.com" target="_blank" rel="noopener" class="btn btn-secondary">Read on Substack</a>
-        </div>
-      </div>
-
+  <div class="about-hero">
+    <div>
+      <img
+        src="../assets/alfonse.png"
+        alt="Alfonse Otieno"
+        class="about-img"
+        onerror="this.style.display='none'"
+      />
+    </div>
+    <div class="about-content">
+      <h1>Alfonse Otieno</h1>
+      <p class="about-tagline">Developer. Writer. Boxer. Builder.</p>
     </div>
   </div>
 </div>
 
+<!-- THE STORY -->
+<div class="container">
+  <div class="about-story">
+    <span class="section-eyebrow">The Story</span>
+    <h2>Where I started, what I decided, and where I am going.</h2>
+
+    <p>
+      I finished high school in November 2025. Most of my peers left with one plan: find a job, earn money,
+      build stability. That is a rational plan. I understood it, and I respected it. But it was not my plan.
+    </p>
+
+    <p>
+      I left school with a different kind of urgency. Not urgency about money &mdash; urgency about becoming.
+      I had watched people spend their twenties waiting for the right time to do the things they actually
+      wanted to do. The right time never came. I decided early that I was not going to wait.
+    </p>
+
+    <div class="about-pull">
+      I had a window of time that most people do not get &mdash; a window before the full weight of survival
+      lands on you. I made a decision to use that window to build the most important thing: myself.
+    </div>
+
+    <p>
+      In December 2025, I tried sales. Field work, door-to-door, results-based pay. I was terrible at it.
+      I quit after one month and treated it as feedback, not failure. It told me something: I was better
+      suited to building things than selling them. That month pointed me in a direction.
+    </p>
+
+    <p>
+      In January 2026, two things happened simultaneously. I started training boxing at Ongata Rongai Boxing Club,
+      and I started learning how to code. I had studied computer science in high school, but formal education
+      had never given me the feeling of actually building something. I wanted to build.
+    </p>
+
+    <p>
+      I started with a virtual assistant course in January &mdash; one month, foundational remote work skills.
+      Then I pivoted into web development. HTML in February. CSS. JavaScript. Full-stack development within
+      two months. By April 2026, I had five live, deployed tools on the internet. Built from scratch,
+      independently, with no team and no bootcamp.
+    </p>
+
+    <p>
+      Alongside the building, I started writing. I launched two Substack publications in February 2026:
+      <em>Deliberately Becoming</em> &mdash; on discipline, systems, and the search for meaning &mdash;
+      and <em>Code &amp; System</em> &mdash; on what I build, how I build it, and what breaks along the way.
+      Writing is not a hobby for me. It is how I think. It forces clarity. Every article is a commitment
+      to understand something well enough to explain it.
+    </p>
+
+    <p>
+      I also read. Not to collect books, but to apply them. Every book I finish leaves something that changes
+      how I act &mdash; not how I think in theory, but what I actually do the next day. The books I read are
+      recorded on the Progress page, along with what I took from them and how I applied it.
+    </p>
+
+    <div class="about-pull">
+      This portfolio is the record of all of it. Not just the wins. The failed interview, the difficult months,
+      the projects I abandoned and the ones I shipped. The whole arc.
+    </div>
+
+    <p>
+      I am not trying to look impressive. I am trying to document accurately. There is a version of this
+      portfolio I could build that only shows the highlights &mdash; the five live tools, the articles,
+      the progress. That version would be a lie by omission. The real story includes the sales job I quit,
+      the marathon training runs that hurt, the evenings when the code did not work and I did not know why.
+    </p>
+
+    <p>
+      That is what this portfolio is. A record that is honest, detailed, and permanent. Something I can
+      open in ten years and see the full arc of who I was becoming and how I got there. Something that
+      shows not just what I built, but who I was while building it.
+    </p>
+
+    <p>
+      The goal is not to arrive somewhere. The goal is to keep moving and document every step.
+    </p>
+
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+      <a href="projects.html" class="btn btn-primary">See What I Build</a>
+      <a href="articles.html" class="btn btn-secondary">Read What I Write</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOUR PILLARS -->
+<section class="pillars-section">
+  <div class="container">
+    <span class="section-eyebrow">What I Am Doing</span>
+    <h2>The Four Pillars</h2>
+    <p class="pillars-subtitle">Four areas I am developing simultaneously. Each one feeds the others.</p>
+    <div class="pillars-grid">
+
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="fa-solid fa-hand-fist"></i></div>
+        <h3>Boxing</h3>
+        <p>
+          Boxing is the discipline that coding cannot teach me. When I am in the ring, there is no algorithm
+          to fall back on. There is only what I have trained, and whether I have trained it enough.
+          The sport teaches me that preparation is real &mdash; that what you put in before the moment
+          determines what you can do in the moment. It also teaches me to absorb failure without stopping.
+          Every session I get hit, I learn. Every session I get tired, I learn. The ring is the most
+          honest feedback loop I have ever been in.
+        </p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Building</h3>
+        <p>
+          I build tools because I believe that real understanding only comes from making things. I can read
+          documentation for a week and understand very little. I can spend one day building something broken
+          and understand everything. Every project I ship teaches me something I could not have learned
+          any other way. My philosophy on software is simple: build things that solve real problems, ship
+          them before they are perfect, and iterate based on real feedback. The goal is never the perfect
+          tool &mdash; it is the working one.
+        </p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h3>Reading</h3>
+        <p>
+          I read because I am trying to stand on the shoulders of people who thought about things more
+          deeply than I have time to think about from scratch. Every book I finish is a conversation with
+          someone who spent years on a single idea. I look for books that change how I act, not just how
+          I feel. The measure of a book for me is not whether I found it interesting &mdash; it is whether
+          I did something differently the week after I read it. Reading, building, and boxing are all the
+          same discipline applied to different materials.
+        </p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <h3>Writing</h3>
+        <p>
+          I write publicly because privacy creates no accountability. When I write on Substack, I am
+          making a commitment. I am saying: this is what I think, this is what I did, this is what happened.
+          I cannot revise history when the history is public. Writing forces me to understand my own
+          experience clearly enough to explain it to someone else. What I cannot explain, I do not
+          understand. The two publications I run &mdash; <em>Deliberately Becoming</em> and
+          <em>Code &amp; System</em> &mdash; represent the two sides of what I am doing: becoming someone
+          and building things.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <p>© 2026 Alfonse Otieno. All rights reserved.</p>
+    <div class="footer-inner">
+      <span class="footer-name">Alfonse Otieno</span>
+      <span class="footer-since">Portfolio started 2026 &mdash; A lifetime project</span>
+      <div class="footer-ctas">
+        <a href="articles.html" class="btn btn-secondary btn-sm">Read Articles</a>
+        <a href="projects.html" class="btn btn-secondary btn-sm">View Projects</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Me</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Alfonse Otieno. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 

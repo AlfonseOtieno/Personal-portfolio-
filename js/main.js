@@ -1,48 +1,19 @@
 /* ============================================================
    ALFONSE OTIENO — PORTFOLIO
-   js/main.js — Global JavaScript (nav, theme, mobile menu)
+   js/main.js — Global JavaScript
+   Handles: nav, mobile menu, active links, home page rendering
    ============================================================ */
-
-// ── THEME TOGGLE ─────────────────────────────────────────────
-(function () {
-  const saved = localStorage.getItem('theme');
-  if (saved === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
-})();
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Apply saved theme icon
-  const saved = localStorage.getItem('theme');
-  const icon = document.getElementById('theme-icon');
-  if (icon && saved === 'dark') icon.textContent = '☀️';
-
-  // Theme toggle button
-  const toggleBtn = document.querySelector('.theme-toggle');
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', function () {
-      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      if (isDark) {
-        document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-        if (icon) icon.textContent = '🌙';
-      } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        if (icon) icon.textContent = '☀️';
-      }
-    });
-  }
-
   // ── MOBILE MENU ─────────────────────────────────────────────
-  const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
+  var hamburger   = document.getElementById('hamburger');
+  var mobileMenu  = document.getElementById('mobile-menu');
+
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', function () {
       mobileMenu.classList.toggle('open');
     });
-    // Close on link click
     mobileMenu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         mobileMenu.classList.remove('open');
@@ -50,31 +21,65 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ── FEATURED PROJECT — CASE STUDY TOGGLE ────────────────────
-  const fpToggle = document.querySelector('.fp-toggle-btn');
-  const fpCaseStudy = document.querySelector('.fp-case-study');
-  if (fpToggle && fpCaseStudy) {
-    fpToggle.addEventListener('click', function () {
-      const isOpen = fpToggle.getAttribute('aria-expanded') === 'true';
-      if (isOpen) {
-        fpCaseStudy.hidden = true;
-        fpToggle.setAttribute('aria-expanded', 'false');
-        fpToggle.innerHTML = 'Read Case Study <span class="fp-arrow">↓</span>';
-      } else {
-        fpCaseStudy.hidden = false;
-        fpToggle.setAttribute('aria-expanded', 'true');
-        fpToggle.innerHTML = 'Close Case Study <span class="fp-arrow">↓</span>';
-      }
-    });
-  }
-
-  // ── ACTIVE NAV LINK ──────────────────────────────────────────
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  // ── ACTIVE NAV LINK ─────────────────────────────────────────
+  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(function (a) {
-    const href = a.getAttribute('href');
-    if (href === currentPage) {
+    if (a.getAttribute('href') === currentPage) {
       a.classList.add('active');
     }
   });
+
+  // ── HOME: RENDER LATEST ARTICLE ────────────────────────────
+  var articleSlot = document.getElementById('latest-article-slot');
+  if (articleSlot && typeof ARTICLES !== 'undefined' && ARTICLES.length > 0) {
+    var a = ARTICLES[0];
+    var pubClass = a.publication === 'deliberately-becoming' ? 'pub-db' : 'pub-cs';
+    var pubLabel = a.publication === 'deliberately-becoming' ? 'Deliberately Becoming' : 'Code &amp; System';
+    articleSlot.innerHTML =
+      '<div class="article-preview-card" onclick="window.location.href=\'articles.html#' + a.slug + '\'">' +
+        '<span class="article-pub-badge ' + pubClass + '">' + pubLabel + '</span>' +
+        '<h3>' + a.title + '</h3>' +
+        '<p class="excerpt">' + a.excerpt + '</p>' +
+        '<div class="article-meta-row">' +
+          '<span>' + a.date + '</span>' +
+          '<span>' + a.readTime + '</span>' +
+          '<span>' + a.topic + '</span>' +
+        '</div>' +
+        '<span class="article-read-more">Read article <i class="fa-solid fa-arrow-right"></i></span>' +
+      '</div>';
+  }
+
+  // ── HOME: RENDER FEATURED PROJECT ──────────────────────────
+  var projectSlot = document.getElementById('featured-project-slot');
+  if (projectSlot && typeof PROJECTS !== 'undefined' && PROJECTS.length > 0) {
+    var p = PROJECTS[0];
+    var stackHtml = p.stack.slice(0, 5).map(function (s) {
+      return '<span class="stack-tag">' + s + '</span>';
+    }).join('');
+    var badgeClass = p.status === 'Archived'
+      ? 'project-status-badge status-archived'
+      : (p.status === 'In Progress' ? 'project-status-badge status-progress' : 'project-status-badge');
+
+    projectSlot.innerHTML =
+      '<div class="featured-project-card">' +
+        '<div class="fp-top">' +
+          '<div class="fp-preview">' +
+            '<img src="../assets/portfolio/' + p.image + '" alt="' + p.title + ' preview" ' +
+              'onerror="this.parentNode.innerHTML=\'<div class=fp-img-placeholder>No preview available</div>\'" />' +
+          '</div>' +
+          '<div class="fp-info">' +
+            '<p class="fp-label">Latest Project</p>' +
+            '<h3>' + p.title + '</h3>' +
+            '<span class="' + badgeClass + '">' + p.status + '</span>' +
+            '<p>' + p.summary + '</p>' +
+            '<div class="fp-stack">' + stackHtml + '</div>' +
+            '<div class="fp-actions">' +
+              (p.liveUrl ? '<a href="' + p.liveUrl + '" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Site</a>' : '') +
+              '<a href="projects.html#' + p.slug + '" class="btn btn-secondary btn-sm">View Case Study</a>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
 
 });

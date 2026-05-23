@@ -3,10 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Progress — Alfonse Otieno</title>
+<meta name="description" content="Alfonse Otieno's progress — honest metrics, the full timeline, and every book read.">
+<title>Progress &mdash; Alfonse Otieno</title>
+<link rel="icon" type="image/png" href="https://alfonseotieno.github.io/favicon.png">
+<meta name="theme-color" content="#F73859">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -17,271 +21,164 @@
     <a class="nav-logo" href="index.html">Alfonse Otieno</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="articles.html">Articles</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="quotes.html">Quotes</a></li>
       <li><a href="progress.html">Progress</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="articles.html">Articles</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div style="display:flex;align-items:center;gap:0.75rem;">
-      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-        <span id="theme-icon">🌙</span>
-      </button>
-      <button class="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
-  <a href="articles.html">Articles</a>
+  <a href="about.html">About</a>
   <a href="quotes.html">Quotes</a>
   <a href="progress.html">Progress</a>
   <a href="projects.html">Projects</a>
-  <a href="about.html">About</a>
+  <a href="articles.html">Articles</a>
   <a href="contact.html">Contact</a>
 </div>
 
 <div class="container">
   <div class="page-header">
     <h1>Progress</h1>
-    <p>Honest, real metrics. No inflation. Just what has actually happened so far.</p>
+    <p>Honest, real metrics. No inflation. Just what has actually happened, and the movement behind it.</p>
   </div>
 
-  <!-- STATS -->
+  <!-- STATS COUNTERS — auto-populated by progress.js -->
   <div class="stats-grid">
     <div class="stat-card">
-      <div class="stat-number" data-target="3" id="stat-books">0</div>
-      <div class="stat-label">Books Read</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number" data-target="3" id="stat-langs">0</div>
-      <div class="stat-label">Programming Languages Learned</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number" data-target="16" id="stat-articles">0</div>
+      <div class="stat-icon"><i class="fa-solid fa-pen-nib"></i></div>
+      <div class="stat-number" id="stat-articles">0</div>
       <div class="stat-label">Articles Written</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number" data-target="4" id="stat-projects">0</div>
+      <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+      <div class="stat-number" id="stat-projects">0</div>
       <div class="stat-label">Projects Built</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fa-solid fa-book-open"></i></div>
+      <div class="stat-number" id="stat-books">0</div>
+      <div class="stat-label">Books Read</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+      <div class="stat-number" id="stat-subscribers">0</div>
+      <div class="stat-label">Substack Subscribers</div>
     </div>
   </div>
 
   <!-- TIMELINE -->
+  <span class="section-eyebrow">The Journey</span>
   <h2 class="section-title" style="margin-bottom:0.5rem;">Timeline</h2>
   <div class="divider"></div>
-  <div class="timeline" style="margin-bottom:5rem;">
-    
+
+  <div class="timeline" id="timeline-list" style="margin-bottom:1.5rem;">
+
     <div class="timeline-item">
       <div class="timeline-date">April 2026</div>
-      <div class="timeline-event">Decided to start freelancing</div>
-      <div class="timeline-desc">Decided to start freelancing so that I can monetise from my current system. Created freelancer account in Upwork and Freelancer.com. Bidding daily while wating to land my first client.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">March 2026</div>
-      <div class="timeline-event">Built my first AI powered project</div>
-      <div class="timeline-desc">Built myself an AI powered code reviewer which would help in detecting problems in code and also reccomending possible solutions.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-event"March 2026</div>
-      <div class="timeline-event">Built my portfolio website</div>
-      <div class="timeline-desc">Designed my own personal portfolio website. This was my first real world project apart from those from coding tutorials.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">March 2026</div>
-      <div class="timeline-event">Decided to integrate AI into my system</div>
-      <div class="timeline-desc">Tis wasn't an easy choice for me since I was not a big fan of the rise of artificial intelligence. I accepted the fact that AI is a powerful tool and a force multiplier. As long as you dont use it as a substitute for human intelligence.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">February 2026</div>
-      <div class="timeline-event">Started writing substack articles</div>
-      <div class="timeline-desc">I started writing articles on substack. This was mostly inspired by reading James Clear newsletters. I decided to also share my journey and lessons learnt along the way.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">February 2026</div>
-      <div class="timeline-event">Started Learning Web Development</div>
-      <div class="timeline-desc">After finishing my virtual assistant course. I decided to learn web development since it allowed me to solve real world problems without necessarily having been emplyed. I started with learning HTML.</div>
-    </div>
-    
-   <div class="timeline-item">
-      <div class="timeline-event"January 2026</div>
-      <div class="timeline-event">Started Training boxing</div>
-      <div class="timeline-desc">After quitting sales I now had more time to start training boxing.  I joined Ongata Rongai Boxing Club and started training boxing.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">January 2026</div>
-      <div class="timeline-event">Learnt how to become a virtual assistant</div>
-      <div class="timeline-desc">I decided to do remote jobs so that I would be able to execute my one year master plan while earning money. I spent one month training to become a virtual assistant.</div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">January 2026</div>
-      <div class="timeline-event">Quit my sales job</div>
-      <div class="timeline-desc">After struggling with sales for one month, i decided to quit sales.  I decided to become a virtual assistant.</div>
+      <div class="timeline-event">Started freelancing</div>
+      <div class="timeline-desc">Created accounts on Upwork and Freelancer.com. Bidding daily while continuing to build and ship projects. Learning what the market actually wants.</div>
     </div>
 
     <div class="timeline-item">
+      <div class="timeline-date">March &ndash; April 2026</div>
+      <div class="timeline-event">Shipped four AI-integrated tools</div>
+      <div class="timeline-desc">Built and deployed CodeReview AI, NeuroPlex, Inkdraft, and Athena. Each project integrates the Gemini API with serverless backends on Vercel. Also built Apela, a full-stack habit tracking agent using Next.js, TypeScript, Supabase, and OAuth 2.0.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">March 2026</div>
+      <div class="timeline-event">Built portfolio website</div>
+      <div class="timeline-desc">Designed and built the first version of this portfolio from scratch using pure HTML, CSS, and JavaScript. No frameworks, no templates. The portfolio itself became one of the five shipped projects.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">March 2026</div>
+      <div class="timeline-event">Integrated AI into workflow</div>
+      <div class="timeline-desc">Accepted that AI is a force multiplier, not a substitute. Started using the Gemini and Anthropic APIs deliberately across all projects, with AI assisting rather than replacing.</div>
+    </div>
+
+    <!-- Items below are hidden by default; show more reveals them -->
+    <div class="timeline-item timeline-hidden">
+      <div class="timeline-date">February 2026</div>
+      <div class="timeline-event">Started writing on Substack</div>
+      <div class="timeline-desc">Launched two publications: Deliberately Becoming (discipline, systems, meaning) and Code &amp; System (building, technical lessons, process). Publishing twice a week.</div>
+    </div>
+
+    <div class="timeline-item timeline-hidden">
+      <div class="timeline-date">February 2026</div>
+      <div class="timeline-event">Started learning web development</div>
+      <div class="timeline-desc">Began with HTML after finishing a virtual assistant course. Progressed through CSS and JavaScript into full-stack development within two months. Zero to deployed in sixty days.</div>
+    </div>
+
+    <div class="timeline-item timeline-hidden">
+      <div class="timeline-date">January 2026</div>
+      <div class="timeline-event">Started training boxing</div>
+      <div class="timeline-desc">Joined Ongata Rongai Boxing Club and began training consistently. Target: compete in first bout by end of 2026. The discipline of the gym transferred directly into the discipline of the desk.</div>
+    </div>
+
+    <div class="timeline-item timeline-hidden">
+      <div class="timeline-date">January 2026</div>
+      <div class="timeline-event">Completed virtual assistant training</div>
+      <div class="timeline-desc">Spent one month learning remote work skills and foundational computer literacy. Pivoted to web development after recognising the greater long-term leverage in building rather than assisting.</div>
+    </div>
+
+    <div class="timeline-item timeline-hidden">
       <div class="timeline-date">December 2025</div>
-      <div class="timeline-event">Started Sales</div>
-      <div class="timeline-desc">I became a field sales agent for zuku home fibre. Was very ambitious to get money. Worked my hardest but I struggled with making sales.</div>
+      <div class="timeline-event">Tried sales, learned from failure</div>
+      <div class="timeline-desc">Worked as a field sales agent for Zuku Home Fibre. Struggled to close. Quit after one month and treated it as feedback: I am better suited to building things than selling them. That clarity was worth the month.</div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item timeline-hidden">
       <div class="timeline-date">November 2025</div>
-      <div class="timeline-event">Did my KCSE examination</div>
-      <div class="timeline-desc">Finished my high school education eager to start my next chapter in life.</div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">November 2025</div>
-      <div class="timeline-event">Created one year master plan</div>
-      <div class="timeline-desc">Designed a system for radical self improvement within the year 2026 after finishing my high school studies.</div>
+      <div class="timeline-event">Finished KCSE examinations</div>
+      <div class="timeline-desc">Completed high school education. Built a one-year master plan for radical self-improvement across code, writing, fitness, and discipline. The plan was the starting gun.</div>
     </div>
 
   </div>
 
-  <!-- BOOKS -->
+  <div class="timeline-toggle-wrap">
+    <button class="timeline-toggle" id="timeline-toggle">
+      <i class="fa-solid fa-chevron-down" id="timeline-toggle-icon"></i>
+      <span id="timeline-toggle-label">Show more</span>
+    </button>
+  </div>
+
+  <!-- BOOKS READ — rendered by progress.js from BOOKS array -->
+  <span class="section-eyebrow" style="margin-top:2rem;display:block;">Intellectual Record</span>
   <h2 class="section-title" style="margin-bottom:0.5rem;">Books Read</h2>
   <div class="divider"></div>
-  <div class="books-grid">
-
-    <div class="book-card">
-      <div class="book-cover-placeholder">
-        <img
-          src="https://covers.openlibrary.org/b/isbn/0143113100-M.jpg"
-          alt="The Brain That Changes Itself cover"
-          class="book-cover-img"
-          onerror="this.parentElement.innerHTML='📖'"
-        >
-      </div>
-      <div class="book-completed">Completed: January 2025</div>
-      <h3 class="book-title">The Brain That Changes Itself</h3>
-      <p class="book-desc">Norman Doidge explores the science of neuroplasticity — how the brain can rewire itself through experience and deliberate practice.</p>
-      <ul class="book-takeaways">
-        <li>The brain is not fixed — it reshapes itself based on what you repeatedly do.</li>
-        <li>Deliberate, focused practice drives structural change in the brain.</li>
-        <li>Habits carved through repetition become increasingly automatic over time.</li>
-      </ul>
-      <div class="book-applied"><strong>What I applied:</strong> Used this to commit to daily coding sessions, treating skill-building as a physical process of brain change, not just willpower.</div>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover-placeholder">
-        <img
-          src="https://covers.openlibrary.org/b/isbn/9780735211292-M.jpg"
-          alt="Atomic Habits cover"
-          class="book-cover-img"
-          onerror="this.parentElement.innerHTML='⚛️'"
-        >
-      </div>
-      <div class="book-completed">Completed: February 2025</div>
-      <h3 class="book-title">Atomic Habits</h3>
-      <p class="book-desc">James Clear's framework for building systems of small habits that compound into significant long-term results.</p>
-      <ul class="book-takeaways">
-        <li>Identity-driven habits outlast outcome-driven ones — become the person, not just the goal.</li>
-        <li>Make habits obvious, attractive, easy, and satisfying to reinforce them.</li>
-        <li>1% improvements are invisible daily but transformative over a year.</li>
-      </ul>
-      <div class="book-applied"><strong>What I applied:</strong> Rebuilt daily routines around identity — "I am a developer" rather than "I want to learn to code."</div>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover-placeholder">
-        <img
-          src="https://covers.openlibrary.org/b/isbn/9781455586691-M.jpg"
-          alt="Deep Work cover"
-          class="book-cover-img"
-          onerror="this.parentElement.innerHTML='🎯'"
-        >
-      </div>
-      <div class="book-completed">Completed: March 2025</div>
-      <h3 class="book-title">Deep Work</h3>
-      <p class="book-desc">Cal Newport makes the case for distraction-free, concentrated work as the defining skill of the knowledge economy.</p>
-      <ul class="book-takeaways">
-        <li>Depth of focus, not quantity of hours, produces the most valuable work.</li>
-        <li>Shallow work expands to fill time if you don't protect your schedule deliberately.</li>
-        <li>Embrace boredom — the ability to focus is trained, not innate.</li>
-      </ul>
-      <div class="book-applied"><strong>What I applied:</strong> Blocked 2–3 hour deep work sessions for coding and writing, removed phone during those windows.</div>
-    </div>
-
+  <div class="books-grid" id="books-grid">
+    <!-- Filled by progress.js -->
   </div>
 
-  <!-- GALLERY — uncomment this entire block when you have images/videos ready
+</div>
 
-  <h2 class="section-title" style="margin-top:5rem;margin-bottom:0.5rem;">Gallery</h2>
-  <div class="divider"></div>
-  <p class="section-subtitle">Photos and videos from training, building, and the journey.</p>
-
-  <div class="gallery-grid">
-
-    <div class="gallery-item gallery-video">
-      <video controls poster="" class="gallery-video-player">
-        <source src="gallery-video-1.mp4" type="video/mp4">
-        Your browser does not support video.
-      </video>
-      <div class="gallery-placeholder gallery-placeholder-video">
-        🎥 Replace gallery-video-1.mp4 with your video file
-      </div>
-    </div>
-
-    <div class="gallery-item gallery-image">
-      <img
-        src="gallery-image-1.jpg"
-        alt="Gallery image"
-        class="gallery-img"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-      >
-      <div class="gallery-placeholder gallery-placeholder-img">
-        📸 Replace gallery-image-1.jpg with your image file
-      </div>
-    </div>
-
-    <div class="gallery-item gallery-video">
-      <video controls poster="" class="gallery-video-player">
-        <source src="gallery-video-2.mp4" type="video/mp4">
-        Your browser does not support video.
-      </video>
-      <div class="gallery-placeholder gallery-placeholder-video">
-        🎥 Replace gallery-video-2.mp4 with your video file
-      </div>
-    </div>
-
-    <div class="gallery-item gallery-image">
-      <img
-        src="gallery-image-2.jpg"
-        alt="Gallery image"
-        class="gallery-img"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-      >
-      <div class="gallery-placeholder gallery-placeholder-img">
-        📸 Replace gallery-image-2.jpg with your image file
-      </div>
-    </div>
-
-  </div>
-  To add more: copy any gallery-item block above and change the filename
-
-  -->
-
-</div><!-- /container -->
-
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <p>© 2026 Alfonse Otieno. All rights reserved.</p>
+    <div class="footer-inner">
+      <span class="footer-name">Alfonse Otieno</span>
+      <span class="footer-since">Portfolio started 2026 &mdash; A lifetime project</span>
+      <div class="footer-ctas">
+        <a href="articles.html" class="btn btn-secondary btn-sm">Read Articles</a>
+        <a href="projects.html" class="btn btn-secondary btn-sm">View Projects</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Me</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Alfonse Otieno. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
 <script src="../js/main.js"></script>
+<script src="../js/articles.js"></script>
+<script src="../js/projects.js"></script>
 <script src="../js/progress.js"></script>
 </body>
 </html>

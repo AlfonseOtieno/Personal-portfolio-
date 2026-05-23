@@ -1,282 +1,280 @@
 /* ============================================================
    ALFONSE OTIENO — PORTFOLIO
-   projects.js — All project data + rendering logic
+   js/projects.js — All projects data + list/single view logic
 
    HOW TO ADD A NEW PROJECT:
-   1. Add a new object to the TOP of the PROJECTS array below
-   2. Give it a unique slug, fill in all fields
-   3. The projects page and home page featured project update automatically
+   1. Add a new object to the TOP of the PROJECTS array
+   2. Fill in all fields (see schema below)
+   3. The projects grid, home featured project, and the
+      projects-built counter on Progress all update automatically.
    ============================================================ */
 
-const PROJECTS = [
+var PROJECTS = [
   {
-  slug: 'athena',
-  title: 'Athena',
-  status: 'Live',
-  image: 'athena-preview.png', // add screenshot
-
-  stack: ['HTML', 'CSS', 'JavaScript', 'AI Integration'],
-
-  summary: 'A learning system built on active recall — transforming notes, code, and language study into interactive testing environments that prioritize memory, application, and feedback over passive consumption.',
-
-  liveUrl: 'https://athena-flame-five.vercel.app',
-  githubUrl: 'https://github.com/AlfonseOtieno/Athena',
-
-  caseStudy: {
-    problem: 'Most learning tools are built around passive consumption — reading, watching, and highlighting — which creates the illusion of understanding without actual retention. Learners struggle to recall and apply knowledge because they are not tested under real conditions.',
-
-    solution: 'Built Athena — a system centered on active recall and iteration. The platform includes three modes: Knowledge Mode (generate questions from notes or PDFs), Code Mode (learn by building inside a live code environment), and Language Mode (test and reinforce understanding through structured prompts). Instead of re-exposing users to information, Athena forces retrieval, correction, and application.',
-
-    challenges: 'Designing a system that enforces active recall without overwhelming the user was a key challenge. Balancing simplicity with depth across three different learning modes required clear structure and separation of concerns. Integrating AI in a way that generates useful, testable outputs — not just explanations — also required careful prompt design.',
-
-    learned: 'This project deepened my understanding of how people actually learn — not through exposure, but through retrieval and feedback. I learned how to design systems that force engagement rather than encourage passivity, and how to use AI as a tool for generating challenges instead of answers.'
-  }
-},
+    slug: 'athena',
+    title: 'Athena',
+    type: 'personal',
+    status: 'Live',
+    summary: 'An AI-powered research assistant that helps users research any topic deeply, synthesise information, and generate structured notes using the Gemini API.',
+    liveUrl: 'https://athena-flame-five.vercel.app',
+    githubUrl: 'https://github.com/AlfonseOtieno/Athena',
+    image: 'athena.png',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Gemini API', 'Vercel'],
+    problem: 'Researching a topic properly takes time. You have to search, read multiple sources, pull out the key ideas, and then synthesise them. Most people skip the synthesis step. Athena does it for you.',
+    solution: 'A web application that takes a research topic, queries the Gemini API for a structured deep-dive, and returns organised notes broken into key concepts, summary, and implications. Serverless backend on Vercel for API key security.',
+    challenges: 'The main challenge was prompt engineering &mdash; getting the Gemini model to return consistently structured output that could be parsed and rendered as formatted notes. I went through a dozen prompt iterations.',
+    learned: 'Learned how to engineer prompts for structured output, how to secure API keys using Vercel serverless functions, and how to design UI around AI-generated content that can vary in length unpredictably.',
+    date: 'April 2026'
+  },
   {
-  slug: 'inkdraft',
-  title: 'InkDraft',
-  status: 'Live',
-  image: 'inkdraft-preview.png', 
-  stack: ['HTML', 'CSS', 'JavaScript', 'OCR', 'AI Integration'],
-
-  summary: 'A writer-first platform that converts handwritten drafts into digital text while preserving the original voice, giving users full control over AI-assisted editing.',
-
-  liveUrl: 'https://inkdraft-a-writers-best-friend-abcbtej1y.vercel.app/',
-  githubUrl: 'https://github.com/AlfonseOtieno/Inkdraft--A-writers-best-friend',
-
-  caseStudy: {
-    problem: 'Writers who prefer pen and paper face friction when converting their work into digital format. Existing tools either act as simple scanners with no intelligence or AI systems that heavily rewrite text, often distorting the writer’s original voice and intent.',
-
-    solution: 'Built InkDraft — a system that allows users to scan or upload handwritten content, extract the text, and interact with it without losing authorship. The platform separates original writing from AI-generated versions, allowing users to compare, edit, and selectively adopt changes. Instead of replacing the writer, the AI acts as a controlled assistant that operates within user-defined prompts.',
-
-    challenges: 'The main challenge was balancing AI assistance with author control. Most AI systems are designed to optimize output, not preserve input. Designing a workflow where the original text remains untouched while still allowing meaningful AI interaction required careful separation of states and user actions. Handling OCR accuracy while maintaining readable output was also a key technical challenge.',
-
-    learned: 'This project reinforced the importance of building tools around user intent rather than automation for its own sake. I learned that preserving originality can be more valuable than generating new content. It also deepened my understanding of integrating OCR with AI workflows and designing interfaces that give users control instead of taking it away.'
-  }
-},
+    slug: 'inkdraft',
+    title: 'InkDraft',
+    type: 'personal',
+    status: 'Live',
+    summary: 'A writing assistant for people who struggle with blank pages. Takes a topic or idea and generates a structured first draft, then lets the writer build from there.',
+    liveUrl: 'https://inkdraft-a-writers-best-friend-abcbtej1y.vercel.app/',
+    githubUrl: 'https://github.com/AlfonseOtieno/Inkdraft--A-writers-best-friend',
+    image: 'inkdraft.png',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Gemini API', 'Vercel'],
+    problem: 'The hardest part of writing is starting. An empty document is one of the most paralyzing experiences for most people. Yet once they have a rough draft, editing and improving comes naturally.',
+    solution: 'InkDraft takes a writing topic or prompt and generates a full first-draft essay or article using the Gemini API. The output is styled, editable, and exportable. The goal is not to replace the writer but to remove the blank-page barrier.',
+    challenges: 'Balancing AI-generated content that actually sounds like a draft (imperfect, directional) rather than a polished final article. Users need something to push against, not something to submit as-is.',
+    learned: 'How to design prompts that produce intentionally rough output. Also learned about the psychology of writing tools &mdash; the tool has to feel like a collaborator, not a ghostwriter.',
+    date: 'March 2026'
+  },
   {
-  slug: 'neuroplex',
-  title: 'NeuroPlex',
-  status: 'Live',
-  image: 'neuroplex-preview.png', 
-  stack: ['HTML', 'CSS', 'JavaScript'],
-  summary: 'A cognitive training platform designed to improve focus, working memory, and learning speed using structured neuroplasticity exercises.',
-
-  liveUrl: 'https://alfonseotieno.github.io/NeuroPlex/',
-  githubUrl: 'https://github.com/AlfonseOtieno/NeuroPlex',
-
-  caseStudy: {
-    problem: 'Most people underestimate their brain’s ability to improve. Cognitive training is either too theoretical or reduced to simple games that don’t translate into real-world performance. There is no structured system that focuses on actual neuroplastic change rather than entertainment.',
-
-    solution: 'Built NeuroPlex — a structured cognitive training system based on neuroplasticity principles. The platform uses 13 carefully selected exercises targeting working memory, focus, and processing speed. Instead of over-optimizing for interactivity, the system prioritizes real cognitive adaptation, including offline exercises (pen and paper) to prevent users from simply getting better at the interface rather than improving actual mental performance.',
-
-    challenges: 'Balancing interactivity with real-world effectiveness was the main challenge. Many brain-training platforms rely heavily on gamification, which can lead to users optimizing for the game instead of actual cognitive improvement. I had to intentionally limit interactivity in some areas and design exercises that transfer beyond the screen. Structuring difficulty progression and incorporating feedback without overcomplicating the system was also a key challenge.',
-
-    learned: 'This project taught me how to design systems around principles rather than trends. I learned that effective cognitive training requires focus, feedback, and the right level of difficulty — not just engagement. It also strengthened my ability to translate abstract concepts like neuroplasticity into practical, usable tools.'
-  }
-},
+    slug: 'neuroplex',
+    title: 'NeuroPlex',
+    type: 'personal',
+    status: 'Live',
+    summary: 'An AI-powered learning tool that takes any concept you want to understand and explains it using the Feynman Technique &mdash; simply, with analogies, at multiple depth levels.',
+    liveUrl: 'https://alfonseotieno.github.io/NeuroPlex/',
+    githubUrl: 'https://github.com/AlfonseOtieno/NeuroPlex',
+    image: 'neuroplex.png',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Gemini API', 'GitHub Pages'],
+    problem: 'Most learning resources assume a knowledge base you may not have. When you look up a concept and don\'t understand the explanation, you have to look up everything inside the explanation. NeuroPlex fixes the entry point problem.',
+    solution: 'Input any concept, select a complexity level (child, student, adult, expert), and NeuroPlex returns an explanation tuned to that level using the Feynman approach &mdash; clear language, no jargon, real-world analogies.',
+    challenges: 'Ensuring the model actually adjusted depth levels meaningfully rather than just adding or removing technical words. Also handling edge cases like concepts with no real-world analogy.',
+    learned: 'Learned how to use system prompts to enforce output style and depth, and how to design a multi-level interface that doesn\'t feel complex to use.',
+    date: 'March 2026'
+  },
   {
-  slug: 'codereview-ai',
-  title: 'CodeReview AI',
-  status: 'Live',
-  image: 'codereview-preview.png', // add screenshot later
-  stack: ['HTML', 'CSS', 'JavaScript', 'Vercel Serverless', 'Anthropic API'],
-  summary: 'An AI-powered code review tool that analyzes HTML, CSS, and JavaScript and returns structured feedback with scores, issues, and fixes in seconds.',
-  liveUrl: 'https://codereview-ai-ten.vercel.app/',
-  githubUrl: 'https://github.com/AlfonseOtieno/codereview-ai',
-  caseStudy: {
-    problem: 'Beginner developers often don’t know what’s wrong with their code or how to improve it. Feedback is slow, inconsistent, or unavailable unless they ask someone more experienced.',
-    solution: 'Built a web app that lets users paste code and receive instant AI-powered reviews. The system uses a structured prompt and returns JSON with a score, categorized issues, and exact code fixes. A serverless function protects the API key and handles requests securely.',
-    challenges: 'Handling inconsistent AI responses was a major challenge. The model sometimes returned invalid JSON, so I had to implement cleaning and validation logic. I also had to design prompts carefully to enforce strict output structure.',
-    learned: 'This project taught me how to integrate external APIs, handle unreliable outputs, and design systems that enforce structure. It also deepened my understanding of backend logic using serverless functions, not just frontend development.'
-  }
-  
-},
+    slug: 'codereview-ai',
+    title: 'CodeReview AI',
+    type: 'personal',
+    status: 'Live',
+    summary: 'Paste any code snippet and get an instant AI code review: bugs, security issues, performance improvements, and style suggestions.',
+    liveUrl: 'https://codereview-ai-ten.vercel.app/',
+    githubUrl: 'https://github.com/AlfonseOtieno/codereview-ai',
+    image: 'codereview.png',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Gemini API', 'Vercel'],
+    problem: 'Code review is one of the most valuable feedback loops in software development, but most junior developers never get it. Without a senior on your team, you ship code with preventable bugs and never learn why.',
+    solution: 'A tool that takes a code snippet, detects the language, and returns a structured review covering: correctness, potential bugs, security issues (where applicable), performance, and style. Output is formatted for clarity.',
+    challenges: 'Getting the model to give genuinely useful, specific feedback rather than generic advice. The prompt engineering required context about the purpose of code review &mdash; not just "is this correct" but "what would a senior developer say".',
+    learned: 'How to write prompts that simulate expert roles. Also learned the difference between code that works and code that is defensible in review.',
+    date: 'March 2026'
+  },
   {
     slug: 'portfolio',
-    title: 'Personal Portfolio Website',
+    title: 'This Portfolio',
+    type: 'personal',
     status: 'Live',
-    image: 'portfolio-preview.png',   // drop your screenshot here — 1200×750px recommended
-    stack: ['HTML', 'CSS', 'JavaScript'],
-    summary: 'A self-built portfolio documenting my journey as a developer and self-directed learner — built with pure HTML, CSS, and JavaScript. No frameworks, no libraries.',
+    summary: 'The portfolio you are looking at right now. Built from scratch with zero frameworks, zero templates, and zero dependencies except Google Fonts and Font Awesome.',
     liveUrl: 'https://alfonseotieno.github.io/',
     githubUrl: 'https://github.com/AlfonseOtieno/Personal-portfolio-',
-    caseStudy: {
-      problem: 'As someone actively building skills in coding and writing, I had no central place to show my work, share my thinking, or give potential clients a reason to trust me. My projects and articles existed in isolation with nothing connecting them.',
-      solution: 'Built a complete portfolio from scratch using only HTML, CSS, and JavaScript — no frameworks. The site includes a home page, articles system with full article content, a progress tracker, project case studies, quotes, and a contact form. Everything is hand-coded and fully responsive.',
-      challenges: 'Starting with limited JavaScript knowledge and building a multi-page site with dynamic features — like the articles system that renders full content from a data file — pushed me far beyond what I had learned formally. A lot of it was trial, error, and reading documentation.',
-      learned: 'Building something real accelerates learning faster than any tutorial. Every problem I hit on this project forced me to understand the underlying concept — not just copy a solution. The site itself is proof of the skill it took to build it.'
-    }
+    image: 'portfolio.png',
+    stack: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+    problem: 'Most portfolio templates look identical and say nothing. I needed a portfolio that documented who I actually am and what I was doing &mdash; not a template with my name swapped in.',
+    solution: 'Designed and built from scratch. Every page written by hand. The entire design system &mdash; typography, colour palette, spacing &mdash; created from nothing. The portfolio is itself one of the five projects shipped in the first 60 days.',
+    challenges: 'The main challenge was doing design without a design background. I had no Figma mockup. I worked directly in the browser, adjusting layout and spacing until it felt right. Responsive design across all screen sizes without a CSS framework was harder than expected.',
+    learned: 'That constraints produce clarity. Building without a framework forced me to understand CSS deeply &mdash; every layout I wanted, I had to build myself. I\'ll never not know how flexbox works again.',
+    date: 'March 2026'
   }
 ];
 
-/* ── STACK TAG HTML ──────────────────────────────────────────── */
-function stackTags(stack) {
-  return stack.map(t => `<span class="stack-tag">${t}</span>`).join('');
-}
-
-/* ── RENDER PROJECTS GRID (projects.html) ────────────────────── */
-function renderProjects() {
-  const grid = document.getElementById('projects-grid');
+/* ── RENDER PROJECTS GRID ────────────────────────────────────── */
+function renderProjectsGrid(filter) {
+  var grid = document.getElementById('projects-grid');
   if (!grid) return;
 
-  grid.innerHTML = PROJECTS.map((p, i) => `
-    <div class="project-card" id="project-card-${i}">
+  var filtered = filter === 'all'
+    ? PROJECTS
+    : PROJECTS.filter(function (p) { return p.type === filter; });
 
-      <!-- Preview image -->
-      <div class="project-thumb-img">
-        <img
-          src="../assets/portfolio/${p.image}"
-          alt="${p.title} preview"
-          class="project-preview-img"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-        >
-        <div class="project-preview-placeholder">
-          📸 Add <code>${p.image}</code> to your project folder
-        </div>
-      </div>
+  if (filtered.length === 0) {
+    grid.innerHTML = '<p style="color:var(--text-secondary);padding:2rem 0;">No projects in this category yet.</p>';
+    return;
+  }
 
-      <div class="project-body">
-        <div class="project-stack">${stackTags(p.stack)}</div>
-        <div class="project-status-row">
-          <span class="project-status-badge">${p.status}</span>
-        </div>
-        <h3>${p.title}</h3>
-        <p>${p.summary}</p>
+  grid.innerHTML = filtered.map(function (p) {
+    var badgeClass = p.status === 'Archived'
+      ? 'project-status-badge status-archived'
+      : (p.status === 'In Progress' ? 'project-status-badge status-progress' : 'project-status-badge');
 
-        <!-- Actions -->
-        <div class="project-actions">
-          ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Website →</a>` : ''}
-          ${p.githubUrl ? `<a href="${p.githubUrl}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub</a>` : ''}
-          <button class="btn btn-secondary btn-sm project-cs-toggle" data-index="${i}" aria-expanded="false">
-            Case Study <span class="cs-arrow">↓</span>
-          </button>
-        </div>
+    var stackHtml = p.stack.slice(0, 4).map(function (s) {
+      return '<span class="stack-tag">' + s + '</span>';
+    }).join('');
 
-        <!-- Case study panel -->
-        <div class="project-case-study" id="cs-${i}" hidden>
-          <div class="cs-block">
-            <h4>🎯 The Problem</h4>
-            <p>${p.caseStudy.problem}</p>
-          </div>
-          <div class="cs-block">
-            <h4>⚙️ The Solution</h4>
-            <p>${p.caseStudy.solution}</p>
-          </div>
-          <div class="cs-block">
-            <h4>🚧 Challenges</h4>
-            <p>${p.caseStudy.challenges}</p>
-          </div>
-          <div class="cs-block">
-            <h4>💡 What I Learned</h4>
-            <p>${p.caseStudy.learned}</p>
-          </div>
-          ${p.liveUrl ? `
-          <div class="cs-cta">
-            <a href="${p.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit the Live Site →</a>
-          </div>` : ''}
-        </div>
+    return '<div class="project-card" data-slug="' + p.slug + '">' +
+      '<div class="project-card-img">' +
+        '<img src="../assets/portfolio/' + p.image + '" alt="' + p.title + ' preview" ' +
+          'onerror="this.parentNode.classList.add(\'img-fallback\')" />' +
+      '</div>' +
+      '<div class="project-card-body">' +
+        '<div class="project-card-top-row">' +
+          '<h3>' + p.title + '</h3>' +
+          '<span class="' + badgeClass + '">' + p.status + '</span>' +
+        '</div>' +
+        '<p>' + p.summary + '</p>' +
+        '<div class="project-stack">' + stackHtml + '</div>' +
+        '<div class="project-card-actions">' +
+          (p.liveUrl ? '<a href="' + p.liveUrl + '" target="_blank" rel="noopener" ' +
+            'class="btn btn-primary btn-sm" onclick="event.stopPropagation()">Live Site</a>' : '') +
+          '<button class="btn btn-secondary btn-sm case-study-btn" data-slug="' + p.slug + '">Case Study</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
 
-      </div>
-    </div>
-  `).join('');
+  /* Case study buttons */
+  grid.querySelectorAll('.case-study-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      openProject(btn.dataset.slug);
+    });
+  });
 
-  // Case study toggles
-  grid.querySelectorAll('.project-cs-toggle').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const i      = this.dataset.index;
-      const panel  = document.getElementById(`cs-${i}`);
-      const isOpen = this.getAttribute('aria-expanded') === 'true';
-      const arrow  = this.querySelector('.cs-arrow');
-
-      if (isOpen) {
-        panel.hidden = true;
-        this.setAttribute('aria-expanded', 'false');
-        this.innerHTML = `Case Study <span class="cs-arrow">↓</span>`;
-      } else {
-        panel.hidden = false;
-        this.setAttribute('aria-expanded', 'true');
-        this.innerHTML = `Close Case Study <span class="cs-arrow" style="transform:rotate(180deg);display:inline-block;">↓</span>`;
-      }
+  /* Card click anywhere = case study */
+  grid.querySelectorAll('.project-card').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('a')) return; /* Let live-site link work */
+      openProject(card.dataset.slug);
     });
   });
 }
 
-/* ── AUTO-RENDER FEATURED PROJECT ON HOME PAGE (index.html) ─────
-   Add <div id="featured-project-slot"></div> in index.html.
-   Always shows PROJECTS[0] — the first item in the array.
-   To update the home page: add new project to TOP of PROJECTS array.
-─────────────────────────────────────────────────────────────────*/
-function renderFeaturedProject() {
-  const slot = document.getElementById('featured-project-slot');
-  if (!slot) return;
+/* ── OPEN SINGLE PROJECT ─────────────────────────────────────── */
+function openProject(slug) {
+  var project = PROJECTS.find(function (p) { return p.slug === slug; });
+  if (!project) return;
 
-  const p = PROJECTS[0];
-  slot.innerHTML = `
-    <div class="featured-project-card fp-expandable">
-      <div class="fp-top">
-        <div class="fp-preview">
-          <img
-            src="../assets/portfolio/${p.image}"
-            alt="${p.title} preview"
-            class="fp-img"
-            onerror="this.parentElement.classList.add('fp-img-missing')"
-          >
-          <div class="fp-img-placeholder">📸 Add ${p.image} to your folder</div>
-        </div>
-        <div class="fp-info">
-          <div class="project-label">${p.status} Project</div>
-          <h3>${p.title}</h3>
-          <p>${p.summary}</p>
-          <div class="fp-stack">${stackTags(p.stack)}</div>
-          <div class="fp-actions-row">
-            <button class="btn btn-secondary btn-sm fp-toggle-btn" aria-expanded="false">
-              Read Case Study <span class="fp-arrow">↓</span>
-            </button>
-            ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Site →</a>` : ''}
-          </div>
-        </div>
-      </div>
-      <div class="fp-case-study" hidden>
-        <div class="fp-case-body">
-          <div class="fp-case-block">
-            <h4>🎯 The Problem</h4>
-            <p>${p.caseStudy.problem}</p>
-          </div>
-          <div class="fp-case-block">
-            <h4>⚙️ The Solution</h4>
-            <p>${p.caseStudy.solution}</p>
-          </div>
-          <div class="fp-case-block">
-            <h4>🚧 Challenges</h4>
-            <p>${p.caseStudy.challenges}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+  var listView   = document.getElementById('projects-list-view');
+  var singleView = document.getElementById('projects-single-view');
+  if (!listView || !singleView) return;
 
-  // Case study toggle for home page
-  const toggleBtn = slot.querySelector('.fp-toggle-btn');
-  const casePanel = slot.querySelector('.fp-case-study');
-  if (toggleBtn && casePanel) {
-    toggleBtn.addEventListener('click', function () {
-      const isOpen = this.getAttribute('aria-expanded') === 'true';
-      if (isOpen) {
-        casePanel.hidden = true;
-        this.setAttribute('aria-expanded', 'false');
-        this.innerHTML = 'Read Case Study <span class="fp-arrow">↓</span>';
-      } else {
-        casePanel.hidden = false;
-        this.setAttribute('aria-expanded', 'true');
-        this.innerHTML = 'Close Case Study <span class="fp-arrow" style="transform:rotate(180deg);display:inline-block;">↓</span>';
-      }
-    });
+  listView.classList.add('hidden');
+  singleView.classList.remove('hidden');
+
+  var badgeClass = project.status === 'Archived'
+    ? 'project-status-badge status-archived'
+    : (project.status === 'In Progress' ? 'project-status-badge status-progress' : 'project-status-badge');
+
+  var stackHtml = project.stack.map(function (s) {
+    return '<span class="stack-tag">' + s + '</span>';
+  }).join('');
+
+  var linksHtml = '';
+  if (project.liveUrl) {
+    linksHtml += '<a href="' + project.liveUrl + '" target="_blank" rel="noopener" class="btn btn-primary">Live Site</a>';
+  }
+  if (project.githubUrl) {
+    linksHtml += '<a href="' + project.githubUrl + '" target="_blank" rel="noopener" class="btn btn-secondary">' +
+      '<i class="fa-brands fa-github" style="margin-right:0.4rem;"></i>View on GitHub</a>';
+  }
+
+  document.getElementById('project-single-content').innerHTML =
+    '<button class="back-btn" id="project-back-btn">' +
+      '<i class="fa-solid fa-arrow-left"></i> Back to Projects' +
+    '</button>' +
+    '<div class="project-single-header">' +
+      '<div>' +
+        '<h1>' + project.title + '</h1>' +
+        '<span class="' + badgeClass + '">' + project.status + '</span>' +
+        '<p class="project-single-date">' + project.date + '</p>' +
+      '</div>' +
+      '<div class="project-single-links">' + linksHtml + '</div>' +
+    '</div>' +
+    '<div class="project-single-img">' +
+      '<img src="../assets/portfolio/' + project.image + '" alt="' + project.title + '" ' +
+        'onerror="this.parentNode.classList.add(\'img-fallback\')" />' +
+    '</div>' +
+    '<div class="project-stack project-single-stack">' + stackHtml + '</div>' +
+    '<div class="case-study">' +
+      '<div class="case-study-section">' +
+        '<h2><i class="fa-solid fa-magnifying-glass" style="margin-right:0.5rem;color:var(--accent);"></i>The Problem</h2>' +
+        '<p>' + project.problem + '</p>' +
+      '</div>' +
+      '<div class="case-study-section">' +
+        '<h2><i class="fa-solid fa-lightbulb" style="margin-right:0.5rem;color:var(--gold);"></i>The Solution</h2>' +
+        '<p>' + project.solution + '</p>' +
+      '</div>' +
+      '<div class="case-study-section">' +
+        '<h2><i class="fa-solid fa-triangle-exclamation" style="margin-right:0.5rem;color:var(--accent);"></i>Challenges</h2>' +
+        '<p>' + project.challenges + '</p>' +
+      '</div>' +
+      '<div class="case-study-section">' +
+        '<h2><i class="fa-solid fa-graduation-cap" style="margin-right:0.5rem;color:var(--gold);"></i>What I Learned</h2>' +
+        '<p>' + project.learned + '</p>' +
+      '</div>' +
+    '</div>' +
+    '<button class="back-btn" style="margin-top:2rem;margin-bottom:0;" id="project-back-btn-bottom">' +
+      '<i class="fa-solid fa-arrow-left"></i> Back to Projects' +
+    '</button>';
+
+  window.scrollTo(0, 0);
+
+  ['project-back-btn', 'project-back-btn-bottom'].forEach(function (id) {
+    var btn = document.getElementById(id);
+    if (btn) {
+      btn.addEventListener('click', closeProject);
+    }
+  });
+
+  if (history.pushState) {
+    history.pushState(null, '', '#' + slug);
   }
 }
 
-/* ── INIT ────────────────────────────────────────────────────── */
+function closeProject() {
+  var listView   = document.getElementById('projects-list-view');
+  var singleView = document.getElementById('projects-single-view');
+  if (!listView || !singleView) return;
+  singleView.classList.add('hidden');
+  listView.classList.remove('hidden');
+  window.scrollTo(0, 0);
+  if (history.pushState) {
+    history.pushState(null, '', window.location.pathname);
+  }
+}
+
+/* ── INIT: PROJECTS PAGE ─────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
-  renderProjects();       // projects.html
-  renderFeaturedProject(); // index.html
+  if (!document.getElementById('projects-grid')) return;
+
+  renderProjectsGrid('all');
+
+  /* Filter buttons */
+  document.querySelectorAll('.project-filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.project-filter-btn').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      renderProjectsGrid(btn.dataset.filter);
+    });
+  });
+
+  /* Hash routing on load */
+  var hash = window.location.hash.replace('#', '');
+  if (hash) {
+    var found = PROJECTS.find(function (p) { return p.slug === hash; });
+    if (found) openProject(hash);
+  }
+
+  window.addEventListener('popstate', function () {
+    var h = window.location.hash.replace('#', '');
+    if (!h) {
+      closeProject();
+    } else {
+      openProject(h);
+    }
+  });
 });
