@@ -13,6 +13,157 @@
 
 var ARTICLES = [
   {
+    slug: 'building-my-first-ai-agent-a-habit-tracking-system',
+    title: 'Building My First AI Agent: A Habit Tracking System',
+    topic: 'Building',
+    date: 'Apr 07, 2026',
+    readTime: '10 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/building-my-first-ai-agent-a-habit',
+    publication: 'code-system',
+    excerpt: 'I decided that instead of using different AI models for different tasks, why don\'t I create an AI agent which automates most of the tasks that I do?',
+    body: `
+      <p>I've been using AI for quite a while now, and I've been using different models for different tasks. So, I decided that instead of using different AI models for different tasks, why don't I create an AI agent which automates most of the tasks that I do? I wanted to build an AI agent that could automate almost every aspect of life.</p>
+      <p>Not just reminders. Not just tracking. Something closer to an operating layer for daily behavior—something that could observe what I do, log it, analyze it, and eventually help optimize my life over time.</p>
+      <p>But I didn't build that.</p>
+      <p>At least not yet.</p>
+      <p>What I built instead is smaller, more focused, and in some ways more important than the original idea.</p>
+      <p>I built a habit tracking system.</p>
+      <p>But not a normal one.</p>
+      <p>This is a chat-based habit tracker that feels like WhatsApp, where I can log my actions naturally, see my entire behavioral history, and generate patterns over time through analytics.</p>
+      <p>And more importantly, it became my first real step toward building an AI agent.</p>
+      <h2>The Idea: An AI Agent for Life</h2>
+      <p>The original vision was ambitious.</p>
+      <p>I've always been fascinated by the idea of AI agents—systems that don't just respond to inputs but actively participate in shaping decisions, routines, and outcomes.</p>
+      <p>I wasn't thinking about tools.</p>
+      <p>I was thinking about systems.</p>
+      <p>A system that could: track my habits automatically, understand patterns in my behavior, store long-term personal data, help optimize routines without friction, and eventually act like a personal operating system.</p>
+      <p>The idea was simple in theory:</p>
+      <p>If you can understand everything a person does daily, you can begin to optimize their life.</p>
+      <p>But the moment I started breaking that idea down, I realized something important.</p>
+      <p>It wasn't one project.</p>
+      <p>It was multiple complex systems bundled into one.</p>
+      <p>And I was still at the beginning.</p>
+      <p>So I made a decision.</p>
+      <p>I chose to start small.</p>
+      <h2>Why I Started With Habits</h2>
+      <p>If you want to build anything related to life optimization, habits are the most fundamental unit.</p>
+      <p>Not goals. Not motivation. Not systems.</p>
+      <p>Habits.</p>
+      <p>Because everything else is built on repetition.</p>
+      <p>You don't get fit from deciding to go to the gym once.</p>
+      <p>You don't become a developer by watching one tutorial.</p>
+      <p>You don't become disciplined by reading about discipline.</p>
+      <p>You become what you repeatedly do.</p>
+      <p>So I narrowed the scope.</p>
+      <p>Instead of trying to build an AI agent that understands everything, I built something that understands one thing deeply: daily behavior.</p>
+      <p>And I started with one question:</p>
+      <p>How can I make habit tracking so frictionless that I never avoid it?</p>
+      <h2>The Core Problem: Tracking Is Too Friction Heavy</h2>
+      <p>Most habit tracking apps fail for a simple reason.</p>
+      <p>They require effort.</p>
+      <p>Open the app. Find the habit. Tap a button. Log an entry. Repeat every day.</p>
+      <p>This might not sound like much, but psychologically it creates friction.</p>
+      <p>And friction kills consistency.</p>
+      <p>I didn't want a system that I had to "remember to use."</p>
+      <p>I wanted something that fits into how I already behave.</p>
+      <p>And the most natural interface I already use every day is chat.</p>
+      <p>So I asked a simple question:</p>
+      <p>What if logging habits felt like sending a message?</p>
+      <h2>The Solution: A Chat-Based Habit System</h2>
+      <p>That question changed the entire direction of the project.</p>
+      <p>Instead of building a traditional app interface, I built a chat system that mimics WhatsApp.</p>
+      <p>The core idea is simple:</p>
+      <p>I don't "log habits."</p>
+      <p>I just talk.</p>
+      <p>For example: "I ran 5km today", "Did 50 pushups", "Studied React for 2 hours."</p>
+      <p>The system interprets the message and stores it in the database as a structured habit entry.</p>
+      <p>No forms. No buttons. No friction.</p>
+      <p>Just input → storage → analysis.</p>
+      <p>This alone made the system feel fundamentally different from anything I had used before.</p>
+      <p>Because it stopped feeling like an app.</p>
+      <p>It started feeling like a conversation with myself.</p>
+      <h2>How It Works Under the Hood</h2>
+      <p>Even though the interface is simple, the system behind it is structured.</p>
+      <p>The architecture is built around three core layers.</p>
+      <p>1. Input Layer (Chat Interface) — This is the front-end experience. A WhatsApp-style chat UI where every message is treated as a habit entry, natural language input is accepted, and minimal interaction design is used. The goal here is not complexity. It is speed. The faster I can log something, the more likely I am to do it consistently.</p>
+      <p>2. Data Layer (Habit Storage) — Once a message is sent, it is processed and stored in a database. Each entry includes: habit name or inferred category, timestamp, raw input message, and structured metadata. This allows the system to not just store data, but organize it. Over time, this becomes a personal behavioral dataset. A timeline of everything I do.</p>
+      <p>3. Analytics Layer (Pattern Detection) — This is where things start to feel intelligent. The system can show all logged habits over time, identify frequency patterns, track consistency, and generate basic behavioral insights. For example: which habits are most consistent, which days are most productive, and where gaps in behavior occur. It's not "AI" in the advanced sense. But it is the beginning of structured intelligence built on personal data.</p>
+      <h2>The Dashboard: Seeing My Behavior Over Time</h2>
+      <p>The second part of the system is the dashboard.</p>
+      <p>If the chat interface is about input, the dashboard is about reflection.</p>
+      <p>It allows me to: view all past logs, see habits grouped over time, track consistency visually, and understand behavioral trends.</p>
+      <p>This is important because input alone is not enough.</p>
+      <p>Without feedback, behavior doesn't improve.</p>
+      <p>The dashboard turns raw data into something visible.</p>
+      <p>And visibility creates awareness.</p>
+      <p>Awareness creates change.</p>
+      <h2>The Unexpected Insight: Simplicity Was the Real Breakthrough</h2>
+      <p>At some point during development, something unexpected happened.</p>
+      <p>The system started working really well.</p>
+      <p>It was fast. It was clean. It was usable every day.</p>
+      <p>And most importantly—it didn't feel like something I needed to "fix."</p>
+      <p>That's when I faced a strange problem.</p>
+      <p>I didn't want to keep modifying it.</p>
+      <p>Not because I lacked ideas.</p>
+      <p>But because it felt complete.</p>
+      <p>There was a moment where I realized:</p>
+      <p>If I keep expanding this into a full life automation system, I will lose what makes it powerful.</p>
+      <p>It would become complex. Confusing. Unfocused.</p>
+      <p>And ironically, less useful.</p>
+      <p>So I stopped expanding it.</p>
+      <p>Not because it was finished in an absolute sense, but because it was finished in a functional sense.</p>
+      <h2>The Temptation to Build Everything</h2>
+      <p>The original idea was still in my mind.</p>
+      <p>I still wanted to build: task automation, calendar integration, goal tracking, AI decision-making, and life-wide optimization.</p>
+      <p>But the more I thought about it, the more I realized something important:</p>
+      <p>Bigger does not always mean better.</p>
+      <p>There is a trap in system design where you try to solve everything at once.</p>
+      <p>But when you do that, you often lose clarity on what the system is actually supposed to do.</p>
+      <p>And in this case, the purpose was simple: make habit tracking effortless and meaningful.</p>
+      <p>Everything else was secondary.</p>
+      <h2>Why I Stopped Expanding It</h2>
+      <p>There were two main reasons.</p>
+      <p>1. Product Clarity — If I added too many features, users would no longer understand what the system is. Is it a habit tracker? Is it a life assistant? Is it a productivity tool? Confusion kills adoption. A system must have identity.</p>
+      <p>2. Personal Discipline — The second reason was more personal. I realized I was falling into a common trap: the desire to keep building instead of observing what I had built. But real systems need time to breathe. They need usage data, not just features. So I made a decision: stop building. Start using.</p>
+      <h2>The Bigger Idea: This Is Not the Final Product</h2>
+      <p>This project is not the final form of anything.</p>
+      <p>It is not a complete AI agent.</p>
+      <p>It is not a life automation system.</p>
+      <p>It is something much simpler.</p>
+      <p>It is a prototype. A first attempt. A proof of concept that behavior can be captured through natural interaction.</p>
+      <p>And more importantly, it is a foundation.</p>
+      <p>Because once you can reliably capture behavior, store behavior, and analyze behavior — you are no longer building an app.</p>
+      <p>You are building a behavioral system.</p>
+      <p>And that is where AI agents actually begin.</p>
+      <h2>What I Learned About Building Systems</h2>
+      <p>This project taught me something that applies far beyond coding.</p>
+      <p>Most people think building is about adding features.</p>
+      <p>But real building is about removing friction.</p>
+      <p>The best systems are not the ones that do the most.</p>
+      <p>They are the ones that get used the most.</p>
+      <p>And usage only happens when: it is easy, it is fast, and it fits into existing behavior.</p>
+      <p>Everything else is secondary.</p>
+      <h2>Where This Is Going Next</h2>
+      <p>This habit system is only the beginning.</p>
+      <p>The next step is not to expand it randomly.</p>
+      <p>The next step is to deepen it.</p>
+      <p>Possible future directions include: better natural language processing for logs, smarter behavioral pattern detection, integration with external data sources, more personalized insights over time, and lightweight AI assistance for reflection.</p>
+      <p>But for now, the focus is simple: use it. Improve it based on real behavior. Not assumptions.</p>
+      <h2>Final Thoughts</h2>
+      <p>When I started this project, I thought I was building an AI agent.</p>
+      <p>But what I actually built was something much smaller—and much more real.</p>
+      <p>A habit tracking system that works.</p>
+      <p>And sometimes, that is how real systems begin.</p>
+      <p>Not with completeness.</p>
+      <p>But with clarity.</p>
+      <p>This is my first step toward building AI systems that understand human behavior.</p>
+      <p>Not in theory.</p>
+      <p>But in practice.</p>
+      <p>And maybe that is what matters most.</p>
+      <img src="../assets/articles/apela-habits.webp" alt="Apela — Habit Tracking Dashboard" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+    `
+  },
+  {
     slug: 'sometimes-patience-is-the-best-strategy',
     title: 'Sometimes patience is the best strategy',
     topic: 'Personal Growth',
