@@ -13,6 +13,143 @@
 
 var ARTICLES = [
   {
+    slug: 'i-was-learning-confidence-backwards',
+    title: 'I Was Learning Confidence Backwards',
+    topic: 'Personal Growth',
+    date: 'Mar 03, 2026',
+    readTime: '6 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/i-was-learning-confidence-backwards',
+    publication: 'deliberately-becoming',
+    excerpt: 'I had been learning confidence backwards. I was studying the appearance of authority. But authority does not begin with posture. It begins with composure.',
+    body: `
+      <p>Recently, I watched an interview with behavioral expert Chase Hughes in conversation with Steven Bartlett in the Diary of a CEO.</p>
+      <p>The discussion covered many topics—authority, control, discipline, communication, influence, and human behavior.</p>
+      <p>But what stayed with me wasn't a technique.</p>
+      <p>It was a realization:</p>
+      <p>I had been learning confidence backwards.</p>
+      <h2>The Triangle to Success</h2>
+      <p>The interview began with what was called the Triangle to Success, built on three pillars:</p>
+      <p>Self-mastery</p>
+      <p>Observation</p>
+      <p>Communication</p>
+      <p>According to this framework, these three traits largely determine human outcomes. You can often predict success or faliure by observing how strong someone is in these areas.</p>
+      <p>What struck me immediately was self-mastery.</p>
+      <p>Because right now, that is exactly where I am—trying to understand myself, refine myself, and deliberately evolve into a better version of who I am.</p>
+      <p>For the first time, self-development stopped feeling random.</p>
+      <p>It felt structured.</p>
+      <h2>Everyone Wants Control</h2>
+      <p>Social media constantly sells control.</p>
+      <p>Be confident.</p>
+      <p>Be dominant.</p>
+      <p>Be respected.</p>
+      <p>Be powerful.</p>
+      <p>Some people appear to be born with it and practice it even without trying. Others feel excluded from it.</p>
+      <p>But one thing I have learnt from The Brain That Changes Itself is that human behavior is trainable.</p>
+      <p>Control can be cultivated through practice.</p>
+      <p>Control consists of four elements:</p>
+      <p>Authority</p>
+      <p>Comfort</p>
+      <p>Social skills</p>
+      <p>Skills</p>
+      <p>Most of us chase the last two.</p>
+      <p>That's why we go to YouTube to search for communication tricks, charisma hacks, or behavioral techniques.</p>
+      <p>But the interview suggested something uncomfortable:</p>
+      <p>What we actually lack is authority and comfort.</p>
+      <p>And those cannot be downloaded from the internet.</p>
+      <h2>The Comparison Problem</h2>
+      <p>I recognized myself here immediately.</p>
+      <p>During COVID-19, social media expanded my world overnight. Comparison stopped being local and became global.</p>
+      <p>At fourteen, I constantly compared myself to others—better photos, better clothes, better lives. It left me focusing more on the things that I didn't have and very little appreciation for what I had.</p>
+      <p>Eventually, I left social media.</p>
+      <p>Later, when I wanted to build my discipline brand on Instagram, I returned and this time curated my feed to show only "discipline" content. My feed was filled with people doing workouts in the rain, people in the gym in "beast mode" and teenagers who became millionaires at 16.</p>
+      <p>But I realized something. I was also comparing myself with these people and started chasing intensity and more dramatic changes.</p>
+      <p>Even discipline content creates comparison.</p>
+      <p>Comparison itself isn't the problem. We are social creatures and are prone to compare ourselves to others.</p>
+      <p>Maybe all we need is to change what we compare.</p>
+      <p>The interview introduced a different metric:</p>
+      <p>Compare comfort.</p>
+      <p>Someone may have fame, money, or attention—but would I be comfortable living their lifestyle? Would I accept the pressure required to maintain it?</p>
+      <p>Right now, I have time to learn, train, and build myself.</p>
+      <p>That is comfortable for me.</p>
+      <p>And comfort is an advantage.</p>
+      <h2>Composure Before Posture</h2>
+      <p>This idea changed me the most.</p>
+      <p>For quite some time, I used to search for videos teaching:</p>
+      <p>how to walk</p>
+      <p>how to sit</p>
+      <p>how to shake hands</p>
+      <p>how to look confident</p>
+      <p>I was studying the appearance of authority.</p>
+      <p>But authority does not begin with posture.</p>
+      <p>It begins with composure.</p>
+      <p>Fear speeds you up.</p>
+      <p>Stress makes you rush.</p>
+      <p>Insecurity makes you overperform.</p>
+      <p>Calm people move slower, not lazily, but deliberately. They think before speaking. Their presence feels controlled.</p>
+      <p>The confident posture isn't performed.</p>
+      <p>It is produced.</p>
+      <p>The person sitting upright isn't trying to look confident. He doesn't constantly remind himself to keep his shoulders high or maintain eye contact.</p>
+      <p>Their internal state creates the posture naturally.</p>
+      <p>That realization made me stop chasing behavioral tricks.</p>
+      <p>I started pursuing composure instead. I started by just trying to slow down and do things more deliberately.</p>
+      <h2>What Authority Is Actually Made Of</h2>
+      <p>Authority was described as a combination of five elements:</p>
+      <p>Confidence</p>
+      <p>Leadership</p>
+      <p>Discipline</p>
+      <p>Gratitude</p>
+      <p>Enjoyment</p>
+      <p>Confidence especially resonated with me.</p>
+      <p>You cannot be confident without something behind you.</p>
+      <p>You're confident in exams because you studied.</p>
+      <p>You're confident in negotiation because you have leverage.</p>
+      <p>This is partly why I train boxing and study programming. To have something that I'm confident in.</p>
+      <p>Confidence grows from capability.</p>
+      <p>The surprising element was enjoyment (You may also call it mindfulness).</p>
+      <p>Enjoyment doesn't necessarily mean loving every moment. I'm not always smiling during runs, when working out almost close to failure or while getting hit in sparring.</p>
+      <p>But there is gratitude in participating in the process itself. That is mindfulness.</p>
+      <h2>Life Creates Body Language</h2>
+      <p>One sentence stayed with me:</p>
+      <p>Your life creates your body language. Not the other way around.</p>
+      <p>Instead of fixing gestures, we should first control the foundations:</p>
+      <p>Environment — Is your space ordered?</p>
+      <p>Time — Are you always rushing?</p>
+      <p>Appearance — Do you respect your presentation?</p>
+      <p>Social life — Can you connect with others?</p>
+      <p>Financial direction — Are you progressing toward independence?</p>
+      <p>Authority emerges from lived structure.</p>
+      <h2>Confidence Is a Difficulty Setting</h2>
+      <p>Confidence was explained through a simple analogy.</p>
+      <p>When playing a football video game on easy mode, conceding a goal doesn't scare you. You still expect to win. You are sure that at the end you will still win even though you conceded a goal.</p>
+      <p>On the hardest difficulty, conceding one goal makes you panic. You feel like the game is already lost. You start putting more effort in trying not to concede another goal instead of trying to win the game.</p>
+      <p>The same also applies to how we live our lives.</p>
+      <p>Confident people operate with a general expectation of positive outcomes.</p>
+      <p>Discipline builds that expectation.</p>
+      <h2>The Person Off-Camera</h2>
+      <p>Most of life is performance.</p>
+      <p>We perform professionalism.</p>
+      <p>We perform confidence.</p>
+      <p>We perform competence.</p>
+      <p>But real character appears off-camera. When nobody is watching.</p>
+      <p>If you don't believe in yourself privately, performance will always feel fake publicly.</p>
+      <p>Confidence cannot be permanently acted.</p>
+      <p>It must be lived.</p>
+      <h2>The Real Shift</h2>
+      <p>Before this interview, I searched for authority externally:</p>
+      <p>better posture, better behavior, better appearance.</p>
+      <p>Now I understand:</p>
+      <p>Don't chase the symptoms of confidence.</p>
+      <p>Build the causes.</p>
+      <p>Authority isn't performed.</p>
+      <p>Confidence isn't faked.</p>
+      <p>Respect isn't demanded.</p>
+      <p>They emerge from how you live.</p>
+      <p>And for someone trying to become a calm, respected leader, this realization didn't just teach me something.</p>
+      <p>It changed how I think.</p>
+      <img src="../assets/articles/confidence-backwards.webp" alt="Confidence isn't walking into a room thinking you're better than everyone" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+    `
+  },
+  {
     slug: 'boxing-so-far',
     title: 'Boxing So Far',
     topic: 'Boxing',
