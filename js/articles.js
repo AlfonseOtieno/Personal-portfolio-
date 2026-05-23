@@ -13,6 +13,90 @@
 
 var ARTICLES = [
   {
+    slug: 'identity-driven-habits-vs-outcome-driven-habits',
+    title: 'Identity-Driven Habits vs Outcome-Driven Habits',
+    topic: 'Habits',
+    date: 'Mar 10, 2026',
+    readTime: '7 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/identity-driven-habits-vs-outcome',
+    publication: 'deliberately-becoming',
+    excerpt: 'Why do we set New Year\'s resolutions but fail to uphold them until the end of the year? Why do we struggle to stick to most of our resolutions?',
+    body: `
+      <p>Why do we set New Year's resolutions but fail to uphold them until the end of the year? Why do we struggle to stick to most of our resolutions?</p>
+      <h2>Why New Year's Resolutions Often Fail</h2>
+      <p>All of us want change, at least to some degree. We want better results, better habits, and better outcomes. One time when this desire becomes very visible is at the end of the year, when people begin planning their New Year's resolutions. We often hear the famous phrase: "New year, new me."</p>
+      <p>However, we all know that New Year's resolutions rarely last. Yes, someone may start in January and follow through for one week, two weeks, or even one month, but eventually most people stop.</p>
+      <p>This made me ask myself a question: if we truly want to improve, and we know that improvement is necessary, why do we often return to our old habits after making progress?</p>
+      <p>While searching for answers, I started reading the book Atomic Habits by James Clear. I will not go into everything the book discusses, but I want to highlight one insight that explains why the idea of "new year, new me" often fails.</p>
+      <p>According to the book, habit change happens at three different levels: outcomes, processes, and identity.</p>
+      <img src="../assets/articles/identity-driven-habits.webp" alt="New Year's Resolutions" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <h2>The Three Levels of Habit Change</h2>
+      <p>Outcomes are what you want to achieve. For example, you might say that you want to gain weight, lose weight, become fit, or become rich. Outcomes focus on the final result you want to reach.</p>
+      <p>Processes are the actions you take to reach those outcomes. For example, if you want to lose weight, you should exercise more. If you want to become rich, you should save more.</p>
+      <p>Identity, on the other hand, refers to your beliefs, your self-image, and the way you see yourself.</p>
+      <p>Most people approach habit building by starting with outcomes. They focus on what they want to achieve, then move to the processes, and assume their identity will eventually catch up.</p>
+      <p>This is why, during New Year's resolutions, people say "new year, new me" and begin by listing the goals they want to achieve.</p>
+      <p>I am not saying this approach is entirely wrong. Outcomes help us determine what habits we should build. However, we must remember that we already have a self-image. There is already a certain way we see ourselves.</p>
+      <p>The relationship between identity and habits is a two-way process. Your identity influences your habits, and your habits reinforce your identity.</p>
+      <h2>When Habits Clash With Identity</h2>
+      <p>For example, when I wanted to build discipline, I told myself that I wanted to become a more disciplined person. At that time, I saw myself as someone who lacked discipline. I wanted to change that and build a better version of myself.</p>
+      <p>This is what many of us try to do. We attempt to install a completely new version of ourselves.</p>
+      <p>At the beginning, motivation makes this easy. When motivation is high, we can push ourselves to do difficult things. But motivation does not stay constant. It fluctuates over time, and you cannot rely on it in the long run.</p>
+      <p>Once motivation fades, people often return to their previous identity.</p>
+      <p>If the habits you are trying to build contradict the way you see yourself, those actions are unlikely to last. In a way, it is like planning a coup against your current self. You are trying to overthrow your existing identity overnight.</p>
+      <p>You are trying to act like someone you do not yet believe you are.</p>
+      <h2>Starting With Identity</h2>
+      <p>So how can we fix this?</p>
+      <p>Remember the three levels: outcomes, processes, and identity.</p>
+      <p>Instead of starting with outcomes, we should begin by building the identity first.</p>
+      <p>For example, instead of saying, "I want to try running," you start by telling yourself, "I am a runner."</p>
+      <p>Instead of saying, "I want to read more books," you start by telling yourself, "I am a reader."</p>
+      <p>When you correct your self-image first, the habits become natural expressions of who you are. Running becomes easier because that is what runners do. Reading becomes normal because that is what readers do.</p>
+      <p>When your identity and habits are aligned, it becomes much easier to maintain those habits in the long run.</p>
+      <p>Identity and habits reinforce each other.</p>
+      <p>The identity you have right now exists because you have repeated certain habits many times. There is simply too much evidence supporting your current identity.</p>
+      <p>If you want to change that identity, you must begin by introducing small habits and repeating them consistently.</p>
+      <h2>The Power of Small Repetitions</h2>
+      <p>Every time you perform the habit, you are keeping a promise to yourself. Gradually, you begin to see yourself as someone who performs those behaviors.</p>
+      <p>This is why habits do not need to start perfectly or in an extreme way.</p>
+      <p>For example, during the "new year, new me" phase, I once told myself that I would do 100 push-ups, 100 sit-ups, and a one-hour morning run every day.</p>
+      <p>On January 1st, I did exactly that. I ran for an hour, came back, and completed all the exercises.</p>
+      <p>But by January 14th, I was doing none of those activities.</p>
+      <p>This is the all-or-nothing mindset that I have discussed in my previous articles.</p>
+      <p>Instead, it is better to start small.</p>
+      <p>Just show up.</p>
+      <p>If you plan to exercise, start with five minutes. The most important thing is simply being present and performing the habit.</p>
+      <p>A habit must first be established before it is optimized.</p>
+      <p>Even doing the habit for five minutes still counts as progress because you are also building an identity.</p>
+      <p>As James Clear explains, every action you take is like casting a vote for the type of person you want to become.</p>
+      <p>If you read for ten minutes, you are casting a vote that says, "I am a reader."</p>
+      <p>This transformation happens through repetition, not intensity.</p>
+      <h2>The Problem With Outcome-Driven Habits</h2>
+      <p>Outcome-driven habits have several disadvantages.</p>
+      <p>First, they create an if–then mindset for happiness. You begin telling yourself, "If I achieve this goal, then I will be happy."</p>
+      <p>For example, if you set a specific weight goal, you may check the scale every day. If the number does not change, you feel discouraged, even if you are following your habits.</p>
+      <p>Outcomes often take time to appear. Sometimes they do not appear within a month. When people do not see immediate results, they lose motivation.</p>
+      <p>This is why it is dangerous to tie your happiness only to outcomes.</p>
+      <p>Identity-driven habits are different. Your satisfaction comes from performing the action itself, because the action reflects who you are.</p>
+      <p>Another issue with outcome-driven habits is that once the outcome is achieved, the habit often disappears.</p>
+      <p>For example, if you build a study habit only to pass an exam, you may stop studying once the exam is over.</p>
+      <p>Instead of becoming someone who studies only for exams, it is better to become someone who identifies as a reader or a learner.</p>
+      <h2>My Personal Approach to Habits</h2>
+      <p>Personally, I no longer use the mindset of "new year, new me."</p>
+      <p>Instead, I focus on improvement.</p>
+      <p>I accept who I currently am, including my flaws, and focus on becoming a better version of myself.</p>
+      <p>For example, I created a one-year master plan to build discipline. Reading Atomic Habits helped me realize that I had previously been building habits in the wrong way. I focused too much on outcomes and processes while ignoring identity.</p>
+      <p>Now, my focus is simply on putting in the repetitions.</p>
+      <p>I do not need to be perfect. In the past, I associated discipline with perfection. Now I understand that discipline does not require perfection.</p>
+      <p>What matters is consistency.</p>
+      <p>I may not have perfect days, but I no longer have zero days.</p>
+      <p>Even if I only do ten push-ups, I still count that as maintaining my discipline. There is no day when I do nothing.</p>
+      <p>This approach is much more sustainable than the previous version I imagined, where I expected myself to operate in "beast mode" every day. That mindset made failure feel inevitable.</p>
+      <p>Now, I focus on small actions that reinforce the identity I want to build.</p>
+      <p>And that is why I believe identity-driven habits are far more powerful than outcome-driven habits.</p>
+    `
+  },
+  {
     slug: 'impact-of-artificial-intelligence-on-society-today',
     title: 'Impact of Artificial Intelligence on society today.',
     topic: 'Technology',
