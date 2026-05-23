@@ -13,6 +13,62 @@
 
 var ARTICLES = [
   {
+    slug: 'i-built-an-ai-code-reviewer-not-to-replace-thinking-but-to-improve-it',
+    title: 'I Built an AI Code Reviewer — Not to Replace Thinking, But to Improve It',
+    topic: 'Building',
+    date: 'Mar 24, 2026',
+    readTime: '5 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/i-built-an-ai-code-reviewer-not-to',
+    publication: 'code-system',
+    excerpt: 'One of the most frustrating parts of learning to code is when the code doesn\'t run and you don\'t know why.',
+    body: `
+      <p>One of the most frustrating parts of learning to code is when the code doesn't run and you don't know why.</p>
+      <p>As a self-taught coder, I've experienced this problem firsthand. Although learning and building projects with HTML and CSS wasn't that much complicated, JavaScript projects were a whole different set of problems. After spending hours writing code, the logic makes perfect sense in your head and the structure looks fine, and yet nothing works. You go line by line trying to find the issue, only to realize the problem was something very small—a spelling mistake, case sensitivity, or a missing curly bracket.</p>
+      <p>I've been there many times, and I wanted to solve that problem.</p>
+      <h2>The Decision to Integrate AI into My Daily System</h2>
+      <p>Recently, I made the high-level decision to integrate AI into my daily system, most especially coding.</p>
+      <p>This wasn't an easy decision for me as I am not a big fan of the rise of artificial intelligence.</p>
+      <p>These tools have their own disadvantages which most of us ignore. The risk for developers like me is that if you rely on it too much, you stop thinking for yourself.</p>
+      <p>But AI is a very powerful tool, and not using it is just as dangerous because you are now moving slower compared to others who decided to use it effectively and deliberately.</p>
+      <p>After reading Deep Work by Cal Newport, where he argues that in a world of technological advancements, one of the groups of people who will thrive are those who learn how to work with intelligent machines, I decided to give AI tools a chance.</p>
+      <h2>The Shift</h2>
+      <p>Using AI proved very effective. Just two days after deciding to use AI, I had already created a personal portfolio website and a habit tracker app that I'm even using until now. The AI generated all of them within less than 30 seconds.</p>
+      <p>But there was a problem: I wasn't even going through and reading the code; I was just copying and pasting AI-generated code. And this is the danger zone for developers. Since the AI is so efficient, it got to a point that when I was making changes to the code, I would ask AI to generate the solution, then I would go ahead and delete the entire old code and replace it with the new code.</p>
+      <p>I saw this as a problem since I was no longer engaging my brain.</p>
+      <h2>Building a Solution to my own problem</h2>
+      <p>I came up with a simple solution to my problem: an AI-powered code reviewer. The idea was straightforward:</p>
+      <p>Instead of AI writing the code and me making improvements, I would write the code and make my own improvements.</p>
+      <p>I would feed the code to the AI, where it would point out errors, what's working well, and what can be improved.</p>
+      <p>Then, I go and make the improvements myself.</p>
+      <p>This would ensure that I keep interacting with my code. That is why I intentionally didn't add the option to copy the improved code. To make the improvements, I would have to write the code and get to understand what it is I'm writing.</p>
+      <p>The code reviewer is now live and can be used by both beginners and those who have experience in tech.</p>
+      <h2>Honesty: I Didn't Build It Alone</h2>
+      <p>I want to be clear about something.</p>
+      <p>I did not write this entire project from scratch.</p>
+      <p>I came up with the idea then gave AI a prompt, and it generated most of the initial code. Claiming otherwise would be dishonest, and there's no value in pretending. What matters is how the tool is used.</p>
+      <p>AI can generate in minutes what would take me days. That's a reality. But my role was to understand the code, debug it, and fix the logical issues.</p>
+      <p>And that's where the real learning happened.</p>
+      <h2>The Challenge: Making It Actually Work</h2>
+      <p>The biggest challenge wasn't building the interface—it was integrating the API.</p>
+      <p>After deploying the project, the reviewer didn't work. The AI wasn't responding. Initially, I tried using the Claude API, but I quickly realized it required payment.</p>
+      <p>I had to step back and figure out a better solution.</p>
+      <p>Eventually, I switched to the Gemini API, which offers a free tier with very reasonable limits. That made the project usable without immediate cost and allowed me to keep building without friction.</p>
+      <h2>From Using Tools to Building Them</h2>
+      <p>This project represents a shift in how I approach learning.</p>
+      <p>Instead of just using tools created by others, I'm starting to build my own—starting with solutions to my own problems.</p>
+      <p>I'm not trying to impress anyone with complexity. I'm trying to create systems that make me better.</p>
+      <p>Because at the end of the day, the goal is not just to write code.</p>
+      <p>The goal is to become someone who can think, solve problems, and build.</p>
+      <h2>Final Thought</h2>
+      <p>AI is not the problem.</p>
+      <p>Blind dependence is.</p>
+      <p>Used correctly, AI can accelerate your learning. Used passively, it can weaken it.</p>
+      <p>The difference is not in the tool—it's in how you use it. And this website may just be one of the tools that helps me use AI and code more efficiently.</p>
+      <p>You can also try it out <a href="https://codereview-ai-ten.vercel.app/" target="_blank" rel="noopener">here</a> and give me your feedback on what you think about it.</p>
+      <img src="../assets/articles/codereview-ai.webp" alt="CodeReview AI — AI Code Review for HTML, CSS and JavaScript" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+    `
+  },
+  {
     slug: 'atomic-habbits-are-automatic-habbits',
     title: 'Atomic habbits are automatic habbits',
     topic: 'Books',
