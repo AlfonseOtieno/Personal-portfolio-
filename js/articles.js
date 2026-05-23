@@ -13,6 +13,170 @@
 
 var ARTICLES = [
   {
+    slug: 'life-is-not-fair-and-that-is-okay',
+    title: 'Life Is Not Fair — And That Is Okay',
+    topic: 'Philosophy',
+    date: 'Mar 17, 2026',
+    readTime: '6 min read',
+    substackUrl: 'https://alfonseotieno.substack.com/p/life-is-not-fair-and-that-is-okay',
+    publication: 'deliberately-becoming',
+    excerpt: 'Life is not fair. We can pretend it is. We can tell ourselves comforting stories about equality and balance. But reality proves otherwise.',
+    body: `
+      <p>Life is not fair.</p>
+      <p>We can pretend it is. We can tell ourselves comforting stories about equality and balance. But reality proves otherwise.</p>
+      <p>Yes, we live on the same earth.</p>
+      <p>We breathe the same oxygen.</p>
+      <p>Our blood is the same color.</p>
+      <p>We all feel pain.</p>
+      <p>And in the end, we all die.</p>
+      <p>But we do not start from the same position.</p>
+      <p>Some are born into royalty. Others are born into poverty.</p>
+      <p>Some grow up surrounded by opportunity. Others grow up surrounded by limitations.</p>
+      <p>And that's just the way it is. It is a feature of life not a glitch.</p>
+      <p>And thats also the beauty of life.</p>
+      <h2>Different Starting Lines</h2>
+      <p>Right now there is a young man is studying day and night because he believes education is his only escape from poverty.</p>
+      <p>At the same time, somewhere else, another young man is simply waiting to inherit his father's company.</p>
+      <p>Both may be intelligent.</p>
+      <p>Both may be hardworking.</p>
+      <p>But their starting lines are completely different.</p>
+      <p>They don't have the same opportunities. They may have same capabilities but one has an advantage over the other.</p>
+      <h2>Unequal Advantages Go Beyond Money</h2>
+      <p>Inequality is not only about wealth.</p>
+      <p>Life distributes advantages unevenly in many ways:</p>
+      <ul>
+        <li>Some people are naturally intelligent. Others struggle academically.</li>
+        <li>Some discover their talents early. Others spend years searching for what they are good at.</li>
+        <li>Some are physically strong. Others are not.</li>
+        <li>And then there is luck.</li>
+      </ul>
+      <p>Two people may study equally hard and graduate with the same qualifications. Yet one gets a job while the other struggles for years.</p>
+      <p>In Kenya, this is not unusual.</p>
+      <p>It is reality.</p>
+      <p>This is the part people don't like to talk about.</p>
+      <p>Effort matters. Discipline matters. Skill matters.</p>
+      <p>But sometimes, outcomes are influenced by timing, connections, and circumstances that are completely outside your control.</p>
+      <p>You can do everything right and still lose.</p>
+      <p>You can do very little and still win.</p>
+      <p>That is not fair. But it happens.</p>
+      <p>So the question is no longer whether life is fair.</p>
+      <h2>The Only Question That Matters</h2>
+      <p>The real question becomes:</p>
+      <p>What does this mean?</p>
+      <p>According to Tony Robbins, in every situation we make two decisions:</p>
+      <ul>
+        <li>What does this mean?</li>
+        <li>What am I going to focus on?</li>
+      </ul>
+      <p>Because we all interpret events differently and give them different meanings. And that determines what we focus on. And we experience the life we focus on.</p>
+      <p>If life is unfair, then we have a choice in how we interpret that truth.</p>
+      <p>We can choose to focus on our disadvantages.</p>
+      <p>We can blame our parents.</p>
+      <p>We can blame society.</p>
+      <p>We can blame God.</p>
+      <p>We can complain about people who have advantages.</p>
+      <p>And to be clear—all of those complaints are valid.</p>
+      <p>But none of them change reality. Complaining and focusing on our disadvantages only gives you a disadvantaged life.</p>
+      <p>Blame may feel justified, but it is useless. It keeps you stuck at the starting line, arguing about fairness instead of moving forward.</p>
+      <p>The alternative option is far more powerful.</p>
+      <p>We accept the truth:</p>
+      <p>Some people have a head start.</p>
+      <p>Some people will always have advantages we don't.</p>
+      <p>And we all need to acknowledge and accept that is a feature of life. It is not a glitch or a mistake. It is just how life is and has to be.</p>
+      <p>Once we accept this we stop wasting energy fighting reality—and start working within it.</p>
+      <h2>Radical Responsibility</h2>
+      <p>Once you accept that life is unfair, you are left with one unavoidable conclusion:</p>
+      <p>No one is coming to save you.</p>
+      <p>No one will suddenly level the playing field.</p>
+      <p>No one will ask the privileged to step back so that everyone can start equally.</p>
+      <p>That will never happen.</p>
+      <p>So if you started with less, your responsibility becomes clear:</p>
+      <ul>
+        <li>Work harder</li>
+        <li>Learn faster</li>
+        <li>Build stronger discipline</li>
+        <li>Develop skills that make you valuable</li>
+      </ul>
+      <p>Not because it is fair—but because it is necessary. It is your responsibility to level the playing field. And you do that by working twice as hard.</p>
+      <h2>Control What You Can Control</h2>
+      <p>You cannot control where you started.</p>
+      <p>You cannot control your genetics.</p>
+      <p>You cannot control your upbringing.</p>
+      <p>You cannot control luck.</p>
+      <p>But you can control:</p>
+      <ul>
+        <li>Your habits</li>
+        <li>Your effort</li>
+        <li>Your mindset</li>
+        <li>Your ability to improve</li>
+      </ul>
+      <p>It doesn't do you any good to sit and focus on how disadvantaged you are, you couldn't control any of these. But you can control how you respond to your situations.</p>
+      <p>And here's the beauty of it all.</p>
+      <p>Sometimes, the people who start behind end up going the furthest.</p>
+      <p>Why?</p>
+      <p>Because struggle forces growth.</p>
+      <ul>
+        <li>It builds discipline</li>
+        <li>It sharpens focus</li>
+        <li>It creates resilience</li>
+      </ul>
+      <p>People who have everything given to them often lack the pressure that creates strength.</p>
+      <p>Your environment and your conditions are not your curse, they are in fact a blessing in disguise.</p>
+      <h2>Why I Still Work Hard</h2>
+      <p>If life is not fair, then a reasonable question follows:</p>
+      <p>Why work hard at all?</p>
+      <p>Why put in effort when you know the game is uneven?</p>
+      <p>Why push yourself when you can do everything right and still lose?</p>
+      <p>For me, the answer is personal.</p>
+      <p>I work hard because I want improve myself—to become a better version of who I was yesterday. Not perfect. Just better.</p>
+      <p>I read.</p>
+      <p>I train.</p>
+      <p>I learn skills.</p>
+      <p>I build discipline.</p>
+      <p>The more I keep learning, the more knowledge I gain, the more my mindset shifts. I stop putting unnecessary pressure on myself. I stop expecting immediate results. I understand that progress is slow, and that's okay.</p>
+      <p>Because progress compounds.</p>
+      <p>Every page read.</p>
+      <p>Every training session completed.</p>
+      <p>Every skill practiced.</p>
+      <p>It all adds up.</p>
+      <p>I am building my mind.</p>
+      <p>I am building my character.</p>
+      <p>I am building discipline.</p>
+      <p>Truthfully speaking, I don't know if this path will take me out of poverty.</p>
+      <p>But I know something else with absolute certainty:</p>
+      <p>Inaction will keep me exactly where I am.</p>
+      <p>Doing nothing is the only guaranteed failure.</p>
+      <h2>The Meaning Is in the Climb</h2>
+      <p>I have come to see life differently.</p>
+      <p>Life is not about comfort.</p>
+      <p>It is not about sitting back while everything is handed to you.</p>
+      <p>That kind of life creates weakness.</p>
+      <p>You don't want to become someone who is comfortable doing nothing, someone who depends on others for everything.</p>
+      <p>Life is about the uphill climb.</p>
+      <p>You climb, and it is hard. You struggle, and it tests you.</p>
+      <p>But when you reach the top, you want to sit for a moment and enjoy the view for a while. But then you want to look for another hill.</p>
+      <p>A bigger one.</p>
+      <p>Because the meaning was never at the top—it was always in the climb.</p>
+      <p>This is why I don't resent the fact that life is not fair.</p>
+      <p>In a strange way, it gives my life meaning.</p>
+      <p>The fact that I know I have to work harder…</p>
+      <p>The fact that I know nothing is guaranteed…</p>
+      <p>The fact that I must earn everything…</p>
+      <p>That is what makes the journey valuable.</p>
+      <p>If everything were equal and easy, there would be no challenge.</p>
+      <p>And without challenge, there is no growth.</p>
+      <h2>Conclusion</h2>
+      <p>Life is not fair.</p>
+      <p>But that is exactly what makes it worth engaging with.</p>
+      <p>Because now, there is something to prove.</p>
+      <p>Something to build.</p>
+      <p>Something to chase.</p>
+      <p>And even if I don't know where this path will lead, I know this:</p>
+      <p>I would rather struggle while moving forward than stay comfortable while standing still.</p>
+      <img src="../assets/articles/life-is-not-fair.webp" alt="Life is not fair, it never was — Matthew McConaughey" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+    `
+  },
+  {
     slug: 'turning-rejection-into-progress-my-sales-experiment',
     title: 'Turning Rejection Into Progress: My Sales Experiment in Real Time',
     topic: 'Personal Growth',
