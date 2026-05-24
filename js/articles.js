@@ -13,6 +13,65 @@
 
 var ARTICLES = [
   {
+    slug: 'building-inkdraft-an-ai-writing-tool-that-respects-the-writer',
+    title: 'Building Inkdraft: An AI Writing Tool That Respects the Writer',
+    topic: 'Building',
+    date: 'Apr 14, 2026',
+    readTime: '5 min read',
+    substackUrl: 'https://codeandsystems.substack.com/p/building-inkdraft-an-ai-writing-tool',
+    publication: 'code-system',
+    excerpt: 'One of the most frustrating trends in AI-assisted writing is that AI always seems to replace your voice rather than improve it.',
+    body: `
+      <p>One of the most frustrating trends in AI-assisted writing is that AI always seems to replace your voice rather than improve it.</p>
+      <p>AI tools can generate entire articles in seconds, but they lack one thing: the human touch. They lack the biases, opinions, and conviction—the very things that make writing human.</p>
+      <p>So, I built Inkdraft—a writing assistant designed around a simple principle:</p>
+      <p>The writer's voice remains sacred.</p>
+      <p>This article breaks down the technical architecture, design decisions, and trade-offs behind building the project.</p>
+      <h2>The Problem</h2>
+      <p>I like writing on pen and paper before scanning and publishing my articles. After writing, I like to feed my articles to ChatGPT to correct grammatical errors and remove repetitions, but this approach had one main challenge: improving clarity without losing the writer's voice.</p>
+      <p>I decided to test different writing platforms to find a solution.</p>
+      <p>Some platforms focus heavily on AI generation (similar to modern AI writing tools), while others focus on editing but lack intelligent assistance.</p>
+      <p>I wanted to build something that combines: OCR (Handwriting → Text), AI-assisted refinement, and full control for the writer.</p>
+      <h2>System Overview</h2>
+      <p>The architecture is intentionally simple.</p>
+      <p>Frontend: HTML, CSS, JavaScript (no frameworks), single-page interface, Progressive Web App (PWA).</p>
+      <p>Backend: Serverless functions (Vercel), two endpoints: /api/ocr and /api/generate.</p>
+      <p>AI Layer: Google Gemini API.</p>
+      <h2>Key Design Philosophy</h2>
+      <p>1. AI as an Assistant, Not an Author</p>
+      <p>The author now has full control over the writing process. Instead of letting the AI rewrite everything, I constrained it: it must preserve the original meaning, it must not introduce new ideas, and it must highlight uncertainty instead of guessing.</p>
+      <p>This is enforced through strict system prompts.</p>
+      <h2>OCR Pipeline</h2>
+      <p>The OCR system is the core feature.</p>
+      <p>Step 1: Image → Text Extraction. The system sends the handwritten image to the AI model. Instead of naive OCR, the model is instructed to: extract text faithfully, mark unclear words using a different color, and underline wrongly spelled words.</p>
+      <p>Step 2: Grammar Analysis (Not Rewriting). If the writer commands the AI to generate without entering a prompt, it only checks for grammatical errors. It improves grammar, preserves tone, and avoids rewriting the style.</p>
+      <p>This avoids the common issue where AI tools "over-edit" content.</p>
+      <h2>API Design</h2>
+      <p>/api/ocr handles image input, text extraction, and grammar refinement. Key idea: separate transcription from improvement.</p>
+      <p>/api/generate handles AI-assisted suggestions and controlled transformations. Example constraints: no full rewrites, no hallucinated content, and maintain the original structure.</p>
+      <h2>Why Serverless?</h2>
+      <p>I chose Vercel serverless functions because they require zero infrastructure setup and are ideal for early deployment. However, this comes with trade-offs.</p>
+      <p>Downsides: harder to implement rate limiting. However, this is just an MVP and will be improved for scale over time.</p>
+      <h2>Frontend Architecture</h2>
+      <p>Everything currently lives in a single page: index.html.</p>
+      <p>This was intentional for speed and to maintain minimalism, ensuring a friendly interface where the writer only focuses on the material they are writing.</p>
+      <p>PWA Implementation: the app is installable as a Progressive Web App. This allows for partial offline access and an app-like experience.</p>
+      <h2>Challenges</h2>
+      <p>1. AI Reliability — AI models tend to hallucinate and try to over-correct text. I solved this by engineering strict prompts and multi-step processing.</p>
+      <p>2. OCR Accuracy — Handwriting is inconsistent and may sometimes be very hard to read. Instead of forcing efficiency, I decided to embrace the uncertainty. Text that cannot be clearly read is displayed in a different color so the user can correct it if it was interpreted wrongly.</p>
+      <p>3. Token Limits — The Gemini API key has certain usage limits. Right now, it is sustainable as an MVP, but I will eventually need to add usage limits.</p>
+      <h2>What Makes Inkdraft Different?</h2>
+      <p>Unlike typical AI tools: it does not try to write for you, it preserves your voice, and it exposes uncertainty instead of hiding it.</p>
+      <p>This is meant to get the most benefit out of AI-assisted writing while still maintaining the human aspects of the art of writing.</p>
+      <h2>Conclusion</h2>
+      <p>Inkdraft is not just a writing tool—it's an experiment in human-AI collaboration. Instead of replacing creativity, it aims to protect and enhance it.</p>
+      <p>The biggest lesson from building this: "The real challenge isn't building AI features—it's controlling them."</p>
+      <p>Try the project <a href="https://inkdraft-a-writers-best-friend.vercel.app/" target="_blank" rel="noopener">here</a>.</p>
+      <p>Most developers focus on what AI can do. The real leverage comes from deciding what AI should not be allowed to do.</p>
+      <img src="../assets/articles/inkdraft.webp" alt="Inkdraft — Your words, exactly as written." style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+    `
+  },
+  {
     slug: 'you-dont-have-to-suffer-to-grow',
     title: 'You Don\'t Have to Suffer to Grow',
     topic: 'Personal Growth',
