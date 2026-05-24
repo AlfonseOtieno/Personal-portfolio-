@@ -13,6 +13,47 @@
 
 var ARTICLES = [
   {
+    slug: 'the-failed-cybercafe-interview',
+    title: 'THE FAILED CYBERCAFE INTERVIEW',
+    topic: 'Personal Growth',
+    date: 'Apr 29, 2026',
+    readTime: '5 min read',
+    substackUrl: 'https://deliberatelybecoming.substack.com/p/the-failed-cybercafe-interview',
+    publication: 'deliberately-becoming',
+    excerpt: 'I was rejected for a job I thought I was overqualified for.',
+    body: `
+      <p>I was rejected for a job I thought I was overqualified for.</p>
+      <p>I was at home working on building a website that helps people actually learn and apply knowledge. Then I got a call from my elder brother; he had secured me an interview for a cybercafe job. "They just want someone who is computer literate," he said. "At least you will be able to earn some money as you work on your projects."</p>
+      <p>As I was walking out of the door ready to go for the interview, I felt quite uneasy. I wasn't afraid of them rejecting me; my actual fear was, what if they accepted me?</p>
+      <p>The qualification was, after all, being computer literate. For me, having studied computer science in high school, studied virtual assistant skills for a month, learned four programming languages, and having five live websites shipped, I felt like I had passed the bar by far. I was a superstar, and I was only doing the employer a favor by going to work for them.</p>
+      <p>I had never been interested in seeking employment. After all, I didn't have any financial obligations, and I had more time to learn and do other activities I enjoy. For me, the path would be simple: learn to code, build a tool, the tool goes viral, you become rich.</p>
+      <p>I can't say that I have failed in this regard, but after shipping five tools, I now know that being rich doesn't happen instantly.</p>
+      <p>So for me, the plan was simple: go do the cyber job which is below your standard, earn some money in the process while still building, then quit after your tools start generating money.</p>
+      <p>I walked into the interview knowing the job was already mine and I was the best candidate they had.</p>
+      <h2>The interview</h2>
+      <p>The interview started well. "So you are computer literate," the employer said. I nodded confidently. "So tell me what you know that makes you sure you are computer literate." I listed my qualifications—just some, because I had so many that I couldn't exhaust all of them.</p>
+      <p>Then she started asking specific questions, and my confidence level was decreasing with each one.</p>
+      <p>"Do you know graphics design? Do you know how to register birth certificates or driving licenses? Have you ever registered someone's insurance?" To all these questions, I answered no.</p>
+      <p>These were simple tasks that I didn't think were worth learning, and some I didn't even know people were supposed to know. My focus was on learning the more complex things.</p>
+      <p>The interviewer looked me straight in the eye and told me that all the skills I had were not useful for the job. They were not interested in the fact that I could build an AI agent; all they wanted to know was if I could use Canva.</p>
+      <p>No matter how much I tried to convince them that I could easily learn these things, they weren't interested in teaching and paying you at the same time.</p>
+      <p>And that is how I failed the interview.</p>
+      <p>Four months of learning just to be rejected because of skills I could learn in one week.</p>
+      <p>But that failure proved even more insightful.</p>
+      <h2>What if one day the cage is open but the birds can't fly?</h2>
+      <p>I saw this quote on social media and I always liked it. I associated it with the system, or what we call the matrix, and how we're so comfortable with the system that we can't be free. But I see it is applicable in my situation. What if I invest time in learning a skill just to find out that no one is interested in it?</p>
+      <p>One thing I walked out of the interview with is the knowledge that just because it took you time to learn a complex topic doesn't mean that everyone will want your service. So I also need to consider the market. There are a lot of things to learn, and I can't learn and perfect every skill. But from now on, I will consider for a moment: Do I benefit from learning this skill, and would someone want to employ me for this skill?</p>
+      <p>If it doesn't fit in any of the categories, then it is not a priority. So for me, that means that even as I study coding or understanding machine learning, I still have to set aside some time for understanding the simple, basic tasks that people are willing to pay for.</p>
+      <h2>Overconfidence</h2>
+      <p>This was a mistake on my part. I was so overconfident that I didn't even take time to do some research and understand what the job actually requires. I would have been more prepared. It certainly didn't help me to know what is really required while doing the interview and answering no to every question with shock. So that was a mistake on my end.</p>
+      <h2>Application</h2>
+      <p>Firstly, after the interview, I went back to ask what I was supposed to know to be considered qualified. I have decided to spend two weeks learning the basics before I continue with my specialized learning in AI systems.</p>
+      <p>Second, I now know that real-world feedback is important. So for every tool I build from now on, I must ship it and find some people to test it. No need for building a perfect tool no one will use.</p>
+      <p>This article was based on failure. I know that failure is a part of learning, but that doesn't make it any less painful. But I've learned and will try to apply the lessons. I'm looking forward to writing more success articles in the future.</p>
+      <img src="../assets/articles/failure-process.webp" alt="Failure: Fall, Acknowledge, Investigate, Learn, Understand, Realign, Evolve" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+    `
+  },
+  {
     slug: 'building-inkdraft-an-ai-writing-tool-that-respects-the-writer',
     title: 'Building Inkdraft: An AI Writing Tool That Respects the Writer',
     topic: 'Building',
