@@ -13,6 +13,56 @@
 
 var ARTICLES = [
   {
+    slug: 'self-development-is-expensive-so-i-got-a-job',
+    title: 'Self-development is expensive, so I got a job',
+    topic: 'Personal Growth',
+    date: 'May 09, 2026',
+    readTime: '8 min read',
+    substackUrl: 'https://deliberatelybecoming.substack.com/p/self-development-is-expensive-so',
+    publication: 'deliberately-becoming',
+    excerpt: 'I started boxing in January. I have been reading books, writing articles, building websites, learning about AI and how to code — all of it since January. And somewhere around April, I hit a wall that had nothing to do with discipline or motivation.',
+    body: `
+      <p>I started boxing in January. I have been reading books, writing articles, building websites, learning about AI and how to code — all of it since January. This is all aligned with what I call my one year master plan which is focused on self development and self mastery.</p>
+      <p>And I genuinely enjoy every single one of those things. None of it feels like a burden to me. None of it feels like something I am forcing myself to do.</p>
+      <p>But somewhere around April, I hit a wall that had nothing to do with discipline or motivation.</p>
+      <p>I wanted to run the Nairobi City Marathon in June. Not for anyone else. Just for myself — for the experience, and to prove something to the version of me that existed five months ago who would not have believed he could run 10 kilometres. But to register, I needed money. And I realized I couldn't go to my parents and ask them to fund my marathon entry. They already cover my food, my shelter, and most of my basic needs. That is already a significant thing. Going to them and saying "I also need money to run a race" felt like a big ask — and beyond the marathon, I also needed money to buy books, to finally have my own domains, for all the small costs that quietly support the entire system I have built.</p>
+      <p>And that is when I clearly understood something: self-development is expensive.</p>
+      <p>And I'm not even talking about expensive courses or coaching programs. Just in the quiet, practical way where the things you want to do cost money that you don't have. And you can be the most disciplined, most consistent, most intentional version of yourself — and still not be able to register for the marathon you have been training for.</p>
+      <p>So I got a job.</p>
+      <h2>The Social Media Manager Who Had Deleted Social Media</h2>
+      <p>In February, I deleted every social media platform from my phone. Instagram, Twitter, TikTok — all of it gone. I only kept GitHub and Substack because those are tools I actually use for coding and writing. I wanted to focus more on deep work and saw social media as a distraction and a comparison trap.</p>
+      <p>So paradoxically, my first job is social media management.</p>
+      <p>I find the irony genuinely funny. The person who deleted Instagram to protect his deep work now has to reinstall it for work. The person who structured his day specifically to avoid these platforms now has to spend hours inside them.</p>
+      <p>But I apply the same concept of deep work to how I use social media.</p>
+      <p>I set time blocks for when I will use social media, and during those time blocks I only focus on advertising and getting clients. And during these time blocks I'm focused on what I'm doing and try to avoid anything that may distract me.</p>
+      <p>So right now I can say my job involves deep work while using social media.</p>
+      <h2>My Brother's Selfishness and Mine</h2>
+      <p>The company I am working for is my brother's. It is a web development startup — a small one but growing. My brother is a selfish person and I respect him for that. And before I got the position, my brother told me something.</p>
+      <p>He said he would not give me the job unless I was actually going to benefit the company. No favors. No charity. I had to prove my value. If his partners didn't see the value, I wasn't getting in.</p>
+      <p>I genuinely like that. Because when I got the position, I knew it wasn't handed to me out of obligation. His partners looked at what I could offer and decided it was worth something. He didn't give me a job after I finished high school, and when I finally asked him for a job, I had to pass an interview before getting the job.</p>
+      <p>They didn't place me as a developer. I have been learning web development for four months. They have people with university degrees and years of real experience. They didn't think I was ready or skilled enough for the job, and I too knew they were more skilled than me, and I was comfortable with that fact. So they gave me social media management. They are willing to give me the web development job, but I still need to earn it.</p>
+      <p>That is a smarter arrangement than a title I hadn't earned.</p>
+      <p>Now here is where my own selfishness enters.</p>
+      <p>I took this job for the money. I will say that plainly. I want to register for the marathon. I want to buy books. I want to stop working around financial constraints every time I want to do something for my own development. The money is the point of the job — not the social media itself. Not for passion.</p>
+      <p>But that selfishness is exactly what will make me do the job well. If I want to extend the contract, the company needs to see results. If I want to be paid more, I need to produce better results than they are paying me for. My self-interest and the company's interest are pointing in the same direction. Not because I am a dedicated employee who loves the mission — but because performing well is what gets me what I actually came for.</p>
+      <p>But I am also doing this job with a genuinely open mind. I started this year with web development as my main path. But I am only 19. I don't expect myself to have my entire life figured out. There is no guaranteed one path to anything. Maybe I will be very good at my job. Maybe I will produce exceptional results for the company. I am not dismissing the experience before I have had it. I am showing up, doing the best I can, and remaining curious.</p>
+      <h2>Why I Actually Love This Job</h2>
+      <p>I wake up and I decide whether I am going to the office or working from home. Either way, my morning still belongs to me. The run. The training. The reading. The things I have been doing since January continue exactly as they were. The job has obligations — things I need to deliver by the end of day. As long as I deliver them, how I structure the hours in between is my own business. I'm still able to learn web development and build my own projects.</p>
+      <p>When I go to the office, I am in a room with developers who are better than me. We talk about the job. I ask questions that are worth asking. I also learn from them.</p>
+      <p>At the end of the week, I get paid.</p>
+      <p>I love this job because I still do everything I was doing before. The boxing, the reading, the building, the writing — none of it stopped. I just added work obligations into the schedule, and the work funds the rest.</p>
+      <p>I love this job because I am not choosing between self-development and money. Right now I am doing both in the same week, sometimes on the same day.</p>
+      <p>I love this job because I get to learn from people who are better than me, and they also happen to be people I enjoy spending time with. I go to the office when I'm having a challenge or don't understand something, they are always willing to help. I call them my workmates. I also call them my friends. And I get paid at the end of the week for spending time with them.</p>
+      <h2>What I Understand Now That I Didn't Before</h2>
+      <p>I used to hold self-development and money as separate pursuits that belonged to different seasons of life. The people telling me to get a job and secure money first — I understood their logic, but I disagreed with the sequencing. I believed I should develop myself first and handle money later.</p>
+      <p>What I understand now is that they were not opposite things. They were just poorly integrated in how I was thinking about them.</p>
+      <p>Self-development without money has a ceiling. You eventually reach something you want to do, something that would genuinely push you forward, and you cannot do it because you can't afford it. The marathon taught me that. The domain fees taught me that. The books I wanted but couldn't buy taught me that.</p>
+      <p>Money is not the goal. I have never believed it was and I still don't. But money is the tool that keeps the system running. And a system without resources eventually stalls, no matter how disciplined the person operating it is.</p>
+      <p>I am not rich. I am not trying to be rich right now. I am trying to have enough that money stops being the reason I can't do the next thing I want to do. I am not chasing money, but I will also not pretend it doesn't matter.</p>
+      <p>Right now, I am learning, I am getting paid, and I am still doing everything I care about. The system finally has the money it requires to keep moving.</p>
+    `
+  },
+  {
     slug: 'i-am-sisyphus-and-i-am-happy',
     title: 'I Am Sisyphus. And I Am Happy.',
     topic: 'Philosophy',
