@@ -54,6 +54,44 @@ var ARTICLES = [
     `
   },
   {
+    slug: 'what-i-have-learnt-from-reading-deep-work-by-cal-newport',
+    title: 'What I Have Learnt From Reading Deep Work by Cal Newport',
+    topic: 'Books',
+    date: 'Apr 26, 2026',
+    readTime: '7 min read',
+    substackUrl: 'https://deliberatelybecoming.substack.com/p/what-i-have-learnt-from-reading-deep',
+    publication: 'deliberately-becoming',
+    excerpt: 'I have always considered myself a hard worker, but I never felt like I was learning or producing at my optimal rate.',
+    body: `
+      <img src="../assets/articles/deep-work.webp" alt="Deep Work by Cal Newport" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <h2>Why I Started Reading the Book</h2>
+      <p>I have always considered myself a hard worker, but I never felt like I was learning or producing at my optimal rate. I started learning how to build websites immediately after high school. Four hours per day dedicated to learning — two hours in the morning for learning something new, two hours in the evening for doing a project to apply what I had learnt. But I never fully had truly concentrated in the task at hand for the entire two hour period. I would usually get bored after one hour. I had deleted social media so that I would not get distracted, but now I could find myself scrolling through my gallery or just staring at the screen without doing anything meaningful.</p>
+      <p>I wanted to learn how to get the most out of my two hour deep work windows. I did some research and found that Deep Work by Cal Newport was the best book for that purpose. After finishing reading the book, I can comfortably say that it has provided me with the answer to my question and a lot of useful insight.</p>
+      <h2>What the Book is About</h2>
+      <p>The book revolves around the idea of deep work. Activities done in a state of distraction free concentration that push your cognitive abilities to their limits and are hard to replicate. It also describes shallow work, which is the opposite.</p>
+      <p>Cal Newport starts by describing what deep work is, he then proceeds to explain why deep work is useful for you to learn and produce at a high level. Once you are fully convinced is when he gives you frameworks to adopt deep work to your daily habits. He gives a number of options and alternatives and the reader chooses which ones they want to adopt. Newport also states some of the challenges facing deep work and some of the ways to cope with them. In this article I'll only cover some of the ideas that stuck with me most and the ones I find most beneficial to me.</p>
+      <h2>What Deep Work and Shallow Work Actually Is</h2>
+      <p>One of the major things for me was getting to understand what deep work actually is. It is not keeping yourself occupied and trying to look busy all the time.</p>
+      <p>Hard work is good but you must ensure that you are doing productive work — you must have produced something at the end.</p>
+      <p>For me it was asking myself, how hard is it to automate what I have done and how long would it take to train someone to do it.</p>
+      <p>Understanding shallow work was also beneficial. If it doesn't challenge your current abilities, if it doesn't improve your professional skills, if at the end you don't produce anything, then it doesn't matter how hard you worked or how long. It was still shallow work.</p>
+      <p>This didn't just help me in coding. I realised my shallow work in boxing training where I was repeating the same easy task over and over and never progressing to other challenging drills, watching podcasts that made me feel like I was learning but without real world application. I decided to stop trying to just look busy and look for activities that were beneficial for me.</p>
+      <p>For me that meant reducing the amount of time promoting projects built, to focus more on learning and building better projects, reducing the number of podcasts watched, to write about what I've learnt from them, and not trying to look busy in the boxing gym so that I can learn something each day.</p>
+      <p>And right now I'm improving at a faster pace.</p>
+      <h2>Embrace Boredom</h2>
+      <p>Your concentration when working and how long you can sustain it is not determined at the moment, it is determined by the activities done before. I didn't know that. I believed that one can just summon concentration wherever they wanted. Newport explains that what you do before the work and during breaks is also a key factor in your quality of work.</p>
+      <p>One thing I started doing was not using my phone for at least 10 minutes before sitting down to work. It sounds small but the difference is noticeable. When you open social media right before working, your brain is already in a state of constant novelty-seeking — every scroll brings something new, something stimulating. Then you sit down to work and the task feels dull by comparison. You haven't even started and you're already losing.</p>
+      <p>The same applies to breaks. When you feel tired or notice the first hint of distraction, the instinct is to reach for your phone. I'd argue that is the worst thing you can do. A better approach is to sit with the discomfort for five minutes before giving in. Most of the time the urge passes but even if it doesn't pass then it is still okay. What you're actually doing is training your brain to not surrender at the first sign of boredom. Every time you decide to resist the temptation is rewiring the brain.</p>
+      <p>If you do take a break and watch videos, each clip arriving with a new face, a new sound, a new idea, you've reset your dopamine baseline to expect constant stimulation. When you return to work, the single task in front of you cannot compete. That is why after a stimulating break the work feels like hell. You didn't rest your brain. You overfed it.</p>
+      <h2>A Deep Life is a Meaningful Life</h2>
+      <p>This is where Newport moves beyond productivity and makes a philosophical argument, and it is the part of the book that stuck with me the most.</p>
+      <p>When you are fully concentrated on a single task, you are by definition closed off to distraction. And in the world we are living in right now, distraction is not neutral. The social media ecosystem is built on volume and most of that volume is negative. The more you are open to distraction, the more you are exposed to information that does nothing for you, and a lot of it quietly damages your mood and your outlook without you realising it.</p>
+      <p>So concentration is not just a productivity tool. It is a filter. It protects you from the noise. And beyond protection, it provides something deeper — meaning.</p>
+      <p>When you are working towards something, immersed in it, your mind is not idle. And an idle mind is the devil's workshop. This is not just a proverb, it is a real and observable thing. The moment you have nothing to focus on, the mind reaches for something, and it rarely reaches for something good.</p>
+      <p>Newport says in the book, I will live the deep life because it is the most meaningful life there is. When I read that, it didn't feel like the conclusion of a productivity book. It felt like a life principle. And that is what I am taking from it — not just a framework for getting more done, but a reason to be more intentional about where I direct my attention, because where your attention goes, your life follows.</p>
+    `
+  },
+  {
     slug: 'building-inkdraft-an-ai-writing-tool-that-respects-the-writer',
     title: 'Building Inkdraft: An AI Writing Tool That Respects the Writer',
     topic: 'Building',
