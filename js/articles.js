@@ -1728,20 +1728,26 @@ function renderArticlesList(filter) {
   }
 
   grid.innerHTML = filtered.map(function (a) {
+    var imageHtml = a.image
+      ? '<div class="article-card-img"><img src="../assets/articles/' + a.image + '" alt="' + a.title + '" onerror="this.parentNode.style.display=\'none\'" /></div>'
+      : '';
+
     return '<div class="article-card" data-slug="' + a.slug + '">' +
-      '<span class="article-pub-badge ' + getPubClass(a.publication) + '">' + getPubLabel(a.publication) + '</span>' +
-      '<h3>' + a.title + '</h3>' +
-      '<p>' + a.excerpt + '</p>' +
-      '<div class="article-card-meta">' +
-        '<span>' + a.date + '</span>' +
-        '<span>' + a.readTime + '</span>' +
-        '<span>' + a.topic + '</span>' +
-        '<span class="article-read-link">Read <i class="fa-solid fa-arrow-right" style="font-size:0.75rem;"></i></span>' +
+      imageHtml +
+      '<div class="article-card-body">' +
+        '<span class="article-pub-badge ' + getPubClass(a.publication) + '">' + getPubLabel(a.publication) + '</span>' +
+        '<h3>' + a.title + '</h3>' +
+        '<p>' + a.excerpt + '</p>' +
+        '<div class="article-card-meta">' +
+          '<span>' + a.date + '</span>' +
+          '<span>' + a.readTime + '</span>' +
+          '<span>' + a.topic + '</span>' +
+          '<span class="article-read-link">Read <i class="fa-solid fa-arrow-right" style="font-size:0.75rem;"></i></span>' +
+        '</div>' +
       '</div>' +
     '</div>';
   }).join('');
 
-  /* Attach click handlers */
   grid.querySelectorAll('.article-card').forEach(function (card) {
     card.addEventListener('click', function () {
       openArticle(card.dataset.slug);
@@ -1761,6 +1767,11 @@ function openArticle(slug) {
   listView.classList.add('hidden');
   singleView.classList.remove('hidden');
 
+  var pubLabel = article.publication === 'deliberately-becoming' ? 'Deliberately Becoming' : 'Code &amp; System';
+  var subUrl = article.publication === 'deliberately-becoming'
+    ? 'https://deliberatelybecoming.substack.com'
+    : 'https://codeandsystems.substack.com';
+
   singleView.innerHTML =
     '<div class="container">' +
       '<div class="article-full">' +
@@ -1779,7 +1790,11 @@ function openArticle(slug) {
         '<div class="article-full-body">' + article.body + '</div>' +
         '<div class="article-substack-note">' +
           '<i class="fa-solid fa-arrow-up-right-from-square" style="margin-right:0.4rem;"></i>' +
-          'Originally published on <a href="' + article.substackUrl + '" target="_blank" rel="noopener">Substack</a>.' +
+          'This article was originally published on Substack. <a href="' + article.substackUrl + '" target="_blank" rel="noopener">Click here to read on Substack</a>.' +
+        '</div>' +
+        '<div class="article-subscribe-cta">' +
+          '<p>Enjoyed this article? Subscribe to <strong>' + pubLabel + '</strong> for more.</p>' +
+          '<a href="' + subUrl + '" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on Substack</a>' +
         '</div>' +
         '<button class="back-btn" style="margin-top:2rem;margin-bottom:0;" id="article-back-btn-bottom">' +
           '<i class="fa-solid fa-arrow-left"></i> Back to Articles' +
@@ -1789,7 +1804,6 @@ function openArticle(slug) {
 
   window.scrollTo(0, 0);
 
-  /* Back buttons */
   ['article-back-btn', 'article-back-btn-bottom'].forEach(function (id) {
     var btn = document.getElementById(id);
     if (btn) {
@@ -1799,7 +1813,6 @@ function openArticle(slug) {
     }
   });
 
-  /* Hash routing */
   if (history.pushState) {
     history.pushState(null, '', '#' + slug);
   }
