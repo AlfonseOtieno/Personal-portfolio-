@@ -13,6 +13,80 @@
 
 var ARTICLES = [
   {
+    slug: 'i-am-sisyphus-and-i-am-happy',
+    title: 'I Am Sisyphus. And I Am Happy.',
+    topic: 'Philosophy',
+    date: 'May 05, 2026',
+    readTime: '10 min read',
+    substackUrl: 'https://deliberatelybecoming.substack.com/p/i-am-sisyphus-and-i-am-happy',
+    publication: 'deliberately-becoming',
+    excerpt: 'I am 19 years old, living in Nairobi, and I am the happiest I have ever been in my life. My conditions haven\'t changed much. But something shifted in me.',
+    body: `
+      <p>I am 19 years old, living in Nairobi, and I am the happiest I have ever been in my life.</p>
+      <p>My conditions haven't changed much. I still live with my parents. I still don't have a stable income. The financial constraints are still there. But something shifted in me. And I want to try and explain what that is.</p>
+      <p>I'll be honest with you: it's not easy to explain. If you asked me right now to give you a clear, convincing argument for why I spend money on books instead of saving it, why I would pay to enter a marathon, why I go to boxing training and get hit — I wouldn't give a specific answer or a strong argument.</p>
+      <p>I can't give you facts and figures. But what I can tell you is that I am proud of myself in a way I have never been before. And the only thing I changed is my actions.</p>
+      <p>This article is my attempt to explain that, through four ideas I've been reading about. Not because I'm an expert in any of them — I'm not. But because they come closest to describing something I couldn't name on my own.</p>
+      <h2>Self-Actualization — Why We Are Not All After the Same Thing</h2>
+      <p>In Kenya, the conversation for most people in their twenties goes roughly the same way. You finish school. You look for a job. You start earning. You build stability. That is the script, and for most people, it is not wrong — it is necessary.</p>
+      <p>But I have noticed something. When I talk to peers who are out of their parents' house and fully responsible for themselves, we seem to be chasing completely different things. They are focused on income, on security, on building a foundation. I am focused on boxing, on reading, on writing articles, on running a marathon, on coding and building AI powered tools. And to them, that looks like wasting time.</p>
+      <p>After going through Maslow's hierarchy of needs, I finally understood why we see things so differently.</p>
+      <img src="../assets/articles/maslow-hierarchy.webp" alt="Maslow's Hierarchy of Needs" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <p>The hierarchy places human needs in order — physiological needs at the base (food, shelter, sleep), then safety and security, then love and belonging, then self-esteem, and at the very top, self-actualization. The idea is that you have to meet the lower needs before you naturally start pursuing the higher ones.</p>
+      <p>For a 23-year-old in Nairobi who is paying rent, buying their own food, and supporting themselves — the priority is survival. The hierarchy demands it. Physiological needs, then security. Everything else comes after. That is not a mindset problem. That is just where they are on the pyramid, and their energy goes where the need is greatest.</p>
+      <p>My situation is different. Right now, my physiological needs are covered by my parents. Safety is covered. I have people around me I care about. So without fully realising it, I've moved up the hierarchy. I'm not chasing food or shelter — those are handled. And that has put me in a position to pursue self-esteem and, eventually, self-actualization.</p>
+      <p>This is why the same advice doesn't apply equally to all of us. It's not that one person is right and the other is wrong. We are simply at different stages of the same hierarchy. The person telling me to get a job is solving a real problem — just not the problem I currently have.</p>
+      <p>I'm not anti-money. I know that eventually I will enter that stage — where the support my parents provide disappears and I have to build the foundation myself. But I'm not there yet. And I think forcing that urgency now would mean abandoning the one window in my life where I have the freedom to pursue the top of the pyramid.</p>
+      <p>I don't know if this window will come again. So I'm using it right now.</p>
+      <h2>The Myth of Sisyphus — The Absurd Man</h2>
+      <p>I tried to read The Myth of Sisyphus by Albert Camus. I'll be truthful — it's a heavy book. There was a lot to internalize and I didn't read it at the depth it deserves. But I understood enough to recognize myself in it.</p>
+      <p>Camus starts with one question: if life has no inherent meaning, why continue?</p>
+      <p>He looks at two common answers and rejects both.</p>
+      <p>The first is religion — the idea that this world is not the real one, that meaning exists in another world waiting for us after death. Camus calls this philosophical suicide. You're not answering the question. You're escaping it.</p>
+      <p>The second answer is nihilism — deciding that nothing has meaning, so nothing is worth doing. But this also helps no one. It's just a different kind of surrender. This is what Camus calls real death.</p>
+      <p>His answer is the absurd man. Someone who looks at the meaninglessness of the world directly, refuses to look away, and chooses to live fully anyway. Not in spite of the absurdity — within it.</p>
+      <p>Then there's Sisyphus. In the myth, he was a man who loved life so much that he escaped death twice. I believe Sisyphus saw life so meaningful that he couldn't go to the underworld.</p>
+      <p>When he finally died the gods gave him what they saw as the worst punishment, a meaningless task — push a boulder up a hill for eternity, watch it roll back down, and repeat. Forever.</p>
+      <p>They thought this would break him. Camus says we should imagine Sisyphus happy.</p>
+      <img src="../assets/articles/sisyphus-camus.webp" alt="Sisyphus rolling the boulder — The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy. — Albert Camus" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <p>Most people interpret Sisyphus as the person working a nine to five job they hate, doing the same thing every day, going nowhere. That's one way of reading it.</p>
+      <p>But my reading is different. I think everyone is Sisyphus. We are all born, we live, we struggle, and then we die. The boulder always rolls back.</p>
+      <p>That's just what life is. The question is not whether the boulder rolls back — it always does. The question is whether you are the version of Sisyphus who pushes it in misery, feeling condemned, and always holding on to the hope that someone else will come and save you, or the version Camus imagined — the one who has accepted the rock as his own and pushes it happily.</p>
+      <p>Growing up in a lower-middle-class family in Nairobi, there is a script most of us follow. You survive.</p>
+      <p>At some point I looked at that script and asked myself: is this it? Be born, live your life surviving and chasing money, then die without ever achieving anything? A meaningless life?</p>
+      <p>And I decided that was not enough for me.</p>
+      <p>So now I always have something in front of me that I derive meaning from. A boxing tournament coming up. A marathon to train for. An article I need to write by next week. Not because these things will make me rich. But they always give me something to work towards.</p>
+      <p>I remember a time when I had nothing planned, nothing to do. No training. No article due. Nothing to look forward to. I felt terrible — and I couldn't even explain why. Life was just happening to me. I was just existing. And I think that was the closest I've ever been to the miserable Sisyphus — not because my conditions were bad, but because I had stopped choosing my boulder.</p>
+      <p>Right now, every day when I go to boxing training, when I write an article, when I build a tool to solve something — I am that guy rolling the stone up the hill. But I'm doing it happily. Because I chose this. And choosing your own struggle is completely different from having struggle chosen for you.</p>
+      <h2>Stoicism — Accepting the Cards You Were Dealt</h2>
+      <p>I cannot deny my limitations.</p>
+      <p>Financial constraints — real ones. Things I want to do that I simply cannot afford right now. Resources I don't have access to. A starting point I did not choose.</p>
+      <p>Heidegger called this thrownness — the idea that we are thrown into the world without choosing our conditions. You don't choose your family, your neighbourhood, your starting position. You just arrive, and these are your cards. Some people are dealt better hands than others. That is not fair. But it is the reality.</p>
+      <p>The stoic response — what I understand of Marcus Aurelius and what stoicism generally teaches — is not to pretend the cards are better than they are. It is to accept them fully and then ask: what can I do with these cards I've been dealt?</p>
+      <p>Because I have good cards and bad cards. The bad ones are real — I won't pretend otherwise. But I also have cards that people in other situations don't have. I have time. I have drive. I have a roof over my head while I build. Those are cards too.</p>
+      <p>The stoic principle that changed how I think is simple: you cannot control the world, but you can control how you respond to it. I cannot control where I was born or the environment I grew up in. But I can control what I do with what I have. And that is the only variable that is actually mine.</p>
+      <p>So I find ways around the limitations. No money for web hosting — I found free platforms. No laptop yet — I use my phone. Five projects online, zero cost. Can't always afford to buy books — I find them online. Want to run a marathon but the entry fee is not small — I get a job and save slowly, week by week.</p>
+      <p>I will always have limitations that give me a reason not to do something. Those reasons are real. I don't dismiss them. But I choose not to accept them as a final answer.</p>
+      <h2>The Hero's Journey — The Archetype I Am Completing</h2>
+      <p>Here is something I've had to make peace with: I am not original.</p>
+      <p>Spending about a month studying Greek mythology made that very clear. Every story I thought was mine has been told before. Every drive I feel has been felt before. The young man who realizes he is capable of more, who decides to become it, who faces obstacles and is shaped by them — that is not a new character.</p>
+      <p>That is Heracles. That is Achilles. It is the hero's journey that Joseph Campbell mapped across every culture in human history. The structure is always the same: the hero realizes he is capable of more. He crosses a threshold and commits to the journey. He faces trials that are difficult — and those trials are precisely what make him the hero. And at the end, there is transformation.</p>
+      <p>I am just completing an archetype.</p>
+      <p>And that doesn't discourage me. It anchors me. Because it means this path is proven. The shape of it has worked before.</p>
+      <p>If Sisyphus is the condition of all of us — born, struggle, die — then the hero's journey is the answer to it. It's how you make the boulder worth pushing.</p>
+      <p>In more recent times, David Goggins is one of the people who shaped how I think about physical limits. He is the reason I started running. He came from difficult conditions and decided those conditions were not his ceiling. He isn't a perfect comparison to my life — but the archetype is the same.</p>
+      <p>What I'm doing from January to December, the one-year master plan I built, is just me filling in the hero's journey with the details of my own life. Boxing. Running. Writing. Building. Reading. Nothing new. Nothing special.</p>
+      <p>But I've decided to be the hero of my own version of it.</p>
+      <h2>What I Cannot Fully Explain</h2>
+      <p>If you asked me right now to justify all of this economically — I couldn't. Paying to enter a marathon doesn't increase my income. Getting hit in sparring doesn't build my CV. Writing articles doesn't pay rent.</p>
+      <p>But I am proud of myself in a way I have never been. I am happy in a way I have never been. And the only thing that changed is what I do every day.</p>
+      <p>I can't fully explain that. Maybe I don't need to.</p>
+      <p>What I know is that five months ago, running 10 kilometres felt impossible to me. Not difficult — impossible. And now I'm training for it. That is proof of work. Real, physical, undeniable proof that the ceiling I set for myself was not the real ceiling.</p>
+      <p>And if I was wrong about that, what else was I wrong about?</p>
+      <p>That question is what keeps the boulder moving.</p>
+    `
+  },
+  {
     slug: 'the-failed-cybercafe-interview',
     title: 'THE FAILED CYBERCAFE INTERVIEW',
     topic: 'Personal Growth',
