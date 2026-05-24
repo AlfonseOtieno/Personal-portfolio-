@@ -13,6 +13,59 @@
 
 var ARTICLES = [
   {
+    slug: 'reading-cant-hurt-me-by-david-goggins',
+    title: 'Reading Can\'t Hurt Me by David Goggins',
+    topic: 'Books',
+    date: 'May 12, 2026',
+    readTime: '8 min read',
+    substackUrl: 'https://deliberatelybecoming.substack.com/p/reading-cant-hurt-me-by-david-goggins',
+    publication: 'deliberately-becoming',
+    excerpt: 'I have interacted with David Goggins content countless times and in different ways. From highlight reels to podcasts. I decided to now read a book by David Goggins.',
+    body: `
+      <img src="../assets/articles/cant-hurt-me.webp" alt="Can't Hurt Me by David Goggins" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
+      <p>I have interacted with David Goggins content countless times and in different ways.</p>
+      <p>In January it was the highlight reel on social media — the videos of him running in the dark, cursing and talking with that voice that makes you feel like you have been wasting your life. I used to watch these videos when I was still in search of motivation to do the hard things. But watching these videos alone would make me feel more disciplined, like I had already done the work. I have written about the trap of motivation porn — the loop where you consume content about discipline and mistake the consumption for the discipline itself. Goggins' highlight reels were some of the first content I used that way.</p>
+      <p>Then I wrote an article about my Ideal Life Philosophy, partly in response to a Huberman Lab podcast where Goggins described his daily life as all stick and no carrot. My argument in that article was that my own version of self development does not have to be painful to be significant — that I genuinely enjoy boxing, coding, reading, and building, and that enjoyment doesn't make the work less serious.</p>
+      <p>From watching highlight reels of Goggins to realising his point of view and mentality in podcasts. I decided to now read a book by David Goggins.</p>
+      <h2>Why I Read The Book</h2>
+      <p>I had two specific reasons for reading the book.</p>
+      <p>The first was to understand more about Goggins himself. The highlight reels showed the disciplined man running and cursing. The podcasts showed how the man thinks when he is not running. But I wanted to understand the actual man — how he became what he became, what the process looked like from the inside, and what has kept him operating at that level for decades, why he didn't burn out like most people.</p>
+      <p>The second was to understand how to unleash and utilise my full potential. I had encountered the idea that human beings operate at roughly 40% of their actual capacity — that there is a significant reserve we never access because we stop when we feel discomfort rather than when we are actually done. I wanted to understand that idea more deeply, because I am not trying to pursue discipline for four months or even four years. I want to carry these habits for a lifetime. I wanted to know how a person builds that kind of endurance without destroying themselves in the process.</p>
+      <p>Those were the two questions I had when I opened the book, and I can comfortably say that I found the answer by the time I finished reading the book.</p>
+      <h2>What the book is about</h2>
+      <p>I opened Can't Hurt Me expecting a framework. Tips. A system. The Goggins method for unlocking your potential, laid out in steps I could apply immediately. It started with his life story. I kept reading and waiting for the section where he starts giving frameworks.</p>
+      <p>It never did.</p>
+      <p>The book is almost entirely David Goggins describing his life — his childhood, his environment, the abuse, the poverty, the learning disability, the racism, the years he spent playing dumb and cheating on tests because he had convinced himself he wasn't capable of more. It is a memoir that happens to be about one of the most disciplined human beings alive. And I have come to appreciate that choice deeply, because it confirms what Goggins has been saying all along, "There is no hack."</p>
+      <h2>What I Found</h2>
+      <p>Once you read about his childhood, you stop feeling sorry for yourself. You read what he came from, his struggles and then you look at your own situation and you see all your excuses slowly fade away.</p>
+      <p>For me specifically, reading it in my context: I am not racially discriminated against. I don't have a learning disability. I am not in an abusive environment. By the time I finished the book, those facts felt less like a neutral background and more like advantages I had been underusing. If Goggins became who he is from where he started, then from where I started, the ceiling should be higher.</p>
+      <h2>The Two Things That Stuck With Me Most</h2>
+      <h2>The 40% Rule</h2>
+      <p>Goggins argues that when the mind sends the signal to stop — when you feel like you have nothing left, when your body is telling you it's over — you have actually used approximately 40% of your true capacity. The remaining 60% is locked behind a governor that the mind installs to protect you from discomfort. The work, he argues, is learning to override that governor.</p>
+      <p>I now use this during every training session and every run.</p>
+      <p>When I feel tired, I treat it as the 40% marker. I say it to myself: you have used 40%, there is still more in the tank. Like Goggins says, "I don't stop when I'm tired. I stop when I'm done."</p>
+      <p>I still feel tired during roadwork or intense training sessions. But now the feeling is a signal to tell me where I am, not what to do next. The process is working past the governor.</p>
+      <h2>The Accountability Mirror</h2>
+      <p>Goggins describes standing in front of a mirror and being honest with himself about who he was and what he was avoiding. Just you, the person in the mirror, and the truth.</p>
+      <p>I apply this literally.</p>
+      <p>Every morning, before the day begins, I stand in front of the mirror and have a dialogue with myself. I agree on what needs to be done by the end of the day. I walk out with a spoken agreement with the person looking back at me.</p>
+      <p>Then at night, before I sleep, I return to the mirror. And we discuss what happened. Did I do what I said I would do in the morning? What went well? What can be improved?</p>
+      <p>And I can say that having a dialogue with the guy looking you in the eye gives more clarity for me, and also the fear of having to tell the person that you failed to live up to what you agreed in the evening proves to be more motivation to work than any checklist or journal would have.</p>
+      <h2>Where I Draw the Line</h2>
+      <p>I respect David Goggins enormously. But I don't see any use of trying to become another David Goggins.</p>
+      <p>There is only one David Goggins. The world does not need a second one, and I do not need to produce one. What I need is to become the fullest version of myself — and that version is a boxer, a developer, a writer, a reader. Not a Navy SEAL. Not an ultramarathon runner who trains on broken knees.</p>
+      <p>I read sections of the book where Goggins describes running through injuries that would have ended most people's careers. His body has paid a significant price for the way he has pushed it. I read those sections and I feel genuine admiration for the will it required. And then I put that admiration in its place and remember that I need my body to be functional. A boxer who ignores recovery does not perform — he just accumulates damage. For me, discipline includes listening to my body, protecting my joints, sleeping enough, eating properly. Not because I consider myself soft, but my sport requires it.</p>
+      <p>The endurance I want to build — the mental toughness, the capacity to push past the 40% marker — I will pursue through my own version. My boxing training. The marathon I am preparing for. The long coding sessions and the articles I write. I will prove things to myself in my own arena.</p>
+      <p>After all; The judge that matters is the person I stand in front of each morning and each evening. That is the person that sets the standard.</p>
+      <h2>What the Book Left Me With</h2>
+      <p>There is one line that really stayed with me;</p>
+      <p>It takes 20 years to build 20 years of experience.</p>
+      <p>I have been at this since January. Four months of boxing, coding, running, reading, building. That line feels like a reminder for me not to pressure myself and expect perfection after only four months. David Goggins did not become David Goggins in four months. The version of him that the world knows was built over decades, through repeated cycles of failure, relapse, rebuilding, and pushing forward again.</p>
+      <p>The book does not hide those cycles. He was not a finished product who decided to change and immediately became elite. There were stages where he went backwards. Periods where the old patterns returned. The transformation was not a single event. It was a long, uneven, deeply personal process.</p>
+      <p>I read Can't Hurt Me thinking I would walk away with frameworks. I walked away with something more useful: a picture of what a man can do with enough motivation, and the willingness to continue even when you feel like quitting.</p>
+    `
+  },
+  {
     slug: 'self-development-is-expensive-so-i-got-a-job',
     title: 'Self-development is expensive, so I got a job',
     topic: 'Personal Growth',
