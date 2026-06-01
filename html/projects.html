@@ -58,13 +58,26 @@
       <button class="project-filter-btn" data-filter="client">Client Work</button>
     </div>
 
-    <!-- Grid — filled by projects.js -->
+   <!-- Grid — filled by projects.js -->
     <div class="projects-grid" id="projects-grid"></div>
+
+    <!-- GitHub CTA -->
+    <div class="projects-github-cta">
+      <div class="projects-github-cta-inner">
+        <div>
+          <h3>All the code is public.</h3>
+          <p>Every project lives on GitHub. Follow along as I build, break things, and improve.</p>
+        </div>
+        <a href="https://github.com/AlfonseOtieno" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-brands fa-github" style="margin-right:0.5rem;"></i>View GitHub Profile
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- SINGLE PROJECT VIEW — shown when a project is opened -->
-<div id="projects-single-view" class="project-single-view">
+<div id="projects-single-view" class="project-single-view hidden">
   <div class="container">
     <div class="project-single" id="project-single-content">
       <!-- Filled dynamically by projects.js -->

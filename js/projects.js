@@ -79,15 +79,15 @@ var PROJECTS = [
     title: 'This Portfolio',
     type: 'personal',
     status: 'Live',
-    summary: 'The portfolio you are looking at right now. Built from scratch with zero frameworks, zero templates, and zero dependencies except Google Fonts and Font Awesome.',
-    liveUrl: 'https://alfonseotieno.github.io/',
+    summary: 'A living document and archive — not just a showcase. Stores the narrative of someone building themselves from the ground up through projects, articles, progress, and quotes.',
+    liveUrl: 'https://alfonseotieno.github.io/Personal-portfolio-/',
     githubUrl: 'https://github.com/AlfonseOtieno/Personal-portfolio-',
-    image: 'portfolio.png',
+    image: 'portfolio-preview.png',
     stack: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
-    problem: 'Most portfolio templates look identical and say nothing. I needed a portfolio that documented who I actually am and what I was doing &mdash; not a template with my name swapped in.',
-    solution: 'Designed and built from scratch. Every page written by hand. The entire design system &mdash; typography, colour palette, spacing &mdash; created from nothing. The portfolio is itself one of the five projects shipped in the first 60 days.',
-    challenges: 'The main challenge was doing design without a design background. I had no Figma mockup. I worked directly in the browser, adjusting layout and spacing until it felt right. Responsive design across all screen sizes without a CSS framework was harder than expected.',
-    learned: 'That constraints produce clarity. Building without a framework forced me to understand CSS deeply &mdash; every layout I wanted, I had to build myself. I\'ll never not know how flexbox works again.',
+    problem: 'I needed more than a portfolio. I needed a place to maintain the narrative — an archive of projects, articles, quotes, and progress that tells the story of someone building themselves from the ground up. Most portfolios are static CVs. I needed something alive.',
+    solution: 'Built from scratch with zero frameworks. Every page written by hand. The portfolio is structured as a living document — articles mirror my Substack, projects have honest case studies, the progress page tracks real milestones, and quotes capture the ideas shaping how I think. It grows every time something new happens.',
+    challenges: 'Designing without a design background, no Figma mockup, working directly in the browser. Responsive design across all screen sizes without a CSS framework. The harder challenge was figuring out what the portfolio was actually for — once I understood it was an archive and a narrative, not just a showcase, every design decision became clearer.',
+    learned: 'That constraints produce clarity. Building without a framework forced me to understand CSS deeply. More importantly, I learned that a portfolio is not a finished product — it is a living record. The version you see today will look different in a year, and that is exactly how it should be.',
     date: 'March 2026'
   }
 ];
