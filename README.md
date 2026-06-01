@@ -1,7 +1,51 @@
-# Alfonse Otieno Portfolio Website
+# Alfonse Otieno — Personal Portfolio
 
-Welcome to my first personal portfolio website, a project that marks the beginning of a lifelong journey in computer science, coding, and digital creation.
-This website is more than just a collection of my work—it represents my commitment to continuous growth and learning. Every project, article, and update you’ll see here reflects my evolving skills and ideas. This is a project that will never truly be finished, because as long as I’m learning, creating, and achieving, this portfolio will grow alongside me.
-While I leveraged AI to help generate the initial structure of this website, it is important to emphasize that AI is a tool, not a replacement for my thinking. I have personally reviewed, modified, and continuously maintain every part of this website to ensure it reflects my vision, values, and technical capabilities.
-Previously, I had a website that was generated entirely by AI and not under my full control. I couldn’t maintain it or ensure it truly represented me. That experience taught me the value of ownership and responsibility, which is why I created this portfolio from the ground up, and why it lives here on GitHub, where I can track, update, and refine it indefinitely.
-This repository is a living project, and I invite you to explore it, follow its evolution, and see firsthand how a personal website can grow with its creator.
+A living document. Not a static CV.
+
+This portfolio is an archive of someone building himself from the ground up — tracking projects, writing, books, progress, and the ideas that shape how I think. It started in 2026 and has no end date.
+
+## Purpose
+
+Most portfolios are snapshots. This one is a record.
+
+Every article I write gets mirrored here. Every project I ship has an honest case study — the problem, the solution, the challenges, and what I learned. The progress page tracks real milestones. The quotes page collects the ideas that have shaped my thinking.
+
+The goal is that in ten or twenty years, I can look back at this and see exactly who I was, what I was building, and how I was thinking at every stage.
+
+## Structure
+
+```
+/html          — All pages (about, articles, projects, progress, quotes, contact)
+/css           — Global stylesheet
+/js            — Page logic and data arrays (articles, projects, books, quotes)
+/assets        — Images organized by section
+index.html     — Entry point
+```
+
+## Stack
+
+Built entirely from scratch — no frameworks, no templates, no dependencies beyond Google Fonts and Font Awesome.
+
+- HTML, CSS, JavaScript (vanilla)
+- GitHub Pages (hosting)
+- Vercel (for project deployments)
+
+## Running Locally
+
+Clone the repository and open `index.html` in a browser. No build step, no package manager, no server required.
+
+```bash
+git clone https://github.com/AlfonseOtieno/Personal-portfolio-.git
+cd Personal-portfolio-
+# Open index.html in your browser
+```
+
+## Philosophy
+
+This is not a portfolio to impress employers. It is a portfolio to document the process honestly — the failures alongside the wins, the early articles alongside the later ones, the first projects alongside whatever comes next.
+
+The version you see today will look different in a year. That is exactly how it should be.
+
+---
+
+Built and maintained by [Alfonse Otieno](https://alfonseotieno.github.io/Personal-portfolio-/) · Nairobi, Kenya
