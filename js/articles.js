@@ -1816,6 +1816,58 @@ function openArticle(slug) {
   if (history.pushState) {
     history.pushState(null, '', '#' + slug);
   }
+
+  /* ── SEO: Update page title, meta tags, and schema per article ── */
+  var baseUrl = 'https://alfonseotieno.github.io/html/articles.html#' + slug;
+
+  // 1. Page title
+  document.title = article.title + ' — Alfonse Otieno';
+
+  // 2. Meta description
+  var metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute('content', article.excerpt);
+
+  // 3. Canonical URL
+  var canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.setAttribute('href', baseUrl);
+
+  // 4. Open Graph tags
+  var ogTags = {
+    'og:title': article.title + ' — Alfonse Otieno',
+    'og:description': article.excerpt,
+    'og:url': baseUrl,
+    'og:type': 'article'
+  };
+  Object.keys(ogTags).forEach(function(prop) {
+    var tag = document.querySelector('meta[property="' + prop + '"]');
+    if (tag) tag.setAttribute('content', ogTags[prop]);
+  });
+
+  // 5. Article Schema.org structured data
+  var existingSchema = document.getElementById('article-schema');
+  if (existingSchema) existingSchema.remove();
+  var schema = document.createElement('script');
+  schema.type = 'application/ld+json';
+  schema.id = 'article-schema';
+  schema.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "datePublished": article.date,
+    "author": {
+      "@type": "Person",
+      "name": "Alfonse Otieno",
+      "url": "https://alfonseotieno.github.io/Personal-portfolio-/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Alfonse Otieno"
+    },
+    "url": baseUrl,
+    "mainEntityOfPage": baseUrl
+  });
+  document.head.appendChild(schema);
 }
 
 function closeArticle() {
@@ -1826,6 +1878,20 @@ function closeArticle() {
   listView.classList.remove('hidden');
   singleView.innerHTML = '';
   window.scrollTo(0, 0);
+
+  /* ── SEO: Restore default meta tags on back ── */
+  document.title = 'Articles — Alfonse Otieno';
+  var metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute('content', 'Articles by Alfonse Otieno — published on Substack, mirrored here. Discipline, building, book reflections, and honest documentation.');
+  var canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.setAttribute('href', 'https://alfonseotieno.github.io/html/articles.html');
+  var ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl) ogUrl.setAttribute('content', 'https://alfonseotieno.github.io/html/articles.html');
+  var ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', 'Articles — Alfonse Otieno');
+  var existingSchema = document.getElementById('article-schema');
+  if (existingSchema) existingSchema.remove();
+
   if (history.pushState) {
     history.pushState(null, '', window.location.pathname);
   }
