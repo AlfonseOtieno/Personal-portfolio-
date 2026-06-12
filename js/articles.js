@@ -4,11 +4,12 @@
 
    HOW TO ADD A NEW ARTICLE:
    1. Add a new object to the TOP of the ARTICLES array
-   2. Fill in: slug, title, topic, date, readTime, substackUrl,
-      publication ('deliberately-becoming' or 'code-system'),
+   2. Fill in: slug, title, topic, date, readTime,
       excerpt, and body (HTML string)
-   3. The articles page, home page latest article, and the
-      articles-written counter on Progress all update automatically.
+   3. The articles page updates automatically.
+
+   All articles are part of one publication — Deliberately Becoming
+   (https://deliberatelybecoming.substack.com)
    ============================================================ */
 
 var ARTICLES = [
@@ -18,8 +19,6 @@ var ARTICLES = [
     topic: 'Books',
     date: 'May 12, 2026',
     readTime: '8 min read',
-    substackUrl: 'https://deliberatelybecoming.substack.com/p/reading-cant-hurt-me-by-david-goggins',
-    publication: 'deliberately-becoming',
     excerpt: 'I have interacted with David Goggins content countless times and in different ways. From highlight reels to podcasts. I decided to now read a book by David Goggins.',
     body: `
       <img src="../assets/articles/cant-hurt-me.webp" alt="Can't Hurt Me by David Goggins" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
@@ -71,8 +70,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'May 09, 2026',
     readTime: '8 min read',
-    substackUrl: 'https://deliberatelybecoming.substack.com/p/self-development-is-expensive-so',
-    publication: 'deliberately-becoming',
     excerpt: 'I started boxing in January. I have been reading books, writing articles, building websites, learning about AI and how to code — all of it since January. And somewhere around April, I hit a wall that had nothing to do with discipline or motivation.',
     body: `
       <p>I started boxing in January. I have been reading books, writing articles, building websites, learning about AI and how to code — all of it since January. This is all aligned with what I call my one year master plan which is focused on self development and self mastery.</p>
@@ -121,8 +118,6 @@ var ARTICLES = [
     topic: 'Philosophy',
     date: 'May 05, 2026',
     readTime: '10 min read',
-    substackUrl: 'https://deliberatelybecoming.substack.com/p/i-am-sisyphus-and-i-am-happy',
-    publication: 'deliberately-becoming',
     excerpt: 'I am 19 years old, living in Nairobi, and I am the happiest I have ever been in my life. My conditions haven\'t changed much. But something shifted in me.',
     body: `
       <p>I am 19 years old, living in Nairobi, and I am the happiest I have ever been in my life.</p>
@@ -195,8 +190,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'Apr 29, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://deliberatelybecoming.substack.com/p/the-failed-cybercafe-interview',
-    publication: 'deliberately-becoming',
     excerpt: 'I was rejected for a job I thought I was overqualified for.',
     body: `
       <p>I was rejected for a job I thought I was overqualified for.</p>
@@ -236,8 +229,6 @@ var ARTICLES = [
     topic: 'Books',
     date: 'Apr 26, 2026',
     readTime: '7 min read',
-    substackUrl: 'https://deliberatelybecoming.substack.com/p/what-i-have-learnt-from-reading-deep',
-    publication: 'deliberately-becoming',
     excerpt: 'I have always considered myself a hard worker, but I never felt like I was learning or producing at my optimal rate.',
     body: `
       <img src="../assets/articles/deep-work.webp" alt="Deep Work by Cal Newport" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
@@ -274,8 +265,6 @@ var ARTICLES = [
     topic: 'Building',
     date: 'Apr 14, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://codeandsystems.substack.com/p/building-inkdraft-an-ai-writing-tool',
-    publication: 'code-system',
     excerpt: 'One of the most frustrating trends in AI-assisted writing is that AI always seems to replace your voice rather than improve it.',
     body: `
       <p>One of the most frustrating trends in AI-assisted writing is that AI always seems to replace your voice rather than improve it.</p>
@@ -333,8 +322,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'Apr 11, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://deliberatelybecoming.substack.com/p/you-dont-have-to-suffer-to-grow',
-    publication: 'deliberately-becoming',
     excerpt: 'Does the process of self-development have to be a constant journey of discomfort and unhappiness, or can it actually be a happy one?',
     body: `
       <p>Does the process of self-development have to be a constant journey of discomfort and unhappiness, or can it actually be a happy one?</p>
@@ -381,8 +368,6 @@ var ARTICLES = [
     topic: 'Building',
     date: 'Apr 07, 2026',
     readTime: '10 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/building-my-first-ai-agent-a-habit',
-    publication: 'code-system',
     excerpt: 'I decided that instead of using different AI models for different tasks, why don\'t I create an AI agent which automates most of the tasks that I do?',
     body: `
       <p>I've been using AI for quite a while now, and I've been using different models for different tasks. So, I decided that instead of using different AI models for different tasks, why don't I create an AI agent which automates most of the tasks that I do? I wanted to build an AI agent that could automate almost every aspect of life.</p>
@@ -532,8 +517,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'Apr 04, 2026',
     readTime: '10 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/sometimes-patience-is-the-best-strategy',
-    publication: 'deliberately-becoming',
     excerpt: '"When nothing seems to help, I go and look at a stonecutter hammering away at his rock perhaps a hundred times without as much as a crack showing in it." — Jacob Riis',
     body: `
       <p>"When nothing seems to help, I go and look at a stonecutter hammering away at his rock perhaps a hundred times without as much as a crack showing in it. Yet at the hundred and first blow it will split in two, and I know it was not that blow that did it, but all that had gone before." - Jacob Riis</p>
@@ -659,8 +642,6 @@ var ARTICLES = [
     topic: 'Building',
     date: 'Mar 31, 2026',
     readTime: '9 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/designing-a-neuroplasticity-training',
-    publication: 'code-system',
     excerpt: 'After reading The Brain That Changes Itself, I came to a powerful realisation: our brains are not fixed and we can improve our cognitive abilities through deliberate practice.',
     body: `
       <p>After reading The Brain That Changes Itself, I came to a powerful realisation:</p>
@@ -771,8 +752,6 @@ var ARTICLES = [
     topic: 'Masculinity',
     date: 'Mar 28, 2026',
     readTime: '8 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/masculinity-how-does-a-boy-become',
-    publication: 'deliberately-becoming',
     excerpt: 'As young boys, we looked up to our fathers. A boy who idolises his father sees him as one sort of superhero - a figure of authority.',
     body: `
       <p>As young boys, we looked up to our fathers. A boy who idolises his father sees him as one sort of superhero - a figure of authority. He doesn't necessarily know what he does or why he leaves home. He can't fully describe it. He just sees him, and admires him. And you just know that one day you want to be like him.</p>
@@ -831,8 +810,6 @@ var ARTICLES = [
     topic: 'Building',
     date: 'Mar 24, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/i-built-an-ai-code-reviewer-not-to',
-    publication: 'code-system',
     excerpt: 'One of the most frustrating parts of learning to code is when the code doesn\'t run and you don\'t know why.',
     body: `
       <p>One of the most frustrating parts of learning to code is when the code doesn't run and you don't know why.</p>
@@ -887,8 +864,6 @@ var ARTICLES = [
     topic: 'Books',
     date: 'Mar 21, 2026',
     readTime: '4 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/atomic-habbits-are-automatic-habbits',
-    publication: 'deliberately-becoming',
     excerpt: 'I created a one-year master plan while in high school which was aimed at self-improvement, building skills, and most importantly, building discipline.',
     body: `
       <h2>Why I started reading Atomic Habits</h2>
@@ -914,8 +889,6 @@ var ARTICLES = [
     topic: 'Philosophy',
     date: 'Mar 17, 2026',
     readTime: '6 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/life-is-not-fair-and-that-is-okay',
-    publication: 'deliberately-becoming',
     excerpt: 'Life is not fair. We can pretend it is. We can tell ourselves comforting stories about equality and balance. But reality proves otherwise.',
     body: `
       <p>Life is not fair.</p>
@@ -1078,8 +1051,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'Mar 14, 2026',
     readTime: '8 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/turning-rejection-into-progress-my',
-    publication: 'deliberately-becoming',
     excerpt: 'Salespeople are told not to take rejection personally. But when emotions take over, that advice is easier said than done. Here\'s how I used the paperclip strategy to regain control and improve my sales.',
     body: `
       <p>Salespeople are told not to take rejection personally. But when emotions take over, that advice is easier said than done. Here's how I used the paperclip strategy to regain control and improve my sales.</p>
@@ -1129,8 +1100,6 @@ var ARTICLES = [
     topic: 'Habits',
     date: 'Mar 10, 2026',
     readTime: '7 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/identity-driven-habits-vs-outcome',
-    publication: 'deliberately-becoming',
     excerpt: 'Why do we set New Year\'s resolutions but fail to uphold them until the end of the year? Why do we struggle to stick to most of our resolutions?',
     body: `
       <p>Why do we set New Year's resolutions but fail to uphold them until the end of the year? Why do we struggle to stick to most of our resolutions?</p>
@@ -1213,8 +1182,6 @@ var ARTICLES = [
     topic: 'Technology',
     date: 'Mar 07, 2026',
     readTime: '15 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/impact-of-artificial-intelligence',
-    publication: 'deliberately-becoming',
     excerpt: 'If you are a young person right now, part of Gen Z or Gen Alpha, you are probably experiencing some level of anxiety that AI might take over many of the jobs in the next few years.',
     body: `
       <p>So, let's talk about artificial intelligence. Artificial intelligence has grown rapidly over the past few years, and there are now many AI systems doing a lot of different things. Of course, many of you have already interacted with artificial intelligence while playing chess, checkers, and other tasks. But now I want to talk about general AI, specifically large language models like ChatGPT.</p>
@@ -1315,8 +1282,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'Mar 03, 2026',
     readTime: '6 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/i-was-learning-confidence-backwards',
-    publication: 'deliberately-becoming',
     excerpt: 'I had been learning confidence backwards. I was studying the appearance of authority. But authority does not begin with posture. It begins with composure.',
     body: `
       <p>Recently, I watched an interview with behavioral expert Chase Hughes in conversation with Steven Bartlett in the Diary of a CEO.</p>
@@ -1452,8 +1417,6 @@ var ARTICLES = [
     topic: 'Boxing',
     date: 'Feb 28, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/boxing-so-far',
-    publication: 'deliberately-becoming',
     excerpt: 'I started boxing in January this year. Not exactly as part of a New Year\'s resolution, since I had wanted to start as early as November. January just happened to be more favorable.',
     body: `
       <h2>Starting the Journey</h2>
@@ -1482,8 +1445,6 @@ var ARTICLES = [
     topic: 'Books',
     date: 'Feb 24, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/what-i-learned-from-the-brain-that',
-    publication: 'deliberately-becoming',
     excerpt: 'Have you ever asked yourself why it is so hard to do things that are beneficial to you like reading while it requires no effort to scroll or play video games? So have I.',
     body: `
       <img src="../assets/articles/brain-that-changes-itself.jpg" alt="The Brain That Changes Itself by Norman Doidge" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
@@ -1539,8 +1500,6 @@ var ARTICLES = [
     topic: 'Discipline',
     date: 'Feb 21, 2026',
     readTime: '4 min read',
-    substackUrl: 'https://alfonseotieno.substack.com/p/discipline-isnt-beast-mode-its-boring',
-    publication: 'deliberately-becoming',
     excerpt: 'We\'ve romanticized discipline. And when you romanticize something, you misunderstand it.',
     body: `
       <img src="../assets/articles/discipline-boring.jpeg" alt="Discipline Isn't Beast Mode. It's Boring." style="width:100%;border-radius:8px;margin:1.5rem 0;" />
@@ -1657,8 +1616,6 @@ var ARTICLES = [
     topic: 'Personal Growth',
     date: 'Feb 19, 2026',
     readTime: '5 min read',
-    substackUrl: 'https://open.substack.com/pub/alfonseotieno/p/why-im-documenting-my-growth-at-19?utm_source=share&utm_medium=android&r=7mywyj',
-    publication: 'deliberately-becoming',
     excerpt: 'I created a one-year master plan to achieve radical improvement—the kind that allows me to look back and say I never wasted my time. I structured the plan around three pillars: body, mind, and skill.',
     body: `
       <h2>High School: Foundations and Achievements</h2>
@@ -1706,28 +1663,13 @@ var ARTICLES = [
 ];
 
 /* ── HELPERS ─────────────────────────────────────────────────── */
-function getPubLabel(pub) {
-  return pub === 'deliberately-becoming' ? 'Deliberately Becoming' : 'Code &amp; System';
-}
-function getPubClass(pub) {
-  return pub === 'deliberately-becoming' ? 'pub-db' : 'pub-cs';
-}
 
 /* ── RENDER ARTICLES LIST ─────────────────────────────────────── */
-function renderArticlesList(filter) {
+function renderArticlesList() {
   var grid = document.getElementById('articles-grid');
   if (!grid) return;
 
-  var filtered = filter === 'all'
-    ? ARTICLES
-    : ARTICLES.filter(function (a) { return a.publication === filter; });
-
-  if (filtered.length === 0) {
-    grid.innerHTML = '<p style="color:var(--text-secondary);padding:2rem 0;">No articles in this category yet.</p>';
-    return;
-  }
-
-  grid.innerHTML = filtered.map(function (a) {
+  grid.innerHTML = ARTICLES.map(function (a) {
     var imageHtml = a.image
       ? '<div class="article-card-img"><img src="../assets/articles/' + a.image + '" alt="' + a.title + '" onerror="this.parentNode.style.display=\'none\'" /></div>'
       : '';
@@ -1735,7 +1677,6 @@ function renderArticlesList(filter) {
     return '<div class="article-card" data-slug="' + a.slug + '">' +
       imageHtml +
       '<div class="article-card-body">' +
-        '<span class="article-pub-badge ' + getPubClass(a.publication) + '">' + getPubLabel(a.publication) + '</span>' +
         '<h3>' + a.title + '</h3>' +
         '<p>' + a.excerpt + '</p>' +
         '<div class="article-card-meta">' +
@@ -1767,10 +1708,6 @@ function openArticle(slug) {
   listView.classList.add('hidden');
   singleView.classList.remove('hidden');
 
-  var pubLabel = article.publication === 'deliberately-becoming' ? 'Deliberately Becoming' : 'Code &amp; System';
-  var subUrl = article.publication === 'deliberately-becoming'
-    ? 'https://deliberatelybecoming.substack.com'
-    : 'https://codeandsystems.substack.com';
 
   singleView.innerHTML =
     '<div class="container">' +
@@ -1778,9 +1715,6 @@ function openArticle(slug) {
         '<button class="back-btn" id="article-back-btn">' +
           '<i class="fa-solid fa-arrow-left"></i> Back to Articles' +
         '</button>' +
-        '<span class="article-pub-badge ' + getPubClass(article.publication) + '" style="margin-bottom:0.75rem;">' +
-          getPubLabel(article.publication) +
-        '</span>' +
         '<h1>' + article.title + '</h1>' +
         '<div class="article-meta-row">' +
           '<span>' + article.date + '</span>' +
@@ -1788,13 +1722,9 @@ function openArticle(slug) {
           '<span>' + article.topic + '</span>' +
         '</div>' +
         '<div class="article-full-body">' + article.body + '</div>' +
-        '<div class="article-substack-note">' +
-          '<i class="fa-solid fa-arrow-up-right-from-square" style="margin-right:0.4rem;"></i>' +
-          'This article was originally published on Substack. <a href="' + article.substackUrl + '" target="_blank" rel="noopener">Click here to read on Substack</a>.' +
-        '</div>' +
         '<div class="article-subscribe-cta">' +
-          '<p>Enjoyed this article? Subscribe to <strong>' + pubLabel + '</strong> for more.</p>' +
-          '<a href="' + subUrl + '" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on Substack</a>' +
+          '<p>Enjoyed this article? Follow along on <strong>Deliberately Becoming</strong>.</p>' +
+          '<a href="https://deliberatelybecoming.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on Substack</a>' +
         '</div>' +
         '<button class="back-btn" style="margin-top:2rem;margin-bottom:0;" id="article-back-btn-bottom">' +
           '<i class="fa-solid fa-arrow-left"></i> Back to Articles' +
@@ -1902,16 +1832,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!document.getElementById('articles-grid')) return;
 
   /* Initial render */
-  renderArticlesList('all');
-
-  /* Publication filter buttons */
-  document.querySelectorAll('.pub-filter-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('.pub-filter-btn').forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      renderArticlesList(btn.dataset.pub);
-    });
-  });
+  renderArticlesList();
 
   /* Hash routing on load */
   var hash = window.location.hash.replace('#', '');

@@ -33,11 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var articleSlot = document.getElementById('latest-article-slot');
   if (articleSlot && typeof ARTICLES !== 'undefined' && ARTICLES.length > 0) {
     var a = ARTICLES[0];
-    var pubClass = a.publication === 'deliberately-becoming' ? 'pub-db' : 'pub-cs';
-    var pubLabel = a.publication === 'deliberately-becoming' ? 'Deliberately Becoming' : 'Code &amp; System';
     articleSlot.innerHTML =
       '<div class="article-preview-card" onclick="window.location.href=\'articles.html#' + a.slug + '\'">' +
-        '<span class="article-pub-badge ' + pubClass + '">' + pubLabel + '</span>' +
         '<h3>' + a.title + '</h3>' +
         '<p class="excerpt">' + a.excerpt + '</p>' +
         '<div class="article-meta-row">' +
