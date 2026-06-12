@@ -13,6 +13,38 @@
    ============================================================ */
 
 var ARTICLES = [
+    {
+    slug: 'mindsets-the-new-psychology-of-success',
+    title: 'Mindsets: The New Psychology of Success',
+    topic: 'Books',
+    date: 'Jun 11, 2026',
+    readTime: '6 min read',
+    excerpt: 'What differentiates happy and successful people from the sad and unsuccessful? Dr. Carol S. Dweck says it is mostly a difference in mindsets.',
+    body: `
+      <h2>What the Book Is About</h2>
+      <p>The book mainly talks about two mindsets: the growth mindset and the fixed mindset. The growth mindset believes that traits, character, and abilities are not fixed and can be improved with practice. Conversely, the fixed mindset believes that you either have it or you don't &mdash; that there are superior beings who have all the good traits like intelligence and creativity, and there are inferior beings who were just dealt a bad hand, with not much they can do to change it.</p>
+      <p>The book encourages us to adopt an open mindset and do away with the fixed mindset. We are taken through what causes some people to develop a growth mindset and others a fixed mindset. We are then shown the impact of these mindsets in different areas, from business to sports to relationships.</p>
+      <p>The book is an excellent option for people who want to become good leaders, those pursuing self-improvement, and anyone who wants to be successful at what they do.</p>
+      <p>In this article, we will not cover everything in the book &mdash; just what I saw was worth emphasizing and what stuck with me.</p>
+      <h2>The Growth Mindset</h2>
+      <p>The growth mindset believes that human traits are not fixed and can be improved through practice. It is similar to what Norman Doidge writes in his book The Brain That Changes Itself, but termed as "neuroplasticity" from a neurological perspective. The growth mindset makes you open to challenges because you know the outcome doesn't define you. The challenge is a way to improve your abilities, and if you fail, you know there is room for improvement.</p>
+      <p>A fixed mindset, however, doesn't like challenges because they may expose flaws in their fixed traits.</p>
+      <h2>How Mindsets Affect Your Learning</h2>
+      <p>We are always learning, whether that is in the classroom, at home, or in the office. However, we approach learning differently depending on our mindset.</p>
+      <p>With a growth mindset, you accept that there is a gap between what you know and what you need to know, and you bridge that gap by learning what you don't know. You might be bad at a particular sport, but instead of wishing you were as talented as those who excel at it, you know that if you put in the work, you will improve your skills.</p>
+      <p>Therefore, in the growth mindset, failure is not defined by a lack of talent or intelligence &mdash; you can build both. The only way you truly fail is by not putting any effort into improving.</p>
+      <p>In the fixed mindset, everything is a test to gauge your fixed abilities. The belief is that if you are smart, you don't have to study, and if you are talented, there is no need to exert effort. Fixed mindsets assume gifted people just "have it," and having to put effort into something is viewed merely as an indicator of your deficiencies.</p>
+      <p>We often say that you miss 100% of the shots you don't take. In a growth mindset, you might miss the shots but still step up to take another one, hoping every miss makes you a better striker. In the fixed mindset, if you can't score on the first shot, you conclude it is because you are a bad striker. Consequently, you decide not to take the shot at all so that others cannot see your flaws.</p>
+      <h2>The False Growth Mindset</h2>
+      <p>As you read the book, at some point you might start saying to yourself, "I think I have a growth mindset." The book addresses this trap. This is often your fixed mindset reasoning, saying, "These mindset traits are fixed, and I am lucky I have the growth mindset."</p>
+      <p>Human beings are rarely that binary. There are no purely growth-minded or fixed-minded people; we all possess both mindsets in different areas and to varying degrees. I may believe that I can improve my skills in mathematics and my social skills, but I might not think the same way about my ability to sing. Thus, you may have a growth mindset when it comes to intelligence, but a fixed mindset when it comes to your vocals.</p>
+      <h2>Mindsets Can Be Altered</h2>
+      <p>Realizing this is liberating because now we know that just as traits can be cultivated, mindsets, too, can be changed. You are not doomed to a fixed mindset; you just need to learn to cultivate a growth mindset.</p>
+      <p>Throughout the book, you can see this shift when researchers conduct experiments. You encounter statements like, "We put some of them in a growth mindset and some in a fixed mindset." They don't choose participants based on their pre-existing mindsets; they take a random group and then prime them into a specific mindset. This is a profound concept worth sitting with for a while.</p>
+      <p>Your mindset is not entirely within your internal control &mdash; your environment plays a massive role too. This influences you through everything from something as simple as what someone says to you, to the content you consume on a daily basis.</p>
+      <p>Therefore, when you decide to change your mindset, remember to work from within while also actively making intentional changes to your external environment.</p>
+    `
+  },
   {
     slug: 'reading-cant-hurt-me-by-david-goggins',
     title: 'Reading Can\'t Hurt Me by David Goggins',
