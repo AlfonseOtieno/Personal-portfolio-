@@ -13,6 +13,41 @@
    ============================================================ */
 
 var ARTICLES = [
+  {
+    slug: 'before-you-judge-their-character-look-at-their-incentives',
+    title: 'Before You Judge Their Character, Look at Their Incentives',
+    topic: 'Philosophy',
+    date: 'Jun 15, 2026',
+    readTime: '5 min read',
+    excerpt: 'Do we need everyone around us to be righteous for us to succeed? Betrayal and disappointment don\'t come from character flaws — they come from flaws in the incentive structure.',
+    body: `
+      <p>When you are young, you mostly see the good in people. You have not experienced a major betrayal or disappointment. And that is why most young adults start off naive. We expect people to be truthful, loyal, and also care about others. Eventually, we get disappointed when people don't live up to this expectation. We learn that people are liars, manipulative, and most of them don't care about you. The young person who was once naive now becomes cynical and manipulative. We call this process maturing. Basically, the lesson becomes: "The world is full of bad people, good people won't survive."</p>
+      <p>There are genuinely good people in the world, and there are people who have chosen to be the villain in the story. And there are those who don't see themselves as either angels or devils. They don't fall to religion or any other metric to judge their character &mdash; they just do what suits them. My argument in this article is that you don't have to become the judge of a person's character, let God do that. But if you want to work with someone, look at the incentive structure.</p>
+      <h2>The Boss and the Employee</h2>
+      <p>There is a man who needs money, maybe for rent, food, or any other need he may have. He has some skills and therefore decides to look for a job.</p>
+      <p>There is also a man who owns a business. He wants to grow his business but is too busy to do it himself. He decides to employ someone to manage the business for him.</p>
+      <p>Basically, the idea is: You need money and I need my business to grow. Why don't you come grow my business as you earn money?</p>
+      <p>None of them has to be selfless. Everyone has an end they are working towards, their partner just proves to be the best means.</p>
+      <p>The boss underpaying the employee affects the growth of the business. The employee underperforming affects his paycheck. And so everyone gives their best efforts to benefit themselves, and in the process benefits their partner.</p>
+      <h2>The Stingy Boss and the Intern</h2>
+      <p>This is another case of employer and employee but with a slightly different incentive structure.</p>
+      <p>The intern wants a place where they can apply their skills, learn, and improve. Money is not their main concern &mdash; learning is. And so he applies for an internship.</p>
+      <p>The boss wants these services to grow his business. But he also likes the idea of not having to pay in the process. He prefers free labor. He hires the intern.</p>
+      <p>The intern works to the best of his ability and in the process, the business grows. Is the intern a good man or a fool? Is the boss a bad man or exploitative? Doesn't matter. Everyone gets what they wanted. Everyone goes away satisfied.</p>
+      <p>In both cases, everyone's incentives align. Everyone is primarily putting effort to benefit themselves, and their partner benefits in the process, irrespective of whether they are selfless or selfish. Everyone wins.</p>
+      <p>Can the employee who wants money work for the stingy boss? No. Their incentives conflict. The boss underpays, the employee underdelivers. The business doesn't grow, the employee doesn't get the money he was looking for. Both fail. Both walk away resentful. We may judge character, but the incentive structure was flawed from the beginning.</p>
+      <p>Can the intern work for the generous boss? Yes. Their incentives still align. You improve your skills as you grow my business.</p>
+      <h2>Black Tax &mdash; Is One Stingy or is the Other a Parasite?</h2>
+      <p>This is one where people are polarized. One has to be right and another has to be wrong.</p>
+      <p>Money changes people. They say that they will never forget you and once they get money they abandon you. Or is that so?</p>
+      <p>Money changes the people around you. They used to love you as you are, but now everyone wants something from you and gets angry when you can't give it to them. They expect you to bear their burdens on your shoulders. Who is wrong?</p>
+      <p>Let's use a simple example.</p>
+      <p>There is a man who wants his daughter to study but he genuinely can't afford to pay for her education. He does have a rich friend whose children all attend expensive schools. The man calls his rich friend to ask for assistance, but the friend tells him that he has a lot of financial obligations and projects and cannot help him. Let's look at incentives.</p>
+      <p>The poor man wants his daughter to study. The rich man also wants his children to study, but also wants to invest and grow his wealth. Helping his friend would slow down his process.</p>
+      <p>While this man refused to sponsor one girl's education, there are rich people who sponsor hundreds of children. There are philanthropists who intend to use their wealth to curb starvation in whole countries. The man will get help from the philanthropist who doesn't even know his daughter's name &mdash; not his friend. His friend may later decide to give back to the community. Has he become a different man? The incentives have only changed.</p>
+      <p>In an ideal world, the world should be filled with good men who care about both themselves and others around them. But we don't live in an ideal world. We all need characters and principles to guide ourselves. But betrayal and disappointment don't come from character flaws. They come from flaws in the incentive structure.</p>
+    `
+  },
     {
     slug: 'mindsets-the-new-psychology-of-success',
     title: 'Mindsets: The New Psychology of Success',
