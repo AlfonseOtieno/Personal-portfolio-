@@ -13,6 +13,56 @@
    ============================================================ */
 
 var ARTICLES = [
+    {
+    slug: 'the-five-currencies-of-a-wealthy-life',
+    title: 'The Five Currencies of a Wealthy Life',
+    topic: 'Philosophy',
+    date: 'Jun 19, 2026',
+    readTime: '5 min read',
+    excerpt: 'Why chase money if it can\'t buy happiness? Real prosperity is achieved by having a good balance of each type of wealth.',
+    body: `
+      <p>Financial independence. That is the end goal that most of us work towards. A major part of that process is investing. We are very keen in choosing the best assets to invest our hard earned money. But if everyone wants financial independence, why do the financially independent tell us that money doesn't buy happiness?</p>
+      <p>Is money meant to make you happy?</p>
+      <h2>Understanding Money First</h2>
+      <p>People have different attitudes towards money.</p>
+      <p>We have some who worship it. They make it their life's mission to pursue money and are willing to sacrifice everything to accumulate more of it.</p>
+      <p>Then we have some who demonize it. They say that money is the root of all evil and see the lack of money as virtuous.</p>
+      <p>But stripped away of all emotions surrounding it, money is simply a medium of exchange. You give money, you get goods or services in return. And I've never heard anyone say trade is the root of all evil.</p>
+      <p>Money doesn't bring happiness. It is not meant to. Does your chair or even your water bottle bring happiness? They are simply tools.</p>
+      <p>We go wrong by tying our happiness to money. "Once I get money I will be happy." You chase it. You get it and you realise you are not as happy as you expected.</p>
+      <p>Real wealth is more than just money. Money is only one type of wealth. Chasing financial wealth only is a trap. You will win the game, but lose in life.</p>
+      <p>There are different types of wealth. Real prosperity is achieved by having a good balance of each.</p>
+      <h2>Financial Wealth</h2>
+      <p>This is the amount you have in your bank account, your investments, and your assets.</p>
+      <p>Financial wealth is important. You need money to survive. And you do need to be financially independent to pursue things you genuinely love or things you are interested in.</p>
+      <p>It also serves you well to become financially literate. Learn about money and how money works. Learn about investments and how inflation affects the time value of money. Learn how to budget and spend your money wisely.</p>
+      <p>But as mentioned earlier, money is just a medium. You don't pursue money in search for happiness. Pursuit of money is just pursuit of money. But financial independence enables you to pursue your interests without having to worry about money, and you can access things which you couldn't get without it.</p>
+      <p>Work hard, earn money, grow your bank account, and invest. But always remember that there is more to life than just having a good financial record.</p>
+      <h2>Social Wealth</h2>
+      <p>If financial wealth is built on financial capital, social wealth is built on social capital. You can spend time looking for the right assets to invest your money. You take financial literacy courses and you know how to analyse the market. But what is the quality of your relationships? You wouldn't invest in a bad stock, then why spend so much time with toxic people.</p>
+      <p>It's not only about the hands you shake or your follower count. It's your relationship with your family. How much time with your parents and siblings. How many friends you know would show up for you in the toughest times.</p>
+      <p>You should not overlook social wealth. It is just as important as any other type of wealth. And you should be deliberate about where you invest your social capital. If you can stay up to date with what is happening with your investments, you can also spare time to stay up to date with what is happening with people around you.</p>
+      <h2>Time Wealth</h2>
+      <p>You can have millions but still be poor in time.</p>
+      <p>We all get 24 hours a day. Time wealth is how many of those 24 are actually yours. If your work or other responsibilities dictate 100% of your time, you are time bankrupt.</p>
+      <p>Time wealth is agency. It is the ability to say no to things that don't matter. Of course you need some degree of financial stability in order to control your time. But you don't need to become a millionaire in order to enjoy the benefits of time wealth. If you can't go abroad for a vacation for one month, you can visit a friend or practice your hobby after work.</p>
+      <p>Whether you are a worker, an entrepreneur, or a retiree — we all have some degree of time wealth. Money can buy you time, but you are the one to decide whether you are actually going to use that time.</p>
+      <h2>Mental Wealth</h2>
+      <p>Your brain is your greatest asset. It doesn't appear on a balance sheet but provides the basis by which all others grow.</p>
+      <p>The human brain is said to be the most complex thing in the universe. That is because no one knows its limits. The brain is plastic, meaning it doesn't only learn &mdash; it learns how to learn.</p>
+      <p>Mental wealth is more than just how many degrees you have or how many things you know. It is the mindset you have built, the books you have read, your life experiences and what you have learnt from them. It is your emotional resilience, intellectual curiosity, and the ability to make good decisions when faced with tough choices.</p>
+      <p>This is what differentiates those who always believe in their success from those who see themselves as victims of life's harshness. It determines your internal environment.</p>
+      <p>You should always strive to learn more, to cultivate a growth mindset, and build mental toughness.</p>
+      <h2>Physical Wealth</h2>
+      <p>This is last on the list. But it is first in importance. Physical wealth is your health.</p>
+      <p>There is a saying: a healthy man wants a thousand things. A sick man wants only one.</p>
+      <p>Without physical wealth, all the others are inaccessible. Health is very important. And yet it is the thing most people sacrifice first &mdash; the sleep, the physical training, the rest &mdash; in pursuit of financial wealth.</p>
+      <p>Eat healthy, do some physical exercise, and take care of your body. Just try to ensure that you are physically fit to do the things you enjoy now and also in the long run.</p>
+      <p>Money is not the enemy. Build your financial wealth, invest deliberately, spend wisely, create security for yourself and the people you love. But build the other four with the same seriousness.</p>
+      <p>Because the goal is not to be rich. The goal is to be wealthy.</p>
+      <p>If someone looked at your life today, which form of wealth are you actively building? And which one are you silently neglecting?</p>
+    `
+  },
   {
     slug: 'before-you-judge-their-character-look-at-their-incentives',
     title: 'Before You Judge Their Character, Look at Their Incentives',
